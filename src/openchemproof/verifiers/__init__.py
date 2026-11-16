@@ -1,0 +1,1 @@
+"""OpenChemProof research software."""
