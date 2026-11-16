@@ -1,0 +1,20 @@
+OpenChemProof v0.1.0
+Copyright 2026 Joy Karmakar and contributors.
+
+Software and synthetic fixtures are licensed under Apache-2.0 (LICENSE).
+The independently maintained external_data subcollections retain their own licenses:
+
+MassBank: selected Eawag records labeled CC BY, version unspecified in source.
+Preserve source authors, copyright, native accessions and license literal in each record.
+Deep4Chem: CC BY 4.0; see external_data/optical/ATTRIBUTION.md.
+ChEMBL: CC BY-SA 3.0; see external_data/structure/DATA_LICENSE.md.
+ORD: CC BY-SA 4.0; see external_data/ord/LICENSE-CC-BY-SA-4.0.txt.
+NMRShiftDB2: nmrshiftdb2 Database License; see external_data/nmr/DATABASE-LICENSE.txt.
+Contains information from nmrshiftdb2 (www.nmrshiftdb.org), which is made available
+here under the nmrshiftdb2 Database License.
+
+Changes to upstream data: selection, normalization, derived structural identifiers,
+pairing, provenance metadata and checksummed indices. Original measurements remain
+distinguishable from computed values. No source is relicensed under Apache-2.0.
+The combined index references separately licensed collections, without replacing
+their respective terms. Cite source papers and datasets in addition to this software.

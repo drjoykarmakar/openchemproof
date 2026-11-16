@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openchemproof"
+version = "0.1.0"
+description = "Deterministic analytical evidence auditing and negative-result records for chemistry agents"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [{name = "Joy Karmakar"}]
+dependencies = [
+  "rdkit>=2025.3,<2027", "pydantic>=2.11,<3", "fastmcp>=4.0,<5",
+  "numpy>=2.2,<3", "scipy>=1.15,<2", "pandas>=2.2,<4", "pyarrow>=19,<24",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=2,<3"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "hypothesis>=6.130,<7",
+       "ruff>=0.11,<1", "mypy>=1.15,<2", "pytest-cov>=6,<8"]
+
+[project.scripts]
+openchemproof = "openchemproof.cli:main"
+openchemproof-mcp = "openchemproof.mcp_server.server:main"
+chem-artifact-generate = "benchmarks.chem_artifact_bench.generate_bench:main"
+chem-artifact-eval = "benchmarks.chem_artifact_bench.eval_runner:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openchemproof", "benchmarks"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src/openchemproof", "benchmarks"]
+
+[[tool.mypy.overrides]]
+module = ["rdkit.*", "pyarrow.*", "pandas.*", "scipy.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-ra"

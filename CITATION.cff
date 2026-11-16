@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, cite this repository and the original data sources."
+type: software
+title: "OpenChemProof: Analytical Evidence Auditing and Negative-Result Records"
+authors:
+  - family-names: Karmakar
+    given-names: Joy
+version: 0.1.0
+date-released: '2026-11-16'
+license: Apache-2.0
+abstract: >-
+  Deterministic cheminformatics and spectroscopy consistency checks,
+  content-addressed audit records, an MCP interface, a synthetic integration
+  benchmark, and a provenance-preserving public experimental evidence collection.
