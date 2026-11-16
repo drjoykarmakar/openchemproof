@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_id": "rec-5d9b6d3d12ed7aaa2e49",
+  "compound": {
+    "compound_id": "m17",
+    "proposed_smiles": "O=c1ccc2ccccc2o1",
+    "canonical_smiles": "O=c1ccc2ccccc2o1",
+    "inchikey": "ZYGHJZDHTFUPRJ-UHFFFAOYSA-N",
+    "inchi_connectivity_layer": "ZYGHJZDHTFUPRJ",
+    "molecular_formula": "C9H6O2",
+    "monoisotopic_mass": 146.036779432,
+    "salt_form": null,
+    "mass_basis": "neutral_parent",
+    "expected_stereocenters": 0,
+    "reference_smiles": null,
+    "ord_compound_identifier": null
+  },
+  "assay": {
+    "assay_type": "fluorescence_probe",
+    "solvent": "DMSO",
+    "ph": null,
+    "temperature_c": 25.0,
+    "concentration_um": null
+  },
+  "evidence": {
+    "lcms": null,
+    "optical": {
+      "excitation_nm": 464.77360638328764,
+      "emission_nm": 534.7736063832876,
+      "absorbance_at_ex": 0.40357868517332923,
+      "absorbance_at_em": 0.14319027038373494,
+      "observed_quantum_yield": 0.5,
+      "apparent_fold_change": 0.5452749193894679,
+      "baseline_absorbance_at_ex": 0.01,
+      "baseline_absorbance_at_em": 0.01,
+      "geometry": "right_angle_center",
+      "upconversion_declared": false,
+      "solvent_raman_shift_cm": null,
+      "solvent_series": [],
+      "expected_solvatochromism": null
+    },
+    "nmr": null
+  },
+  "negative_result": null,
+  "ord_reaction_id": null,
+  "source_references": []
+}

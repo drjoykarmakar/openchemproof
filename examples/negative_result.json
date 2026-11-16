@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "record_id": "rec-0eda8208560acff6fe47",
+  "compound": {
+    "compound_id": "m83",
+    "proposed_smiles": "C1CCCCC1",
+    "canonical_smiles": "C1CCCCC1",
+    "inchikey": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
+    "inchi_connectivity_layer": "XDTMQSROBMDMFD",
+    "molecular_formula": "C6H12",
+    "monoisotopic_mass": 84.093900384,
+    "salt_form": null,
+    "mass_basis": "neutral_parent",
+    "expected_stereocenters": 0,
+    "reference_smiles": null,
+    "ord_compound_identifier": null
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "DMSO",
+    "ph": null,
+    "temperature_c": 25.0,
+    "concentration_um": null
+  },
+  "evidence": {
+    "lcms": null,
+    "optical": null,
+    "nmr": null
+  },
+  "negative_result": {
+    "experiment_id": "exp-83",
+    "outcome": "failed_synthesis",
+    "observation": "No product above the stated analytical detection limit.",
+    "protocol_reference": "synthetic-fixture://protocol/v1",
+    "evidence_references": [
+      "synthetic-fixture://control-and-chromatogram"
+    ],
+    "detection_limit_description": "Synthetic LCMS target detection limit 0.1 micromolar",
+    "controls_passed": true,
+    "measured_yield_percent": 0.0
+  },
+  "ord_reaction_id": null,
+  "source_references": []
+}

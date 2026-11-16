@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "record_id": "rec-715354974c2890f5a0d9",
+  "compound": {
+    "compound_id": "m12",
+    "proposed_smiles": "CCO",
+    "canonical_smiles": "CCO",
+    "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+    "inchi_connectivity_layer": "LFQSCWFLJHTTHZ",
+    "molecular_formula": "C2H6O",
+    "monoisotopic_mass": 46.041864812,
+    "salt_form": null,
+    "mass_basis": "neutral_parent",
+    "expected_stereocenters": 0,
+    "reference_smiles": null,
+    "ord_compound_identifier": null
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "DMSO",
+    "ph": null,
+    "temperature_c": 25.0,
+    "concentration_um": null
+  },
+  "evidence": {
+    "lcms": {
+      "observed_mz": 47.04914675950852,
+      "ionization_mode": "positive",
+      "observed_adduct": "[M+H]+",
+      "relative_isotope_intensities": [
+        1.0,
+        0.02281747482043968,
+        0.002198213384297284
+      ],
+      "retention_time_min": null,
+      "purity_uv_percent": null,
+      "starting_materials": []
+    },
+    "optical": null,
+    "nmr": null
+  },
+  "negative_result": null,
+  "ord_reaction_id": null,
+  "source_references": []
+}
