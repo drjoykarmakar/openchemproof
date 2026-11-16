@@ -220,6 +220,9 @@ relicense CC-BY-SA or NMRShiftDB2 data. Preserve their attribution and applicabl
 }
 ```
 
-No DOI, publication acceptance, external GitHub repository or remote CI result is asserted.
-The local repository is ready for review and upload; [PUBLISHING.md](docs/PUBLISHING.md) gives
-the commands for creating `drjoykarmakar/openchemproof` from an authenticated machine.
+Source code: https://github.com/drjoykarmakar/openchemproof
+
+GitHub Actions checks have passed. OpenChemProof v0.1.0 is a research
+foundation with 500 synthetic integration fixtures and 500 public-source
+experimental records. Live LLM benchmarking and independent experimental
+validation remain future work. No publication or DOI is claimed.
