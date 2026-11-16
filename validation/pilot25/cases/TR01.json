@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_id": "TR01",
+  "compound": {
+    "compound_id": "TR01",
+    "proposed_smiles": "O1B(OC(C)(C)C1(C)C)C=2C=CC=CC2SC"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "CDCl3"
+  },
+  "evidence": {
+    "nmr": {
+      "solvent": "CDCl3",
+      "proton_shifts_ppm": [
+        1.37,
+        2.45,
+        7.095000000000001,
+        7.15,
+        7.369999999999999,
+        7.68
+      ],
+      "proton_integrals": [
+        12.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "multiplicities": [
+        "s",
+        "s",
+        "m",
+        "d",
+        "m",
+        "d"
+      ],
+      "integral_scale": 1.0,
+      "integration_complete": true
+    }
+  },
+  "source_references": [
+    "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet"
+  ],
+  "ord_reaction_id": "ord-f574833fad824541942b5e46d0c56513"
+}

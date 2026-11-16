@@ -1,0 +1,48 @@
+{
+  "record_id": "OP03",
+  "status": "VERIFIED",
+  "confidence_score": 0.8,
+  "flags": [
+    {
+      "code": "HIGH_ABSORBANCE",
+      "severity": "WARNING",
+      "modality": "optical",
+      "message": "Absorbance exceeds the conservative IFE screening threshold",
+      "quantitative_evidence": {
+        "max_absorbance": 0.6
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "Fc1ccc(Nc2ccc3ccccc3n2)cc1",
+    "structure.inchikey": "CJCUXXISDZFQHB-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "CJCUXXISDZFQHB",
+    "structure.molecular_formula": "C15H11FN2",
+    "structure.parent_monoisotopic_mass": 238.090626572,
+    "structure.as_drawn_monoisotopic_mass": 238.090626572,
+    "structure.tautomer_count": 2.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 4.117500000000002,
+    "structure.aromatic_rings": 3.0,
+    "optical.stokes_shift_nm": 57.139999999999986,
+    "optical.stokes_shift_cm": 4052.806494023065,
+    "optical.ife_correction_factor": 2.1379620895022318,
+    "optical.corrected_fold_change": 1.0000000000000002
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "optical.stokes_shift",
+    "optical.quantum_yield",
+    "optical.scatter_overlap",
+    "optical.ife_correction"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "36efc860c2ebc0c414c666c90d8b71b721281e26a9b35bcf23e9f81fa6758ee8"
+}

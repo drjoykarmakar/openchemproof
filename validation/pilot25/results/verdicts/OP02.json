@@ -1,0 +1,86 @@
+{
+  "record_id": "OP02",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "anil_di_alk_B(251)"
+      }
+    },
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "Polycyclic_aromatic_hydrocarbon_3"
+      }
+    },
+    {
+      "code": "AGGREGATION_RISK",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Lipophilicity/aromaticity heuristic warrants detergent and concentration controls",
+      "quantitative_evidence": {
+        "clogp": 6.105700000000005,
+        "aromatic_rings": 5.0
+      }
+    },
+    {
+      "code": "IFE_RESPONSE_ARTIFACT",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "optical",
+      "message": "Apparent response is explained by differential inner filtering within the declared geometry model",
+      "quantitative_evidence": {
+        "apparent_fold_change": 0.47973344863668915,
+        "corrected_fold_change": 0.9999999999999998
+      }
+    },
+    {
+      "code": "HIGH_ABSORBANCE",
+      "severity": "WARNING",
+      "modality": "optical",
+      "message": "Absorbance exceeds the conservative IFE screening threshold",
+      "quantitative_evidence": {
+        "max_absorbance": 0.6
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CN(C)c1ccc(/C=C/c2nc3c4ccccc4c4ccccc4c3[nH]2)cc1",
+    "structure.inchikey": "BMUTVNQMFDYZNG-DTQAZKPQSA-N",
+    "structure.inchi_connectivity_layer": "BMUTVNQMFDYZNG",
+    "structure.molecular_formula": "C25H21N3",
+    "structure.parent_monoisotopic_mass": 363.17354767200004,
+    "structure.as_drawn_monoisotopic_mass": 363.17354767200004,
+    "structure.tautomer_count": 2.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 6.105700000000005,
+    "structure.aromatic_rings": 5.0,
+    "optical.stokes_shift_nm": 74.0,
+    "optical.stokes_shift_cm": 4032.0163896017584,
+    "optical.ife_correction_factor": 2.1379620895022318,
+    "optical.corrected_fold_change": 0.9999999999999998
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "optical.stokes_shift",
+    "optical.quantum_yield",
+    "optical.scatter_overlap",
+    "optical.ife_correction"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "ea0ccd40b5ff7db0006fa0d3e0b6ba5ccfcc21ca63161a79249ed33d3b39667f"
+}

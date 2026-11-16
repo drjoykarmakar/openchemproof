@@ -1,0 +1,242 @@
+{
+  "attribution": "Borylation dataset from Roche; Open Reaction Database; see source provenance and sources_ord.md",
+  "characterization_evidence": "product-linked NMR peak text and observed HRMS m/z",
+  "cohort": "source_characterized_success",
+  "conditions": {
+    "pressure": {
+      "atmosphere": {
+        "type": "ARGON"
+      },
+      "control": {
+        "type": "SEALED"
+      }
+    },
+    "stirring": {},
+    "temperature": {
+      "setpoint": {
+        "units": "CELSIUS",
+        "value": 80.0
+      }
+    }
+  },
+  "engine_confirmed_result": null,
+  "identity_analyses": {
+    "MS of product_1": {
+      "data": {
+        "found": {
+          "description": "Observed m/z",
+          "float_value": 276.1794
+        }
+      },
+      "details": "HRMS Found: 276.1794",
+      "type": "HRMS"
+    },
+    "NMR of product_1": {
+      "data": {
+        "peaks": {
+          "string_value": "1H NMR (400 MHz, CDCl3):  7.81-7.80 (m, 2H), 7.48 (td, J= 7.6 Hz, J = 1.6 Hz, 1H), 7.38 (t, J = 7.6 Hz, 1H), 3.08 (s, 3H), 2.95 (s, 3H), 1.32 (s, 12H). 13C NMR (100 MHz, CDCl3):  171.6, 135.6, 135.2, 133.0, 129.6, 127.7, 83.9, 39.5, 35.2, 24.8. 11B NMR (128 MHz, CDCl3):  30.4"
+        }
+      },
+      "type": "NMR_1H"
+    }
+  },
+  "independently_verified_spectrum_assignment": false,
+  "inputs": {
+    "catalyst_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.003
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[OH2+].C[OH2+].C1CC=CCCC=C1.C1CC=CCCC=C1.[Ir].[Ir]"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "12148-71-9"
+            }
+          ],
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "catalyst_2": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.009
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "[K].OC(C)(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "865-47-4"
+            }
+          ],
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "reagent_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.007
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O=C1C=CC=2C=CC=C(C3=CN=C(C=C3)C=4N=CC=CC4)C2N1"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "2098537-91-6"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "reagent_2": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.2
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1B(OC(C)(C)C1(C)C)B2OC(C)(C)C(O2)(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "73183-34-3"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "solvent_1": {
+      "components": [
+        {
+          "amount": {
+            "volume": {
+              "units": "MILLILITER",
+              "value": 1.0
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "109-99-9"
+            }
+          ],
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "startingmat_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.2
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O=C(C=1C=CC=CC1)N(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "611-74-5"
+            }
+          ],
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "license": "CC-BY-SA-4.0",
+  "procedure_details": "In an argon filled glove box, a 5.0 mL wheaton microreactor was charged with [Ir(cod)(OMe)]2 (1.98 mg, 1.5 mol%), L1 ligand (2.1 mg, 3.5 mol%), B2pin2 (50.8 mg, 1.0 equiv.), KOtBu (1.0 mg, 4.5 mol%) and dry THF (1.0 mL). The reaction mixture was stirred for 2 minutes at room temperature. To this mixture, N,N-dimethylbenzamide (29.8 mg, 0.2 mmol) was added. The microreactor was capped with a teflon pressure cap and placed into pre-heated aluminum block at 80 oC. The reaction mixture was stirred for 12 h. After completion (judged by GC/MS), THF was removed under reduced pressure and chromatographic separation with silica gel (20% ethyl acetate in hexane) gave the meta-borylated product 4a (39.1 mg, 71%) as white solid.",
+  "product_identifiers": [
+    {
+      "type": "SMILES",
+      "value": "O=C(C=1C=CC=C(C1)B2OC(C)(C)C(O2)(C)C)N(C)C"
+    },
+    {
+      "type": "CAS_NUMBER",
+      "value": "832114-07-5"
+    }
+  ],
+  "publication_doi": "10.1002/anie.201809929",
+  "publication_url": null,
+  "raw_spectral_traces_available": false,
+  "record_id": "ord-613fad87c4a647bd9c94667f6cfbf163",
+  "recorded_yield_percentages": [
+    71.0
+  ],
+  "review_note": "Source links product IDENTITY measurements to NMR_1H peak text and observed HRMS m/z; source yield 50–100%. Spectral assignment not independently verified.",
+  "schema_version": "openchemproof.ord-evidence.v1",
+  "source_dataset_id": "ord_dataset-99c23cf435dc42f1af884053bc8b11c7",
+  "source_dataset_name": "Borylation dataset from Roche",
+  "source_dataset_sha256": "59cd8c35e021be300944f8e556b8fd7ec30a6bc32ff36a54be133aad8e44c393",
+  "source_download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "source_failure_excerpts": [],
+  "source_reaction_canonical_json_sha256": "0345b45468ff57fd03dfc515184a246d05f180fb80dce584ab021a92d89a5e44",
+  "source_reaction_protobuf_sha256": "54e1a11488c4704143db2a1787ef7809bf8678d69ed4dab78d223f3877ed0719",
+  "source_record_locator": {
+    "outcome_index": 0,
+    "parquet_column": "reaction",
+    "product_index": 0,
+    "reaction_id": "ord-613fad87c4a647bd9c94667f6cfbf163"
+  },
+  "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "strict_negative_eligible": false,
+  "strict_negative_missing": [],
+  "yield_analyses": {
+    "product_1_UNKNOWN": {
+      "details": "UNKNOWN",
+      "type": "CUSTOM"
+    }
+  },
+  "yield_measurements": [
+    {
+      "analysis_key": "product_1_UNKNOWN",
+      "percentage": {
+        "value": 71.0
+      },
+      "type": "YIELD"
+    }
+  ]
+}

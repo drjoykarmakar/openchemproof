@@ -1,0 +1,676 @@
+{
+  "evidence_kind": "experimental_assigned_shifts",
+  "experimental_selection_basis": "experimental metadata branch: no computational Program/GeomMethod/NMRModel; positive instrument frequency; literature reference; supported explicit solvent",
+  "limitations": [
+    "Assigned shifts are not quantitative integrated peak lists.",
+    "Measured integrals are absent; atom-reference counts are not measured integrals.",
+    "Pairing is by structure and solvent, not a claim of the same physical sample.",
+    "Source multiplicities are retained verbatim, never inferred."
+  ],
+  "name": "1-(2-methylbutyryl)phloroglucinol-glucopyranoside",
+  "record_id": "nmrshiftdb21807",
+  "solvent": "CD3OD",
+  "source": {
+    "attribution": "Contains information from nmrshiftdb2 (www.nmrshiftdb.org), which is made available here under the nmrshiftdb2 Database License.",
+    "database": "nmrshiftdb2",
+    "download_url": "https://downloads.sourceforge.net/project/nmrshiftdb2/data/nmrshiftdb2.xml",
+    "license": "nmrshiftdb2 Database License",
+    "license_url": "https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/snapshots/nmrshiftdb2datalicense.txt",
+    "molecule_fragment_sha256": "3598312a72691b887c12bf2c7d3519e53c6947b7efc2d18c22318eea733055b2",
+    "molecule_id": "21807",
+    "record_url": "https://www.nmrshiftdb.org/molecule/21807",
+    "selected_xml_sha256": "4ebfa04f77fe8fe75b641cfcca77abd272483b7b165740a4aab606dd4a8787f9"
+  },
+  "spectra": [
+    {
+      "assigned_shifts": [
+        {
+          "atom_refs": [
+            "a39"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 0.87,
+          "source_attributes": {
+            "atomRefs": "a39",
+            "id": "p0",
+            "peakMultiplicity": "t",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "0.87"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "t",
+          "source_peak_id": "p0"
+        },
+        {
+          "atom_refs": [
+            "a33"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 1.12,
+          "source_attributes": {
+            "atomRefs": "a33",
+            "id": "p1",
+            "peakMultiplicity": "d",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "1.12"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "d",
+          "source_peak_id": "p1"
+        },
+        {
+          "atom_refs": [
+            "a37"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 1.38,
+          "source_attributes": {
+            "atomRefs": "a37",
+            "id": "p2",
+            "peakMultiplicity": "m",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "1.38"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "m",
+          "source_peak_id": "p2"
+        },
+        {
+          "atom_refs": [
+            "a36"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 1.8,
+          "source_attributes": {
+            "atomRefs": "a36",
+            "id": "p3",
+            "peakMultiplicity": "m",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "1.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "m",
+          "source_peak_id": "p3"
+        },
+        {
+          "atom_refs": [
+            "a45"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.38,
+          "source_attributes": {
+            "atomRefs": "a45",
+            "id": "p4",
+            "peakMultiplicity": "t",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.38"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "t",
+          "source_peak_id": "p4"
+        },
+        {
+          "atom_refs": [
+            "a43",
+            "a44"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.45,
+          "source_attributes": {
+            "atomRefs": "a43 a44",
+            "id": "p5",
+            "peakMultiplicity": "m",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.45"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "m",
+          "source_peak_id": "p5"
+        },
+        {
+          "atom_refs": [
+            "a38"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.5,
+          "source_attributes": {
+            "atomRefs": "a38",
+            "id": "p6",
+            "peakMultiplicity": "dd",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.5"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "dd",
+          "source_peak_id": "p6"
+        },
+        {
+          "atom_refs": [
+            "a48"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.71,
+          "source_attributes": {
+            "atomRefs": "a48",
+            "id": "p7",
+            "peakMultiplicity": "dd",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.71"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "dd",
+          "source_peak_id": "p7"
+        },
+        {
+          "atom_refs": [
+            "a31"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.9,
+          "source_attributes": {
+            "atomRefs": "a31",
+            "id": "p8",
+            "peakMultiplicity": "m",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.9"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "m",
+          "source_peak_id": "p8"
+        },
+        {
+          "atom_refs": [
+            "a47"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 3.91,
+          "source_attributes": {
+            "atomRefs": "a47",
+            "id": "p9",
+            "peakMultiplicity": "dd",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "3.91"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "dd",
+          "source_peak_id": "p9"
+        },
+        {
+          "atom_refs": [
+            "a32"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 5.03,
+          "source_attributes": {
+            "atomRefs": "a32",
+            "id": "p10",
+            "peakMultiplicity": "d",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "5.03"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "d",
+          "source_peak_id": "p10"
+        },
+        {
+          "atom_refs": [
+            "a27"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 5.94,
+          "source_attributes": {
+            "atomRefs": "a27",
+            "id": "p11",
+            "peakMultiplicity": "d",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "5.94"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "d",
+          "source_peak_id": "p11"
+        },
+        {
+          "atom_refs": [
+            "a29"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 6.17,
+          "source_attributes": {
+            "atomRefs": "a29",
+            "id": "p12",
+            "peakMultiplicity": "d",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "6.17"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "d",
+          "source_peak_id": "p12"
+        },
+        {
+          "atom_refs": [
+            "a40",
+            "a41"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 0.87,
+          "source_attributes": {
+            "atomRefs": "a40 a41",
+            "id": "p13",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "0.87"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": null,
+          "source_peak_id": "p13"
+        },
+        {
+          "atom_refs": [
+            "a34",
+            "a35"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 1.12,
+          "source_attributes": {
+            "atomRefs": "a34 a35",
+            "id": "p14",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "1.12"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": null,
+          "source_peak_id": "p14"
+        }
+      ],
+      "bibliography_source": [
+        {
+          "author": "Gregor Bohr; Clarissa Gerhäuser; Jutta Knauft; Josef Zapp; Hans Becker",
+          "doi": "10.1021/np050164z",
+          "etal": "false",
+          "journal": "Journal of Natural Products",
+          "pages": "1545-1548",
+          "url": "http://pubs.acs.org/journals/jnprdf/index.html",
+          "volume": "68",
+          "year": "2005"
+        }
+      ],
+      "conditions_source": {
+        "cml:field": "500",
+        "cml:temp": "Unreported"
+      },
+      "measured_integrations": [],
+      "metadata_source": {
+        "nmr:OBSERVENUCLEUS": "1H",
+        "nmr:assignmentMethod": "HREIMS"
+      },
+      "nucleus": "1H",
+      "observed_unassigned_peak_list": null,
+      "solvent": "CD3OD",
+      "solvent_source_text": "Methanol-D4 (CD3OD)",
+      "source_fragment_sha256": "a3bc80aa6359f9d1c1b2d668111596f9127bdb3b322bb2b86b273fff1283992d",
+      "source_molecule_ref": "nmrshiftdb21807",
+      "source_spectrum_id": "nmrshiftdb61928",
+      "source_spectrum_url": "https://www.nmrshiftdb.org/spectrum/61928"
+    },
+    {
+      "assigned_shifts": [
+        {
+          "atom_refs": [
+            "a11"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 12.0,
+          "source_attributes": {
+            "atomRefs": "a11",
+            "id": "p0",
+            "peakMultiplicity": "Q",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "12.0"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "Q",
+          "source_peak_id": "p0"
+        },
+        {
+          "atom_refs": [
+            "a9"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 16.8,
+          "source_attributes": {
+            "atomRefs": "a9",
+            "id": "p1",
+            "peakMultiplicity": "Q",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "16.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "Q",
+          "source_peak_id": "p1"
+        },
+        {
+          "atom_refs": [
+            "a10"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 28.3,
+          "source_attributes": {
+            "atomRefs": "a10",
+            "id": "p2",
+            "peakMultiplicity": "T",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "28.3"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "T",
+          "source_peak_id": "p2"
+        },
+        {
+          "atom_refs": [
+            "a8"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 47.0,
+          "source_attributes": {
+            "atomRefs": "a8",
+            "id": "p3",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "47.0"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p3"
+        },
+        {
+          "atom_refs": [
+            "a16"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 62.5,
+          "source_attributes": {
+            "atomRefs": "a16",
+            "id": "p4",
+            "peakMultiplicity": "T",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "62.5"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "T",
+          "source_peak_id": "p4"
+        },
+        {
+          "atom_refs": [
+            "a17"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 71.2,
+          "source_attributes": {
+            "atomRefs": "a17",
+            "id": "p5",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "71.2"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p5"
+        },
+        {
+          "atom_refs": [
+            "a13"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 74.8,
+          "source_attributes": {
+            "atomRefs": "a13",
+            "id": "p6",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "74.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p6"
+        },
+        {
+          "atom_refs": [
+            "a14"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 78.4,
+          "source_attributes": {
+            "atomRefs": "a14",
+            "id": "p7",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "78.4"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p7"
+        },
+        {
+          "atom_refs": [
+            "a15"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 78.7,
+          "source_attributes": {
+            "atomRefs": "a15",
+            "id": "p8",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "78.7"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p8"
+        },
+        {
+          "atom_refs": [
+            "a4"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 95.3,
+          "source_attributes": {
+            "atomRefs": "a4",
+            "id": "p9",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "95.3"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p9"
+        },
+        {
+          "atom_refs": [
+            "a2"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 98.3,
+          "source_attributes": {
+            "atomRefs": "a2",
+            "id": "p10",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "98.3"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p10"
+        },
+        {
+          "atom_refs": [
+            "a12"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 101.7,
+          "source_attributes": {
+            "atomRefs": "a12",
+            "id": "p11",
+            "peakMultiplicity": "D",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "101.7"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "D",
+          "source_peak_id": "p11"
+        },
+        {
+          "atom_refs": [
+            "a6"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 106.8,
+          "source_attributes": {
+            "atomRefs": "a6",
+            "id": "p12",
+            "peakMultiplicity": "S",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "106.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "S",
+          "source_peak_id": "p12"
+        },
+        {
+          "atom_refs": [
+            "a5"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 161.8,
+          "source_attributes": {
+            "atomRefs": "a5",
+            "id": "p13",
+            "peakMultiplicity": "S",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "161.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "S",
+          "source_peak_id": "p13"
+        },
+        {
+          "atom_refs": [
+            "a3"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 165.6,
+          "source_attributes": {
+            "atomRefs": "a3",
+            "id": "p14",
+            "peakMultiplicity": "S",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "165.6"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "S",
+          "source_peak_id": "p14"
+        },
+        {
+          "atom_refs": [
+            "a1"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 167.4,
+          "source_attributes": {
+            "atomRefs": "a1",
+            "id": "p15",
+            "peakMultiplicity": "S",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "167.4"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "S",
+          "source_peak_id": "p15"
+        },
+        {
+          "atom_refs": [
+            "a7"
+          ],
+          "measured_integral": null,
+          "shift_ppm": 211.8,
+          "source_attributes": {
+            "atomRefs": "a7",
+            "id": "p16",
+            "peakMultiplicity": "S",
+            "peakShape": "sharp",
+            "xUnits": "units:ppm",
+            "xValue": "211.8"
+          },
+          "source_children_xml": [],
+          "source_multiplicity": "S",
+          "source_peak_id": "p16"
+        }
+      ],
+      "bibliography_source": [
+        {
+          "author": "Gregor Bohr; Clarissa Gerhäuser; Jutta Knauft; Josef Zapp; Hans Becker",
+          "doi": "10.1021/np050164z",
+          "etal": "false",
+          "journal": "Journal of Natural Products",
+          "pages": "1545-1548",
+          "title": "Anti-inflammatory Acylphloroglucinol Derivatives from Hops (Humulus lupulus)",
+          "url": "http://pubs.acs.org/journals/jnprdf/index.html",
+          "volume": "68",
+          "year": "2005"
+        }
+      ],
+      "conditions_source": {
+        "cml:field": "125",
+        "cml:temp": "Unreported"
+      },
+      "measured_integrations": [],
+      "metadata_source": {
+        "nmr:OBSERVENUCLEUS": "13C",
+        "nmr:assignmentMethod": "HREIMS"
+      },
+      "nucleus": "13C",
+      "observed_unassigned_peak_list": null,
+      "solvent": "CD3OD",
+      "solvent_source_text": "Methanol-D4 (CD3OD)",
+      "source_fragment_sha256": "1d7302d8931f7951257e68880faa7765c9875b065aa2b64dbbab4a130543a6c7",
+      "source_molecule_ref": "nmrshiftdb21807",
+      "source_spectrum_id": "nmrshiftdb61929",
+      "source_spectrum_url": "https://www.nmrshiftdb.org/spectrum/61929"
+    }
+  ],
+  "structure": {
+    "canonical_smiles": "CCC(C)C(=O)c1c(O)cc(O)cc1OC1OC(CO)C(O)C(O)C1O",
+    "inchi": "InChI=1S/C17H24O9/c1-3-7(2)13(21)12-9(20)4-8(19)5-10(12)25-17-16(24)15(23)14(22)11(6-18)26-17/h4-5,7,11,14-20,22-24H,3,6H2,1-2H3",
+    "source_sdf_record_sha256": "fdd40599ab9ac72081e0b1e96e7425accf64f30dd5af538f9fa8ebf2a72a6991"
+  },
+  "synthetic_augmentation": []
+}

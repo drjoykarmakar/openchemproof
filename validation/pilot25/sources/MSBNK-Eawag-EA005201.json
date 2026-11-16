@@ -1,0 +1,178 @@
+{
+  "acquisition": {
+    "adduct": "[M+H]+",
+    "collision_energy_original": "35 % (nominal)",
+    "instrument": "LTQ Orbitrap XL Thermo Scientific",
+    "instrument_type": "LC-ESI-ITFT",
+    "ion_mode": "positive",
+    "ms_level": 2,
+    "precursor_mz_original_text": "136.1121",
+    "precursor_mz_source_reported": 136.1121,
+    "precursor_mz_status": "source_reported_metadata; MassBank_prefers_calculated_exact_mass; not_independent_measured_mass",
+    "retention_time_original": "5.2 min"
+  },
+  "benchmark_labels": {
+    "expected_verifier_verdict": null,
+    "independent_positive_verification": false,
+    "structure_match": "source_asserted",
+    "synthetic_perturbation": false
+  },
+  "compound": {
+    "canonicalization": "RDKit 2026.09.2; canonical isomeric SMILES; no tautomer/salt/charge standardization",
+    "exact_mass_source_reported": 135.1048,
+    "formula_source_reported": "C9H13N",
+    "name": "4-Isopropylaniline",
+    "names": [
+      "4-Isopropylaniline",
+      "4-propan-2-ylaniline"
+    ],
+    "smiles_canonical": "CC(C)c1ccc(N)cc1",
+    "smiles_original": "c1(C(C)C)ccc(N)cc1",
+    "structure_status": "source_asserted_standard_compound; not independently reverified"
+  },
+  "data_origin": "public_experimental_library_record",
+  "isotope_envelope": {
+    "M": null,
+    "M+1": null,
+    "M+2": null,
+    "reason": "MS2 fragment peaks cannot establish an MS1 precursor isotope envelope.",
+    "status": "unavailable_in_ms2_record"
+  },
+  "original_fields": {
+    "AC$CHROMATOGRAPHY": [
+      "COLUMN_NAME XBridge C18 3.5um, 2.1x50mm, Waters",
+      "FLOW_GRADIENT 90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min",
+      "FLOW_RATE 200 ul/min",
+      "RETENTION_TIME 5.2 min",
+      "SOLVENT A water with 0.1% formic acid",
+      "SOLVENT B methanol with 0.1% formic acid"
+    ],
+    "AC$INSTRUMENT": [
+      "LTQ Orbitrap XL Thermo Scientific"
+    ],
+    "AC$INSTRUMENT_TYPE": [
+      "LC-ESI-ITFT"
+    ],
+    "AC$MASS_SPECTROMETRY": [
+      "MS_TYPE MS2",
+      "ION_MODE POSITIVE",
+      "IONIZATION ESI",
+      "FRAGMENTATION_MODE CID",
+      "COLLISION_ENERGY 35 % (nominal)",
+      "RESOLUTION 7500"
+    ],
+    "ACCESSION": [
+      "MSBNK-Eawag-EA005201"
+    ],
+    "AUTHORS": [
+      "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag"
+    ],
+    "CH$COMPOUND_CLASS": [
+      "N/A; Environmental Standard"
+    ],
+    "CH$EXACT_MASS": [
+      "135.1048"
+    ],
+    "CH$FORMULA": [
+      "C9H13N"
+    ],
+    "CH$IUPAC": [
+      "InChI=1S/C9H13N/c1-7(2)8-3-5-9(10)6-4-8/h3-7H,10H2,1-2H3"
+    ],
+    "CH$LINK": [
+      "CAS 99-88-7",
+      "PUBCHEM CID:7464",
+      "INCHIKEY LRTFPLFDLJYEKT-UHFFFAOYSA-N",
+      "CHEMSPIDER 13853758",
+      "COMPTOX DTXSID20243932",
+      "ChemOnt CHEMONTID:0000355; Organic compounds; Benzenoids; Benzene and substituted derivatives; Cumenes"
+    ],
+    "CH$NAME": [
+      "4-Isopropylaniline",
+      "4-propan-2-ylaniline"
+    ],
+    "CH$SMILES": [
+      "c1(C(C)C)ccc(N)cc1"
+    ],
+    "COMMENT": [
+      "CONFIDENCE standard compound",
+      "EAWAG_UCHEM_ID 52"
+    ],
+    "COPYRIGHT": [
+      "Copyright (C) 2012 Eawag, Duebendorf, Switzerland"
+    ],
+    "DATE": [
+      "2014.01.14"
+    ],
+    "LICENSE": [
+      "CC BY"
+    ],
+    "MS$DATA_PROCESSING": [
+      "DEPROFILE Spline",
+      "RECALIBRATE loess on assigned fragments and MS1",
+      "REANALYZE Peaks with additional N2/O included",
+      "WHOLE RMassBank 1.3.1"
+    ],
+    "MS$FOCUSED_ION": [
+      "BASE_PEAK 136.112",
+      "PRECURSOR_M/Z 136.1121",
+      "PRECURSOR_TYPE [M+H]+"
+    ],
+    "PK$ANNOTATION": [
+      "m/z tentative_formula formula_count mass error(ppm)"
+    ],
+    "PK$NUM_PEAK": [
+      "2"
+    ],
+    "PK$PEAK": [
+      "m/z int. rel.int."
+    ],
+    "PK$SPLASH": [
+      "splash10-000l-6900000000-b196aadb51046d1f1020"
+    ],
+    "RECORD_TITLE": [
+      "4-Isopropylaniline; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+"
+    ]
+  },
+  "record_id": "MSBNK-Eawag-EA005201",
+  "schema_version": "openchemproof.real_lcms.v1",
+  "source": {
+    "authors": "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag",
+    "commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+    "copyright": "Copyright (C) 2012 Eawag, Duebendorf, Switzerland",
+    "database": "MassBank",
+    "license_literal": "CC BY",
+    "license_version": null,
+    "path": "Eawag/MSBNK-Eawag-EA005201.txt",
+    "publication": [],
+    "raw_file": "raw/MSBNK-Eawag-EA005201.txt",
+    "raw_url": "https://raw.githubusercontent.com/MassBank/MassBank-data/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA005201.txt",
+    "record_date": "2014.01.14",
+    "release": "2026.11",
+    "sha256": "ee800244af8c82f5ee269796aeac90fc8fd20e20b35ecdefa33ea90da0ecb6b2",
+    "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA005201.txt"
+  },
+  "spectrum": {
+    "kind": "experimental_processed_ms2_peak_list",
+    "peaks": [
+      {
+        "intensity": 17677420.5,
+        "mz": 94.065,
+        "relative_intensity": 673.0
+      },
+      {
+        "intensity": 26230353.3,
+        "mz": 136.112,
+        "relative_intensity": 999.0
+      }
+    ],
+    "processing_original": [
+      "DEPROFILE Spline",
+      "RECALIBRATE loess on assigned fragments and MS1",
+      "REANALYZE Peaks with additional N2/O included",
+      "WHOLE RMassBank 1.3.1"
+    ],
+    "raw_instrument_data_available_in_this_bundle": false,
+    "splash": "splash10-000l-6900000000-b196aadb51046d1f1020"
+  }
+}

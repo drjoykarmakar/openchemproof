@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "MS05",
+  "compound": {
+    "compound_id": "MS05",
+    "proposed_smiles": "COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "not reported"
+  },
+  "evidence": {
+    "lcms": {
+      "observed_mz": 301.118282992,
+      "ionization_mode": "positive",
+      "observed_adduct": "[M+H]+",
+      "starting_materials": [
+        {
+          "compound_id": "MSBNK-Eawag-EA014401",
+          "proposed_smiles": "CCOC(=O)Nc1cccc(OC(=O)Nc2ccccc2)c1"
+        }
+      ]
+    }
+  },
+  "source_references": [
+    "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA009401.txt",
+    "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA014401.txt"
+  ]
+}

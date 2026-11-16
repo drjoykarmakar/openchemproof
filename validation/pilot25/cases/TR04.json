@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "TR04",
+  "compound": {
+    "compound_id": "TR04",
+    "proposed_smiles": "CCN1CCN(CC1)C2=C3C4=CC=CC=C4SC3=C(C=C2)C5=CC=CC6=C5OC(=CC6=O)N7CCOCC7"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "see source procedure"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet"
+  ],
+  "ord_reaction_id": "ord-8dc05311ad5340e693477414d5741a5e",
+  "negative_result": {
+    "experiment_id": "ord-8dc05311ad5340e693477414d5741a5e",
+    "outcome": "failed_synthesis",
+    "observation": "8-(1-iododibenzo[b,d]thiophen-4-yl)-2-morpholino-4H-chromen-4-one (20 mg, 0.04 mmol), 1-ethylpiperazine (9.42 µl, 0.07 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (2.145 mg, 3.71 µmol), TRIS(DIBENZYLIDENEACETONE)DIPALLADIUM (0.849 mg, 0.93 µmol) and 2,3,4,6,7,8,9,10-octahydropyrimido[1,2-a]azepine (16.62 µl, 0.11 mmol) were suspended in dioxane (250 µl) and sealed into a microwave tube. The reaction was degased, purged with argon and heated to 130 °C over a period of 45 minutes in the microwave reactor.  No reaction.  ",
+    "protocol_reference": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+    "evidence_references": [
+      "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet"
+    ],
+    "detection_limit_description": "Not reported in the source record.",
+    "controls_passed": false,
+    "measured_yield_percent": 0.0
+  }
+}

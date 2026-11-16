@@ -1,0 +1,48 @@
+{
+  "record_id": "TR04",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "AGGREGATION_RISK",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Lipophilicity/aromaticity heuristic warrants detergent and concentration controls",
+      "quantitative_evidence": {
+        "clogp": 5.806400000000006,
+        "aromatic_rings": 5.0
+      }
+    },
+    {
+      "code": "NEGATIVE_CONTROLS_UNRESOLVED",
+      "severity": "WARNING",
+      "modality": "provenance",
+      "message": "Controls or analytical consistency are unresolved for the negative result",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCN1CCN(c2ccc(-c3cccc4c(=O)cc(N5CCOCC5)oc34)c3sc4ccccc4c23)CC1",
+    "structure.inchikey": "PRECKSFGYCYLSN-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "PRECKSFGYCYLSN",
+    "structure.molecular_formula": "C31H31N3O3S",
+    "structure.parent_monoisotopic_mass": 525.2086128519999,
+    "structure.as_drawn_monoisotopic_mass": 525.2086128519999,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 5.806400000000006,
+    "structure.aromatic_rings": 5.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "6ff8680db0ed25d00ab40db44f36f48366ad11d41c6747e10fd7c52e2b018bdd"
+}

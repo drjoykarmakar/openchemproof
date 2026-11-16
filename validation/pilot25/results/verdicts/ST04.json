@@ -1,0 +1,41 @@
+{
+  "record_id": "ST04",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "INCHI_LAYER_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "structure",
+      "message": "InChIKey assertion conflicts with calculated parent identity; full-key differences can include stereo, isotope, or protonation layers",
+      "quantitative_evidence": {
+        "reported": "AHCLBNDBOQTPGQ-OAHLLOKOSA-N",
+        "calculated": "AHCLBNDBOQTPGQ-HNNXBMFYSA-N"
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCCCN1CCC[C@H]1CNC(=O)c1cc(Cl)cc2c1OCCN2C",
+    "structure.inchikey": "AHCLBNDBOQTPGQ-HNNXBMFYSA-N",
+    "structure.inchi_connectivity_layer": "AHCLBNDBOQTPGQ",
+    "structure.molecular_formula": "C19H28ClN3O2",
+    "structure.parent_monoisotopic_mass": 365.187004816,
+    "structure.as_drawn_monoisotopic_mass": 365.187004816,
+    "structure.tautomer_count": 2.0,
+    "structure.assigned_stereocenters": 1.0,
+    "structure.clogp": 3.1629000000000014,
+    "structure.aromatic_rings": 1.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "a73d35715459f89b7b5830ae497e36cfead95b8dbff3a43366986c83943d849f"
+}

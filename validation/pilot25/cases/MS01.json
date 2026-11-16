@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "record_id": "MS01",
+  "compound": {
+    "compound_id": "MS01",
+    "proposed_smiles": "Cc1nnc(-c2ccccc2)c(=O)[nH]1"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "water / methanol gradient"
+  },
+  "evidence": {
+    "lcms": {
+      "observed_mz": 188.082,
+      "ionization_mode": "positive",
+      "observed_adduct": "[M+H]+"
+    }
+  },
+  "source_references": [
+    "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA000401.txt"
+  ]
+}

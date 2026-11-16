@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "OP05",
+  "compound": {
+    "compound_id": "OP05",
+    "proposed_smiles": "CCCCCCC1(CCCCCC)c2ccccc2-c2ccc(-c3ccc(-c4cc(-c5ccccn5)nc(-c5ccccn5)c4)cc3)cc21"
+  },
+  "assay": {
+    "assay_type": "fluorescence_probe",
+    "solvent": "dichloromethane",
+    "concentration_um": 0.5508457406676338
+  },
+  "evidence": {
+    "optical": {
+      "excitation_nm": 327.0,
+      "emission_nm": 409.0,
+      "absorbance_at_ex": 0.02,
+      "absorbance_at_em": 0.002,
+      "baseline_absorbance_at_ex": 0.02,
+      "baseline_absorbance_at_em": 0.002,
+      "observed_quantum_yield": 0.92,
+      "apparent_fold_change": 1.0,
+      "geometry": "right_angle_center"
+    }
+  },
+  "source_references": [
+    "https://doi.org/10.1039/c6cp04252j"
+  ]
+}

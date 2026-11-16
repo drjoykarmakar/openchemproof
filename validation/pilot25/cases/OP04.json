@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "OP04",
+  "compound": {
+    "compound_id": "OP04",
+    "proposed_smiles": "COc1cc(/C=C/C(=O)O)ccc1O"
+  },
+  "assay": {
+    "assay_type": "fluorescence_probe",
+    "solvent": "water",
+    "concentration_um": 106.02954678554894
+  },
+  "evidence": {
+    "optical": {
+      "excitation_nm": 287.0,
+      "emission_nm": 413.0,
+      "absorbance_at_ex": 1.5,
+      "absorbance_at_em": 0.15000000000000002,
+      "baseline_absorbance_at_ex": 0.02,
+      "baseline_absorbance_at_em": 0.002,
+      "observed_quantum_yield": 0.002,
+      "apparent_fold_change": 0.15346169827992945,
+      "geometry": "right_angle_center"
+    }
+  },
+  "source_references": [
+    "https://doi.org/10.3389/fmars.2015.00098"
+  ]
+}

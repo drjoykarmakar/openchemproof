@@ -1,0 +1,70 @@
+{
+  "record_id": "TR03",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "heavy_metal"
+      }
+    },
+    {
+      "code": "HRMS_MASS_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Observed m/z exceeds the declared HRMS tolerance",
+      "quantitative_evidence": {
+        "ppm_error": -2781.488343580977,
+        "tolerance_ppm": 5.0
+      }
+    },
+    {
+      "code": "MISSING_ISOTOPE_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "lcms",
+      "message": "No MS1 M/M+1/M+2 envelope supplied; MS2 fragment peaks cannot substitute",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CC1(C)OB(c2cnc3cc(C(F)(F)F)ccc3c2Cl)OC1(C)C",
+    "structure.inchikey": "QJNVXGRGGSBNGZ-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "QJNVXGRGGSBNGZ",
+    "structure.molecular_formula": "C16H16BClF3NO2",
+    "structure.parent_monoisotopic_mass": 357.091471492,
+    "structure.as_drawn_monoisotopic_mass": 357.091471492,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 4.2062000000000035,
+    "structure.aromatic_rings": 2.0,
+    "lcms.theoretical_mz": 358.098747492,
+    "lcms.ppm_error": -2781.488343580977,
+    "lcms.matched_adduct": "[M+H]+",
+    "lcms.selected_adduct": "[M+H]+",
+    "nmr.nonexchangeable_h": 16.0,
+    "nmr.exchangeable_h": 0.0,
+    "nmr.expected_integral_lower_h": 16.0,
+    "nmr.expected_integral_upper_h": 16.0,
+    "nmr.observed_integral_h": 16.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "lcms.adduct_mass_matching",
+    "nmr.exchangeable_proton_budget",
+    "nmr.residual_solvent_candidates",
+    "nmr.calibrated_integral_balance"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "3ae6988c9407a9400cd7822273b680eabb47fcdcbd9f6740434b7abce317c105"
+}

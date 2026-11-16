@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "record_id": "NM05",
+  "compound": {
+    "compound_id": "NM05",
+    "proposed_smiles": "CCC(C)C(=O)c1c(O)cc(O)cc1OC1OC(CO)C(O)C(O)C1O"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "CD3OD"
+  },
+  "evidence": {
+    "nmr": {
+      "solvent": "CD3OD",
+      "proton_shifts_ppm": [],
+      "proton_integrals": [],
+      "integration_complete": false
+    }
+  },
+  "source_references": [
+    "https://www.nmrshiftdb.org/molecule/21807"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "record_id": "ST04",
+  "compound": {
+    "compound_id": "ST04",
+    "proposed_smiles": "CCCCN1CCC[C@H]1CNC(=O)c1cc(Cl)cc2c1OCCN2C",
+    "reference_smiles": "CCCCN1CCC[C@H]1CNC(=O)c1cc(Cl)cc2c1OCCN2C",
+    "inchikey": "AHCLBNDBOQTPGQ-OAHLLOKOSA-N"
+  },
+  "assay": {
+    "assay_type": "binding_assay",
+    "solvent": "not reported"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://www.ebi.ac.uk/chembl/api/data/activity/188327.json",
+    "https://www.ebi.ac.uk/chembl/api/data/activity/207354.json"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "record_id": "ST03",
+  "compound": {
+    "compound_id": "ST03",
+    "proposed_smiles": "C=CCN1CCC2c3cccc(O)c3CCC21",
+    "reference_smiles": "C=CCN1CC[C@H]2c3cccc(O)c3CC[C@H]21",
+    "expected_stereocenters": 2
+  },
+  "assay": {
+    "assay_type": "binding_assay",
+    "solvent": "not reported"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://www.ebi.ac.uk/chembl/api/data/activity/187082.json"
+  ]
+}

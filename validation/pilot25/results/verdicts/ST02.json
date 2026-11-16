@@ -1,0 +1,38 @@
+{
+  "record_id": "ST02",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STEREO_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "structure",
+      "message": "Same connectivity but different or missing stereochemical/isotope specification",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCCN(CCC)[C@@H]1CCc2ccc3[nH]c(C#N)cc3c2C1",
+    "structure.inchikey": "WDDZPZKGLZNGEH-MRXNPFEDSA-N",
+    "structure.inchi_connectivity_layer": "WDDZPZKGLZNGEH",
+    "structure.molecular_formula": "C19H25N3",
+    "structure.parent_monoisotopic_mass": 295.20484780000004,
+    "structure.as_drawn_monoisotopic_mass": 295.20484780000004,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 1.0,
+    "structure.clogp": 4.018880000000003,
+    "structure.aromatic_rings": 2.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "a0c5d0750fb31b5093e5747badd1a77d2c23f29cf506c00a23a482fb9e381383"
+}

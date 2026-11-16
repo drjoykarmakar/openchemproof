@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "record_id": "OP01",
+  "compound": {
+    "compound_id": "OP01",
+    "proposed_smiles": "CCCCCCN1C(=O)c2cccc3c(-c4sc(-c5ccc6c7c(cccc57)C(=O)N(CCCCCC)C6=O)c5c4OCCO5)ccc(c23)C1=O"
+  },
+  "assay": {
+    "assay_type": "fluorescence_probe",
+    "solvent": "chloroform"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://doi.org/10.1016/j.dyepig.2012.07.018"
+  ]
+}

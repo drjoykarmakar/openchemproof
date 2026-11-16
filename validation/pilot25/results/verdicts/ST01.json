@@ -1,0 +1,56 @@
+{
+  "record_id": "ST01",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "Aliphatic_long_chain"
+      }
+    },
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "phthalimide"
+      }
+    },
+    {
+      "code": "NO_SPECTRAL_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "provenance",
+      "message": "Structure metadata alone cannot establish an analytical verification",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCCN(CCCCN1C(=O)CC(C)(C)CC1=O)[C@@H]1CCc2ccc3[nH]c(C(N)=O)cc3c2C1",
+    "structure.inchikey": "FBQVSOZYMOLIKP-LJQANCHMSA-N",
+    "structure.inchi_connectivity_layer": "FBQVSOZYMOLIKP",
+    "structure.molecular_formula": "C27H38N4O3",
+    "structure.parent_monoisotopic_mass": 466.294391076,
+    "structure.as_drawn_monoisotopic_mass": 466.294391076,
+    "structure.tautomer_count": 30.0,
+    "structure.assigned_stereocenters": 1.0,
+    "structure.clogp": 3.791500000000002,
+    "structure.aromatic_rings": 2.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "28febfeaab1785fcb4c899fbf40d8408b643b1f52735ae8646afa2e990e17fe2"
+}

@@ -1,0 +1,58 @@
+{
+  "record_id": "NM05",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "UNSPECIFIED_STEREO",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Potential tetrahedral stereocenters lack assignments",
+      "quantitative_evidence": {}
+    },
+    {
+      "code": "UNCALIBRATED_INTEGRALS",
+      "severity": "WARNING",
+      "modality": "nmr",
+      "message": "Supply independent integral units per proton; total normalization would hide artifacts",
+      "quantitative_evidence": {}
+    },
+    {
+      "code": "INCOMPLETE_INTEGRATION",
+      "severity": "WARNING",
+      "modality": "nmr",
+      "message": "A partial peak list cannot support a total proton balance",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCC(C)C(=O)c1c(O)cc(O)cc1OC1OC(CO)C(O)C(O)C1O",
+    "structure.inchikey": "MMJKSUJYDHTZJV-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "MMJKSUJYDHTZJV",
+    "structure.molecular_formula": "C17H24O9",
+    "structure.parent_monoisotopic_mass": 372.14203234799993,
+    "structure.as_drawn_monoisotopic_mass": 372.14203234799993,
+    "structure.tautomer_count": 21.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": -0.4947000000000005,
+    "structure.aromatic_rings": 1.0,
+    "nmr.nonexchangeable_h": 18.0,
+    "nmr.exchangeable_h": 6.0,
+    "nmr.expected_integral_lower_h": 18.0,
+    "nmr.expected_integral_upper_h": 18.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "nmr.exchangeable_proton_budget",
+    "nmr.residual_solvent_candidates"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "776c061b7bb6eddf954489b1dff4616acb1b2ad996737e9e381bfaffc06f7bb5"
+}

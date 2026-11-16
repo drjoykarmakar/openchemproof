@@ -1,0 +1,218 @@
+{
+  "attribution": "Borylation dataset from Roche; Open Reaction Database; see source provenance and sources_ord.md",
+  "characterization_evidence": "product-linked NMR peak text and observed HRMS m/z",
+  "cohort": "source_characterized_success",
+  "conditions": {
+    "pressure": {
+      "atmosphere": {
+        "type": "NITROGEN"
+      },
+      "control": {
+        "type": "SEALED"
+      }
+    },
+    "stirring": {},
+    "temperature": {
+      "setpoint": {
+        "units": "CELSIUS",
+        "value": 55.0
+      }
+    }
+  },
+  "engine_confirmed_result": null,
+  "identity_analyses": {
+    "MS of product_1": {
+      "data": {
+        "found": {
+          "description": "Observed m/z",
+          "float_value": 273.1104
+        }
+      },
+      "details": "HRMS Found: 273.1104",
+      "type": "HRMS"
+    },
+    "NMR of product_1": {
+      "data": {
+        "peaks": {
+          "string_value": "1H NMR (400 MHz, CDCl3) 1.37 (s, 12H), 2.45 (s, 3H), 7.08-7.11 (m, 1H), 7.15 (d, J = 7.8 Hz, 1H), 7.35-7.39 (m, 1H), 7.68 (d, J = 7.3 Hz, 1H); 13C NMR (100 MHz, CDCl3) 15.9, 25.0, 84.2, 123.8, 124.0, 131.5, 136.1, 145.4"
+        }
+      },
+      "type": "NMR_1H"
+    }
+  },
+  "independently_verified_spectrum_assignment": false,
+  "inputs": {
+    "catalyst_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.015
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[OH2+].C[OH2+].C1CC=CCCC=C1.C1CC=CCCC=C1.[Ir].[Ir]"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "12148-71-9"
+            }
+          ],
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "reagent_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.25
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1B(OC(C)(C)C1(C)C)B2OC(C)(C)C(O2)(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "73183-34-3"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "reagent_2": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.03
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "N=1C=CC(=CC1C=2N=CC=C(C2)C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "1134-35-6"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "solvent_1": {
+      "components": [
+        {
+          "amount": {
+            "volume": {
+              "units": "MILLILITER",
+              "value": 1.5000015
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C=1C=C(C=CC1C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "106-42-3"
+            }
+          ],
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "startingmat_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.5
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "S(C=1C=CC=CC1)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "100-68-5"
+            }
+          ],
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "license": "CC-BY-SA-4.0",
+  "procedure_details": null,
+  "product_identifiers": [
+    {
+      "type": "SMILES",
+      "value": "O1B(OC(C)(C)C1(C)C)C=2C=CC=CC2SC"
+    },
+    {
+      "type": "CAS_NUMBER",
+      "value": "1072945-09-5"
+    }
+  ],
+  "publication_doi": "10.1002/anie.201610041",
+  "publication_url": null,
+  "raw_spectral_traces_available": false,
+  "record_id": "ord-f574833fad824541942b5e46d0c56513",
+  "recorded_yield_percentages": [
+    70.0
+  ],
+  "review_note": "Source links product IDENTITY measurements to NMR_1H peak text and observed HRMS m/z; source yield 50–100%. Spectral assignment not independently verified.",
+  "schema_version": "openchemproof.ord-evidence.v1",
+  "source_dataset_id": "ord_dataset-99c23cf435dc42f1af884053bc8b11c7",
+  "source_dataset_name": "Borylation dataset from Roche",
+  "source_dataset_sha256": "59cd8c35e021be300944f8e556b8fd7ec30a6bc32ff36a54be133aad8e44c393",
+  "source_download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "source_failure_excerpts": [],
+  "source_reaction_canonical_json_sha256": "22f83243a48d9dcf306f4114ae39425a61ae6b8a4e471353d1088874aa9d1eb9",
+  "source_reaction_protobuf_sha256": "ed24516d8e4f86f69214d02ec99910c4a05a8f464e1bf67ef0a510e2e5d390f3",
+  "source_record_locator": {
+    "outcome_index": 0,
+    "parquet_column": "reaction",
+    "product_index": 0,
+    "reaction_id": "ord-f574833fad824541942b5e46d0c56513"
+  },
+  "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "strict_negative_eligible": false,
+  "strict_negative_missing": [],
+  "yield_analyses": {
+    "product_1_UNKNOWN": {
+      "details": "UNKNOWN",
+      "type": "CUSTOM"
+    }
+  },
+  "yield_measurements": [
+    {
+      "analysis_key": "product_1_UNKNOWN",
+      "percentage": {
+        "value": 70.0
+      },
+      "type": "YIELD"
+    }
+  ]
+}

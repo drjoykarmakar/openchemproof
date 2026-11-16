@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "record_id": "MS04",
+  "compound": {
+    "compound_id": "MS04",
+    "proposed_smiles": "CCN(CC)C(=O)SCc1ccccc1Cl"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "not reported"
+  },
+  "evidence": {
+    "lcms": {
+      "observed_mz": 258.071388812,
+      "ionization_mode": "positive",
+      "observed_adduct": "[M+H]+",
+      "relative_isotope_intensities": [
+        1.0,
+        0.132,
+        0.0
+      ]
+    }
+  },
+  "source_references": [
+    "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA006901.txt"
+  ]
+}

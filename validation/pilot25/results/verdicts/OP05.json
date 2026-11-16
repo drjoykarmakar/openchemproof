@@ -1,0 +1,58 @@
+{
+  "record_id": "OP05",
+  "status": "VERIFIED",
+  "confidence_score": 0.8,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "Aliphatic_long_chain"
+      }
+    },
+    {
+      "code": "AGGREGATION_RISK",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Lipophilicity/aromaticity heuristic warrants detergent and concentration controls",
+      "quantitative_evidence": {
+        "clogp": 12.746899999999979,
+        "aromatic_rings": 6.0
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCCCCCC1(CCCCCC)c2ccccc2-c2ccc(-c3ccc(-c4cc(-c5ccccn5)nc(-c5ccccn5)c4)cc3)cc21",
+    "structure.inchikey": "ZTILGISGTMGYAN-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "ZTILGISGTMGYAN",
+    "structure.molecular_formula": "C46H47N3",
+    "structure.parent_monoisotopic_mass": 641.376998504,
+    "structure.as_drawn_monoisotopic_mass": 641.376998504,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 12.746899999999979,
+    "structure.aromatic_rings": 6.0,
+    "optical.stokes_shift_nm": 82.0,
+    "optical.stokes_shift_cm": 6131.162004740436,
+    "optical.ife_correction_factor": 1.0256519262514077,
+    "optical.corrected_fold_change": 1.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "optical.stokes_shift",
+    "optical.quantum_yield",
+    "optical.scatter_overlap",
+    "optical.ife_correction"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "879321041e68e77c50097210745ba40d78606d359f196126ee1cb5dc77a348d7"
+}

@@ -1,0 +1,63 @@
+{
+  "record_id": "MS02",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "HRMS_MASS_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Observed m/z exceeds the declared HRMS tolerance",
+      "quantitative_evidence": {
+        "ppm_error": 79683.57355117168,
+        "tolerance_ppm": 5.0
+      }
+    },
+    {
+      "code": "ADDUCT_MISASSIGNMENT",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Observed peak matches another parent adduct",
+      "quantitative_evidence": {
+        "claimed": "[M+H]+",
+        "alternative": "[M+Na]+"
+      }
+    },
+    {
+      "code": "MISSING_ISOTOPE_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "lcms",
+      "message": "No MS1 M/M+1/M+2 envelope supplied; MS2 fragment peaks cannot substitute",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "N#Cc1cc(Br)c(O)c(Br)c1",
+    "structure.inchikey": "UPMXNNIRAGDFEH-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "UPMXNNIRAGDFEH",
+    "structure.molecular_formula": "C7H3Br2NO",
+    "structure.parent_monoisotopic_mass": 274.85813791600003,
+    "structure.as_drawn_monoisotopic_mass": 274.85813791600003,
+    "structure.tautomer_count": 2.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 2.78888,
+    "structure.aromatic_rings": 1.0,
+    "lcms.theoretical_mz": 275.865413916,
+    "lcms.ppm_error": 79683.57355117168,
+    "lcms.matched_adduct": "[M+Na]+",
+    "lcms.selected_adduct": "[M+H]+"
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "lcms.adduct_mass_matching"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "083f08371bd5b6d22ce827f2c614f5321001c601d7fca36f2782152ce7518b17"
+}

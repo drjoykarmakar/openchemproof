@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "record_id": "MS02",
+  "compound": {
+    "compound_id": "MS02",
+    "proposed_smiles": "N#Cc1cc(Br)c(O)c(Br)c1"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "not reported"
+  },
+  "evidence": {
+    "lcms": {
+      "observed_mz": 297.847355916,
+      "ionization_mode": "positive",
+      "observed_adduct": "[M+H]+"
+    }
+  },
+  "source_references": [
+    "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA002451.txt"
+  ]
+}

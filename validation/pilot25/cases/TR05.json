@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "TR05",
+  "compound": {
+    "compound_id": "TR05",
+    "proposed_smiles": "CC1CN(CC(N1)C)C2=CC(=C(C=C2)NC3=NC=C(C(=N3)C4=CN=C5N4C=CC=C5)Cl)OC"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "see source procedure"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet"
+  ],
+  "ord_reaction_id": "ord-d5a89652aac64eea875d9bd85a60b6b2",
+  "negative_result": {
+    "experiment_id": "ord-d5a89652aac64eea875d9bd85a60b6b2",
+    "outcome": "failed_synthesis",
+    "observation": "N-(4-bromo-2-methoxyphenyl)-5-chloro-4-(imidazo[1,2-a]pyridin-3-yl)pyrimidin-2-amine (107 mg, 0.25 mmol), 2,6-dimethylpiperazine (28.4 mg, 0.25 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (5.75 mg, 9.94 µmol), diacetoxypalladium (1.116 mg, 4.97 µmol) and cesium carbonate (162 mg, 0.50 mmol) were suspended in 1,4-dioxane (2 mL) . The reaction was purged with nitrogen and heated to 140 °C for 6 hours in an oil bath.  Control LC/MS : no traces of expected product.  ",
+    "protocol_reference": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+    "evidence_references": [
+      "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet"
+    ],
+    "detection_limit_description": "Not reported in the source record.",
+    "controls_passed": false,
+    "measured_yield_percent": 0.0
+  }
+}

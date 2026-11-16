@@ -1,0 +1,61 @@
+{
+  "record_id": "OP04",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "Michael_acceptor_1"
+      }
+    },
+    {
+      "code": "IFE_OUTSIDE_VALIDITY",
+      "severity": "WARNING",
+      "modality": "optical",
+      "message": "Center-view right-angle correction requires matched path geometry and moderate OD; dilution or instrument-specific correction is needed",
+      "quantitative_evidence": {}
+    },
+    {
+      "code": "HIGH_ABSORBANCE",
+      "severity": "WARNING",
+      "modality": "optical",
+      "message": "Absorbance exceeds the conservative IFE screening threshold",
+      "quantitative_evidence": {
+        "max_absorbance": 1.5
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "COc1cc(/C=C/C(=O)O)ccc1O",
+    "structure.inchikey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+    "structure.inchi_connectivity_layer": "KSEBMYQBYZTDHS",
+    "structure.molecular_formula": "C10H10O4",
+    "structure.parent_monoisotopic_mass": 194.0579088,
+    "structure.as_drawn_monoisotopic_mass": 194.0579088,
+    "structure.tautomer_count": 5.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 1.4986,
+    "structure.aromatic_rings": 1.0,
+    "optical.stokes_shift_nm": 126.0,
+    "optical.stokes_shift_cm": 10630.130514380206
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "optical.stokes_shift",
+    "optical.quantum_yield",
+    "optical.scatter_overlap"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "4017336d1201c36e76ac0c17979b55600118a16b2998a648e235e565e0f30dc7"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "record_id": "ST01",
+  "compound": {
+    "compound_id": "ST01",
+    "proposed_smiles": "CCCN(CCCCN1C(=O)CC(C)(C)CC1=O)[C@@H]1CCc2ccc3[nH]c(C(N)=O)cc3c2C1",
+    "reference_smiles": "CCCN(CCCCN1C(=O)CC(C)(C)CC1=O)[C@@H]1CCc2ccc3[nH]c(C(N)=O)cc3c2C1"
+  },
+  "assay": {
+    "assay_type": "binding_assay",
+    "solvent": "not reported"
+  },
+  "evidence": {},
+  "source_references": [
+    "https://www.ebi.ac.uk/chembl/api/data/activity/171972.json"
+  ]
+}

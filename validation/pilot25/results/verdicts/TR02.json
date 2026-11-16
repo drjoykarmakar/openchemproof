@@ -1,0 +1,48 @@
+{
+  "record_id": "TR02",
+  "status": "VERIFIED",
+  "confidence_score": 0.8,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "heavy_metal"
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CNC(=O)c1ccccc1B1OC(C)(C)C(C)(C)O1",
+    "structure.inchikey": "CDICQJUTNNWEIT-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "CDICQJUTNNWEIT",
+    "structure.molecular_formula": "C14H20BNO3",
+    "structure.parent_monoisotopic_mass": 261.1536239,
+    "structure.as_drawn_monoisotopic_mass": 261.1536239,
+    "structure.tautomer_count": 2.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 1.3454,
+    "structure.aromatic_rings": 1.0,
+    "nmr.nonexchangeable_h": 19.0,
+    "nmr.exchangeable_h": 1.0,
+    "nmr.expected_integral_lower_h": 19.0,
+    "nmr.expected_integral_upper_h": 20.0,
+    "nmr.observed_integral_h": 20.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "nmr.exchangeable_proton_budget",
+    "nmr.residual_solvent_candidates",
+    "nmr.calibrated_integral_balance"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "90c7a89dc587396eff86aecab28f8238f0105424192ab8f82d979ca3940bf5b7"
+}

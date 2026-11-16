@@ -1,0 +1,58 @@
+{
+  "record_id": "NM01",
+  "status": "VERIFIED",
+  "confidence_score": 0.8,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "heavy_metal"
+      }
+    },
+    {
+      "code": "AGGREGATION_RISK",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Lipophilicity/aromaticity heuristic warrants detergent and concentration controls",
+      "quantitative_evidence": {
+        "clogp": 5.354200000000005,
+        "aromatic_rings": 4.0
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CC1(C)OB(c2ccc3ccccc3c2-c2nccc3ccccc23)OC1(C)C",
+    "structure.inchikey": "SNRWQXSKKAVDOU-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "SNRWQXSKKAVDOU",
+    "structure.molecular_formula": "C25H24BNO2",
+    "structure.parent_monoisotopic_mass": 381.1900094079999,
+    "structure.as_drawn_monoisotopic_mass": 381.1900094079999,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 5.354200000000005,
+    "structure.aromatic_rings": 4.0,
+    "nmr.nonexchangeable_h": 24.0,
+    "nmr.exchangeable_h": 0.0,
+    "nmr.expected_integral_lower_h": 24.0,
+    "nmr.expected_integral_upper_h": 24.0,
+    "nmr.observed_integral_h": 24.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "nmr.exchangeable_proton_budget",
+    "nmr.residual_solvent_candidates",
+    "nmr.calibrated_integral_balance"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "32f6ef1c12bcda938676d275986f46a36293857d8f68692c83df8eca60feaa0e"
+}

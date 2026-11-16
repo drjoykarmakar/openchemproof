@@ -1,0 +1,66 @@
+{
+  "record_id": "OP01",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "Aliphatic_long_chain"
+      }
+    },
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "phthalimide"
+      }
+    },
+    {
+      "code": "AGGREGATION_RISK",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Lipophilicity/aromaticity heuristic warrants detergent and concentration controls",
+      "quantitative_evidence": {
+        "clogp": 9.512299999999998,
+        "aromatic_rings": 5.0
+      }
+    },
+    {
+      "code": "NO_SPECTRAL_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "provenance",
+      "message": "Structure metadata alone cannot establish an analytical verification",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCCCCCN1C(=O)c2cccc3c(-c4sc(-c5ccc6c7c(cccc57)C(=O)N(CCCCCC)C6=O)c5c4OCCO5)ccc(c23)C1=O",
+    "structure.inchikey": "LNZXPFVDXCWFMD-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "LNZXPFVDXCWFMD",
+    "structure.molecular_formula": "C42H40N2O6S",
+    "structure.parent_monoisotopic_mass": 700.2607080000001,
+    "structure.as_drawn_monoisotopic_mass": 700.2607080000001,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 9.512299999999998,
+    "structure.aromatic_rings": 5.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "67bc9bace5dd6f238c2341d83d2e1fb0c7695f93f22593e715e556c7745a1895"
+}

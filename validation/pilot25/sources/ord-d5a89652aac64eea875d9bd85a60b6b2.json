@@ -1,0 +1,183 @@
+{
+  "attribution": "750 AstraZeneca ELN dataset; Open Reaction Database; see source provenance and sources_ord.md",
+  "characterization_evidence": "failure narrative and recorded zero yield",
+  "cohort": "source_reported_zero_yield",
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "precision": 10.0,
+        "units": "CELSIUS",
+        "value": 140.0
+      }
+    }
+  },
+  "engine_confirmed_result": null,
+  "identity_analyses": {},
+  "independently_verified_spectrum_assignment": false,
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MOLE",
+              "value": 0.00248
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "amount": {
+            "volume": {
+              "units": "LITER",
+              "value": 0.002
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MOLE",
+              "value": 0.000248
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1CNCC(N1)C"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MOLE",
+              "value": 0.000248
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC(=C1)Br)NC2=NC=C(C(=N2)C3=CN=C4N3C=CC=C4)Cl"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MOLE",
+              "value": 9.94e-06
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "CATALYST"
+        },
+        {
+          "amount": {
+            "moles": {
+              "units": "MOLE",
+              "value": 4.97e-06
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "is_limiting": false,
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "license": "CC-BY-SA-4.0",
+  "procedure_details": "N-(4-bromo-2-methoxyphenyl)-5-chloro-4-(imidazo[1,2-a]pyridin-3-yl)pyrimidin-2-amine (107 mg, 0.25 mmol), 2,6-dimethylpiperazine (28.4 mg, 0.25 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (5.75 mg, 9.94 µmol), diacetoxypalladium (1.116 mg, 4.97 µmol) and cesium carbonate (162 mg, 0.50 mmol) were suspended in 1,4-dioxane (2 mL) . The reaction was purged with nitrogen and heated to 140 °C for 6 hours in an oil bath.  Control LC/MS : no traces of expected product.  ",
+  "product_identifiers": [
+    {
+      "type": "SMILES",
+      "value": "CC1CN(CC(N1)C)C2=CC(=C(C=C2)NC3=NC=C(C(=N3)C4=CN=C5N4C=CC=C5)Cl)OC"
+    }
+  ],
+  "publication_doi": null,
+  "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+  "raw_spectral_traces_available": false,
+  "record_id": "ord-d5a89652aac64eea875d9bd85a60b6b2",
+  "recorded_yield_percentages": [
+    0.0
+  ],
+  "review_note": "Source records exact 0% yield and narrative no reaction/conversion/desired product. Not a detection-limit-qualified negative.",
+  "schema_version": "openchemproof.ord-evidence.v1",
+  "source_dataset_id": "ord_dataset-00005539a1e04c809a9a78647bea649c",
+  "source_dataset_name": "750 AstraZeneca ELN dataset",
+  "source_dataset_sha256": "5326c1f79ef6a71e6b2a91cbd07cd8521049427df79307686c7c4f44eb16b53a",
+  "source_download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+  "source_failure_excerpts": [
+    "nd heated to 140 °C for 6 hours in an oil bath.  Control LC/MS : no traces of expected product.  "
+  ],
+  "source_reaction_canonical_json_sha256": "451290ecbd5faa62b8932e4d993b95856cd983eea0c2754905ffa3fc772b78d9",
+  "source_reaction_protobuf_sha256": "ca7b34ddaab4f1e158f4c302c810c9ab939fa9f9e45e528f9409d3b2e277041f",
+  "source_record_locator": {
+    "outcome_index": 0,
+    "parquet_column": "reaction",
+    "product_index": 0,
+    "reaction_id": "ord-d5a89652aac64eea875d9bd85a60b6b2"
+  },
+  "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+  "strict_negative_eligible": false,
+  "strict_negative_missing": [
+    "validated detection limit",
+    "documented positive/negative controls",
+    "complete assay trace and target-specific calibration"
+  ],
+  "yield_analyses": {},
+  "yield_measurements": [
+    {
+      "percentage": {
+        "value": 0.0
+      },
+      "type": "YIELD"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "record_id": "TR05",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "UNSPECIFIED_STEREO",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "Potential tetrahedral stereocenters lack assignments",
+      "quantitative_evidence": {}
+    },
+    {
+      "code": "NEGATIVE_CONTROLS_UNRESOLVED",
+      "severity": "WARNING",
+      "modality": "provenance",
+      "message": "Controls or analytical consistency are unresolved for the negative result",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "COc1cc(N2CC(C)NC(C)C2)ccc1Nc1ncc(Cl)c(-c2cnc3ccccn23)n1",
+    "structure.inchikey": "ZGBYNZVHNRLYBP-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "ZGBYNZVHNRLYBP",
+    "structure.molecular_formula": "C24H26ClN7O",
+    "structure.parent_monoisotopic_mass": 463.18873613200003,
+    "structure.as_drawn_monoisotopic_mass": 463.18873613200003,
+    "structure.tautomer_count": 3.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 4.383500000000002,
+    "structure.aromatic_rings": 4.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "11dab01f04acbfa2fddaee9bbaa46bd62b0463159ae2d5711cded6ba569193f5"
+}

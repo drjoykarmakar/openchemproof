@@ -1,0 +1,72 @@
+{
+  "record_id": "MS03",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "aniline"
+      }
+    },
+    {
+      "code": "HRMS_MASS_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Observed m/z exceeds the declared HRMS tolerance",
+      "quantitative_evidence": {
+        "ppm_error": 992599.6573270854,
+        "tolerance_ppm": 5.0
+      }
+    },
+    {
+      "code": "ADDUCT_MISASSIGNMENT",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Observed peak matches another parent adduct",
+      "quantitative_evidence": {
+        "claimed": "[M+H]+",
+        "alternative": "[2M+H]+"
+      }
+    },
+    {
+      "code": "MISSING_ISOTOPE_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "lcms",
+      "message": "No MS1 M/M+1/M+2 envelope supplied; MS2 fragment peaks cannot substitute",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CC(C)c1ccc(N)cc1",
+    "structure.inchikey": "LRTFPLFDLJYEKT-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "LRTFPLFDLJYEKT",
+    "structure.molecular_formula": "C9H13N",
+    "structure.parent_monoisotopic_mass": 135.104799416,
+    "structure.as_drawn_monoisotopic_mass": 135.104799416,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 2.3922000000000008,
+    "structure.aromatic_rings": 1.0,
+    "lcms.theoretical_mz": 136.11207541599998,
+    "lcms.ppm_error": 992599.6573270854,
+    "lcms.matched_adduct": "[2M+H]+",
+    "lcms.selected_adduct": "[M+H]+"
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "lcms.adduct_mass_matching"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "427b411d2b82f23c0220a0e554b6aa60497a67be26360b4fffc72006f631cc83"
+}

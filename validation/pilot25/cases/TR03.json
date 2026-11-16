@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "record_id": "TR03",
+  "compound": {
+    "compound_id": "TR03",
+    "proposed_smiles": "FC(F)(F)C=1C=CC=2C(=NC=C(B3OC(C)(C)C(O3)(C)C)C2Cl)C1"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "CDCl3"
+  },
+  "evidence": {
+    "nmr": {
+      "solvent": "CDCl3",
+      "proton_shifts_ppm": [
+        9.12,
+        8.47,
+        8.42,
+        7.8,
+        1.43
+      ],
+      "proton_integrals": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        12.0
+      ],
+      "multiplicities": [
+        "s",
+        "d",
+        "s",
+        "unknown",
+        "s"
+      ],
+      "integral_scale": 1.0,
+      "integration_complete": true
+    },
+    "lcms": {
+      "observed_mz": 357.1027,
+      "ionization_mode": "positive"
+    }
+  },
+  "source_references": [
+    "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet"
+  ],
+  "ord_reaction_id": "ord-7a17fdd932c54be285708fd64e8dcd7b"
+}

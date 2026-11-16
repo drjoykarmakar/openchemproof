@@ -1,0 +1,242 @@
+{
+  "attribution": "Borylation dataset from Roche; Open Reaction Database; see source provenance and sources_ord.md",
+  "characterization_evidence": "product-linked NMR peak text and observed HRMS m/z",
+  "cohort": "source_characterized_success",
+  "conditions": {
+    "pressure": {
+      "atmosphere": {
+        "type": "ARGON"
+      },
+      "control": {
+        "type": "SEALED"
+      }
+    },
+    "stirring": {},
+    "temperature": {
+      "setpoint": {
+        "units": "CELSIUS",
+        "value": 50.0
+      }
+    }
+  },
+  "engine_confirmed_result": null,
+  "identity_analyses": {
+    "MS of product_1": {
+      "data": {
+        "found": {
+          "description": "Observed m/z",
+          "float_value": 381.1894
+        }
+      },
+      "details": "HRMS Found: 381.1894",
+      "type": "HRMS"
+    },
+    "NMR of product_1": {
+      "data": {
+        "peaks": {
+          "string_value": "1 H NMR (500 MHz, CDCl3): δ = 8.68 (d, 1H, J = 6.0 Hz), 8.00 (s, 2H), 7.93 (d, 1H, J = 8.0 Hz), 7.90 (d, 1H, J = 8.0 Hz), 7.74 (d, 1H, J = 6.0 Hz), 7.63 (t, 1H, J = 8.0 Hz), 7.49 (t, 1H, J = 8.0 Hz), 7.43 (d, 1H, J = 8.5 Hz), 7.33 (d, 1H, J = 8.0 Hz), 7.31 (t, 2H, J = 7.5q Hz), 0.95 (s, 6H), 0.75 (s, 6H). 13C NMR (125 MHz, CDCl3): δ = 161.7, 141.9, 136.0, 134.9, 132.2, 130.4, 129.7, 129.6, 127.9, 127.5, 127.5, 126.8, 126.7, 126.4, 126.1, 119.5, 83.2, 24.4, 24.1 (C-B not observed); 11B NMR (160 MHz, CDCl3): δ 31.1 ppm;"
+        }
+      },
+      "type": "NMR_1H"
+    }
+  },
+  "independently_verified_spectrum_assignment": false,
+  "inputs": {
+    "catalyst_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.0025
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1CC=CCCC=C1.C1CC=CCCC=C1.[Cl-].[Cl-].[Ir].[Ir]"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "12112-67-3"
+            }
+          ],
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "reagent_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.5
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1B(OC(C)(C)C1(C)C)B2OC(C)(C)C(O2)(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "73183-34-3"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "reagent_2": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.025
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1BOC(C)(C)C1(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "25015-63-8"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "reagent_3": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.005
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "N=1C=CC=CC1C=NN(C)C"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "25976-67-4"
+            }
+          ],
+          "reaction_role": "REAGENT"
+        }
+      ]
+    },
+    "solvent_1": {
+      "components": [
+        {
+          "amount": {
+            "volume": {
+              "units": "MILLILITER",
+              "value": 1.0
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "109-99-9"
+            }
+          ],
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "startingmat_1": {
+      "components": [
+        {
+          "amount": {
+            "moles": {
+              "units": "MILLIMOLE",
+              "value": 0.5
+            }
+          },
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "N=1C=CC=2C=CC=CC2C1C=3C=CC=C4C=CC=CC43"
+            },
+            {
+              "details": "cas number from SURF _cas column",
+              "type": "CAS_NUMBER",
+              "value": "66920-31-8"
+            }
+          ],
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "license": "CC-BY-SA-4.0",
+  "procedure_details": "Following the general procedure, column chromatography (EtOAc/nhexane 1:3) afforded 9a (160 mg, 84 %) as a light yellow solid. Evaporation from EtOAc/n-hexane afforded X-Ray quality crystals.",
+  "product_identifiers": [
+    {
+      "type": "SMILES",
+      "value": "N=1C=CC=2C=CC=CC2C1C=3C(=CC=C4C=CC=CC43)B5OC(C)(C)C(O5)(C)C"
+    },
+    {
+      "type": "CAS_NUMBER",
+      "value": "1360606-88-7"
+    }
+  ],
+  "publication_doi": "10.1002/anie.201104544",
+  "publication_url": null,
+  "raw_spectral_traces_available": false,
+  "record_id": "ord-e44f21f22e2b47f2983e0a59a5274138",
+  "recorded_yield_percentages": [
+    67.0
+  ],
+  "review_note": "Source links product IDENTITY measurements to NMR_1H peak text and observed HRMS m/z; source yield 50–100%. Spectral assignment not independently verified.",
+  "schema_version": "openchemproof.ord-evidence.v1",
+  "source_dataset_id": "ord_dataset-99c23cf435dc42f1af884053bc8b11c7",
+  "source_dataset_name": "Borylation dataset from Roche",
+  "source_dataset_sha256": "59cd8c35e021be300944f8e556b8fd7ec30a6bc32ff36a54be133aad8e44c393",
+  "source_download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "source_failure_excerpts": [],
+  "source_reaction_canonical_json_sha256": "e2c272649cf3551077bfd18b5c78ee16b05bb605ca72529492ab3cd43b89a8be",
+  "source_reaction_protobuf_sha256": "83c0a8beca70a165c6c1a44d831efc2b5cc8c5d9cd10b56bf14f61225b914d08",
+  "source_record_locator": {
+    "outcome_index": 0,
+    "parquet_column": "reaction",
+    "product_index": 0,
+    "reaction_id": "ord-e44f21f22e2b47f2983e0a59a5274138"
+  },
+  "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+  "strict_negative_eligible": false,
+  "strict_negative_missing": [],
+  "yield_analyses": {
+    "product_1_UNKNOWN": {
+      "details": "UNKNOWN",
+      "type": "CUSTOM"
+    }
+  },
+  "yield_measurements": [
+    {
+      "analysis_key": "product_1_UNKNOWN",
+      "percentage": {
+        "value": 67.0
+      },
+      "type": "YIELD"
+    }
+  ]
+}

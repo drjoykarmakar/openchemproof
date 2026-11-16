@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "record_id": "OP02",
+  "compound": {
+    "compound_id": "OP02",
+    "proposed_smiles": "CN(C)c1ccc(/C=C/c2nc3c4ccccc4c4ccccc4c3[nH]2)cc1"
+  },
+  "assay": {
+    "assay_type": "fluorescence_probe",
+    "solvent": "chloroform",
+    "concentration_um": 11.428571439254288
+  },
+  "evidence": {
+    "optical": {
+      "excitation_nm": 393.0,
+      "emission_nm": 467.0,
+      "absorbance_at_ex": 0.6,
+      "absorbance_at_em": 0.06,
+      "baseline_absorbance_at_ex": 0.02,
+      "baseline_absorbance_at_em": 0.002,
+      "observed_quantum_yield": 0.035,
+      "apparent_fold_change": 0.47973344863668915,
+      "geometry": "right_angle_center"
+    }
+  },
+  "source_references": [
+    "https://doi.org/10.1016/j.dyepig.2016.08.046"
+  ]
+}

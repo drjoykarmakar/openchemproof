@@ -1,0 +1,183 @@
+{
+  "acquisition": {
+    "adduct": "[M+H]+",
+    "collision_energy_original": "35 % (nominal)",
+    "instrument": "LTQ Orbitrap XL Thermo Scientific",
+    "instrument_type": "LC-ESI-ITFT",
+    "ion_mode": "positive",
+    "ms_level": 2,
+    "precursor_mz_original_text": "301.1183",
+    "precursor_mz_source_reported": 301.1183,
+    "precursor_mz_status": "source_reported_metadata; MassBank_prefers_calculated_exact_mass; not_independent_measured_mass",
+    "retention_time_original": "9.2 min"
+  },
+  "benchmark_labels": {
+    "expected_verifier_verdict": null,
+    "independent_positive_verification": false,
+    "structure_match": "source_asserted",
+    "synthetic_perturbation": false
+  },
+  "compound": {
+    "canonicalization": "RDKit 2026.09.2; canonical isomeric SMILES; no tautomer/salt/charge standardization",
+    "exact_mass_source_reported": 300.1105,
+    "formula_source_reported": "C16H16N2O4",
+    "name": "Desmedipham",
+    "names": [
+      "Desmedipham",
+      "N-[3-[anilino(oxo)methoxy]phenyl]carbamic acid ethyl ester"
+    ],
+    "smiles_canonical": "CCOC(=O)Nc1cccc(OC(=O)Nc2ccccc2)c1",
+    "smiles_original": "c1c(OC(Nc2ccccc2)=O)cccc1NC(OCC)=O",
+    "structure_status": "source_asserted_standard_compound; not independently reverified"
+  },
+  "data_origin": "public_experimental_library_record",
+  "isotope_envelope": {
+    "M": null,
+    "M+1": null,
+    "M+2": null,
+    "reason": "MS2 fragment peaks cannot establish an MS1 precursor isotope envelope.",
+    "status": "unavailable_in_ms2_record"
+  },
+  "original_fields": {
+    "AC$CHROMATOGRAPHY": [
+      "COLUMN_NAME XBridge C18 3.5um, 2.1x50mm, Waters",
+      "FLOW_GRADIENT 90/10 at 0 min, 50/50 at 4 min, 5/95 at 17 min, 5/95 at 25 min, 90/10 at 25.1 min, 90/10 at 30 min",
+      "FLOW_RATE 200 ul/min",
+      "RETENTION_TIME 9.2 min",
+      "SOLVENT A water with 0.1% formic acid",
+      "SOLVENT B methanol with 0.1% formic acid"
+    ],
+    "AC$INSTRUMENT": [
+      "LTQ Orbitrap XL Thermo Scientific"
+    ],
+    "AC$INSTRUMENT_TYPE": [
+      "LC-ESI-ITFT"
+    ],
+    "AC$MASS_SPECTROMETRY": [
+      "MS_TYPE MS2",
+      "ION_MODE POSITIVE",
+      "IONIZATION ESI",
+      "FRAGMENTATION_MODE CID",
+      "COLLISION_ENERGY 35 % (nominal)",
+      "RESOLUTION 7500"
+    ],
+    "ACCESSION": [
+      "MSBNK-Eawag-EA014401"
+    ],
+    "AUTHORS": [
+      "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag"
+    ],
+    "CH$COMPOUND_CLASS": [
+      "N/A; Environmental Standard"
+    ],
+    "CH$EXACT_MASS": [
+      "300.1105"
+    ],
+    "CH$FORMULA": [
+      "C16H16N2O4"
+    ],
+    "CH$IUPAC": [
+      "InChI=1S/C16H16N2O4/c1-2-21-15(19)18-13-9-6-10-14(11-13)22-16(20)17-12-7-4-3-5-8-12/h3-11H,2H2,1H3,(H,17,20)(H,18,19)"
+    ],
+    "CH$LINK": [
+      "CAS 13684-56-5",
+      "PUBCHEM CID:24743",
+      "INCHIKEY WZJZMXBKUWKXTQ-UHFFFAOYSA-N",
+      "CHEMSPIDER 23133",
+      "COMPTOX DTXSID0034518",
+      "ChemOnt CHEMONTID:0004714; Organic compounds; Benzenoids; Benzene and substituted derivatives; Phenylcarbamic acid esters"
+    ],
+    "CH$NAME": [
+      "Desmedipham",
+      "N-[3-[anilino(oxo)methoxy]phenyl]carbamic acid ethyl ester"
+    ],
+    "CH$SMILES": [
+      "c1c(OC(Nc2ccccc2)=O)cccc1NC(OCC)=O"
+    ],
+    "COMMENT": [
+      "CONFIDENCE standard compound",
+      "EAWAG_UCHEM_ID 144"
+    ],
+    "COPYRIGHT": [
+      "Copyright (C) 2012 Eawag, Duebendorf, Switzerland"
+    ],
+    "DATE": [
+      "2014.01.14"
+    ],
+    "LICENSE": [
+      "CC BY"
+    ],
+    "MS$DATA_PROCESSING": [
+      "DEPROFILE Spline",
+      "RECALIBRATE loess on assigned fragments and MS1",
+      "REANALYZE Peaks with additional N2/O included",
+      "WHOLE RMassBank 1.3.1"
+    ],
+    "MS$FOCUSED_ION": [
+      "BASE_PEAK 323.1005",
+      "PRECURSOR_M/Z 301.1183",
+      "PRECURSOR_TYPE [M+H]+"
+    ],
+    "PK$ANNOTATION": [
+      "m/z tentative_formula formula_count mass error(ppm)"
+    ],
+    "PK$NUM_PEAK": [
+      "3"
+    ],
+    "PK$PEAK": [
+      "m/z int. rel.int."
+    ],
+    "PK$SPLASH": [
+      "splash10-001i-0900000000-d458abc9e0cf96116d32"
+    ],
+    "RECORD_TITLE": [
+      "Desmedipham; LC-ESI-ITFT; MS2; CE: 35%; R=7500; [M+H]+"
+    ]
+  },
+  "record_id": "MSBNK-Eawag-EA014401",
+  "schema_version": "openchemproof.real_lcms.v1",
+  "source": {
+    "authors": "Stravs M, Schymanski E, Singer H, Department of Environmental Chemistry, Eawag",
+    "commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+    "copyright": "Copyright (C) 2012 Eawag, Duebendorf, Switzerland",
+    "database": "MassBank",
+    "license_literal": "CC BY",
+    "license_version": null,
+    "path": "Eawag/MSBNK-Eawag-EA014401.txt",
+    "publication": [],
+    "raw_file": "raw/MSBNK-Eawag-EA014401.txt",
+    "raw_url": "https://raw.githubusercontent.com/MassBank/MassBank-data/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA014401.txt",
+    "record_date": "2014.01.14",
+    "release": "2026.11",
+    "sha256": "ac551680fc2141adae669fa6602058e217b54da9a65b775151dc441278f9d5d0",
+    "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA014401.txt"
+  },
+  "spectrum": {
+    "kind": "experimental_processed_ms2_peak_list",
+    "peaks": [
+      {
+        "intensity": 59952.2,
+        "mz": 136.0393,
+        "relative_intensity": 89.0
+      },
+      {
+        "intensity": 15736.9,
+        "mz": 154.0497,
+        "relative_intensity": 23.0
+      },
+      {
+        "intensity": 666704.5,
+        "mz": 182.0813,
+        "relative_intensity": 999.0
+      }
+    ],
+    "processing_original": [
+      "DEPROFILE Spline",
+      "RECALIBRATE loess on assigned fragments and MS1",
+      "REANALYZE Peaks with additional N2/O included",
+      "WHOLE RMassBank 1.3.1"
+    ],
+    "raw_instrument_data_available_in_this_bundle": false,
+    "splash": "splash10-001i-0900000000-d458abc9e0cf96116d32"
+  }
+}

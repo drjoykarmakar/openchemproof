@@ -1,0 +1,62 @@
+{
+  "record_id": "MS04",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "thioester"
+      }
+    },
+    {
+      "code": "ISOTOPE_PATTERN_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "lcms",
+      "message": "Nominal isotope envelope conflicts with the proposed ion composition",
+      "quantitative_evidence": {
+        "isotope": "M+2",
+        "expected": 0.3763354726546758,
+        "observed": 0.0,
+        "tolerance": 0.09408386816366895
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CCN(CC)C(=O)SCc1ccccc1Cl",
+    "structure.inchikey": "LLLFASISUZUJEQ-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "LLLFASISUZUJEQ",
+    "structure.molecular_formula": "C12H16ClNOS",
+    "structure.parent_monoisotopic_mass": 257.064112812,
+    "structure.as_drawn_monoisotopic_mass": 257.064112812,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 4.035000000000004,
+    "structure.aromatic_rings": 1.0,
+    "lcms.theoretical_mz": 258.071388812,
+    "lcms.ppm_error": 0.0,
+    "lcms.matched_adduct": "[M+H]+",
+    "lcms.selected_adduct": "[M+H]+",
+    "lcms.isotope_M+1_expected": 0.1436737559722313,
+    "lcms.isotope_M+1_observed": 0.132,
+    "lcms.isotope_M+2_expected": 0.3763354726546758,
+    "lcms.isotope_M+2_observed": 0.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "lcms.adduct_mass_matching",
+    "lcms.isotope_envelope"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "7ba9533ac5f18f67678fbd8e7937250081d6b122b5bce6d26acdfeb71a256280"
+}

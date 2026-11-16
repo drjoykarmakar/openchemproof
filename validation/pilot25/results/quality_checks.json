@@ -1,0 +1,12 @@
+{
+  "frozen_hashes_valid": 56,
+  "audit_bundles_valid": 25,
+  "rerun_matches_first_run": true,
+  "tampered_input_rejected": true,
+  "python_lint_and_format": "passed",
+  "workbook_sheets": 3,
+  "workbook_formula_error_scan": "no matches",
+  "workbook_live_edit_checks": "optical ratio and pending reviewer count passed",
+  "workbook_visual_review": "three worksheets reviewed; long NMR evidence sampled",
+  "independent_human_review": "pending"
+}

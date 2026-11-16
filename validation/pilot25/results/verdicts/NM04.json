@@ -1,0 +1,79 @@
+{
+  "record_id": "NM04",
+  "status": "ARTIFACT_DETECTED",
+  "confidence_score": 1.0,
+  "flags": [
+    {
+      "code": "STRUCTURAL_ALERT",
+      "severity": "WARNING",
+      "modality": "structure",
+      "message": "PAINS/Brenk substructure alert is a risk screen, not proof of assay interference",
+      "quantitative_evidence": {
+        "alert": "heavy_metal"
+      }
+    },
+    {
+      "code": "SOLVENT_PEAK_CANDIDATE",
+      "severity": "WARNING",
+      "modality": "nmr",
+      "message": "Peak positions overlap a common solvent/impurity; coincidence alone is not identification",
+      "quantitative_evidence": {
+        "candidate": "dichloromethane",
+        "solvent": "CDCl3"
+      }
+    },
+    {
+      "code": "PROTON_INTEGRAL_MISMATCH",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "nmr",
+      "message": "Calibrated total integration conflicts with the solvent-specific proton budget",
+      "quantitative_evidence": {
+        "observed_h": 17.0,
+        "lower_h": 15.0,
+        "upper_h": 15.0,
+        "tolerance_h": 0.75
+      }
+    },
+    {
+      "code": "SOLVENT_INTEGRAL_INFLATION",
+      "severity": "CRITICAL_ARTIFACT",
+      "modality": "nmr",
+      "message": "Excess integration coincides with candidate contaminant peaks; contaminant identity remains tentative",
+      "quantitative_evidence": {
+        "candidates": "dichloromethane"
+      }
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "CC1(C)OB(c2cc(Br)cc(OC(F)(F)F)c2)OC1(C)C",
+    "structure.inchikey": "LHVHGIUPEAOMSW-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "LHVHGIUPEAOMSW",
+    "structure.molecular_formula": "C13H15BBrF3O3",
+    "structure.parent_monoisotopic_mass": 366.0249715,
+    "structure.as_drawn_monoisotopic_mass": 366.0249715,
+    "structure.tautomer_count": 1.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 3.6469000000000023,
+    "structure.aromatic_rings": 1.0,
+    "nmr.nonexchangeable_h": 15.0,
+    "nmr.exchangeable_h": 0.0,
+    "nmr.expected_integral_lower_h": 15.0,
+    "nmr.expected_integral_upper_h": 15.0,
+    "nmr.observed_integral_h": 17.0
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "nmr.exchangeable_proton_budget",
+    "nmr.residual_solvent_candidates",
+    "nmr.calibrated_integral_balance"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "47f64e6371d4a15b3209e00f0037878f5490dab107ca727d449d717c3654d01c"
+}

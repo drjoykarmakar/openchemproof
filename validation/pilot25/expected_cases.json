@@ -1,0 +1,809 @@
+[
+  {
+    "case_id": "MS01",
+    "category": "LCMS_ADDUCT_DIMER_TRAP",
+    "title": "Measured surviving precursor; no MS1 envelope",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "MSBNK-Eawag-EA000401",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA000401.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA000401.json",
+        "snapshot_sha256": "521725f2df3496516f76e46e3aed5453447b7b61873ab482072338a9dfadfeea"
+      }
+    ],
+    "original_evidence": "Experimental MS2 peak 188.082 m/z; source adduct [M+H]+. Precursor metadata 188.0818 is not independent measured mass.",
+    "deliberate_modification": "None. Use the measured surviving precursor peak; omit missing MS1 isotope evidence.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "One accurate surviving precursor peak cannot replace a measured MS1 isotope envelope.",
+    "required_flags": [
+      "MISSING_ISOTOPE_EVIDENCE"
+    ],
+    "limitations": "The peak is from processed MS2 data. Fragment matching and chromatography are outside this pilot.",
+    "assumptions": {},
+    "input_file": "cases/MS01.json",
+    "input_sha256": "b62c8b4aa298c3a2bce25edc2a3982daaf99effd76a3dcdadd600097713dc74d",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "MS02",
+    "category": "LCMS_ADDUCT_DIMER_TRAP",
+    "title": "Simulated [M+Na]+ mislabeled [M+H]+",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "MSBNK-Eawag-EA002451",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA002451.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA002451.json",
+        "snapshot_sha256": "0b33c994ec8286933dcb9120e05fda86289d96b72b2c965cc49ac448a9b8619c"
+      }
+    ],
+    "original_evidence": "Source structure N#Cc1cc(Br)c(O)c(Br)c1; experimental source spectrum retained in snapshot.",
+    "deliberate_modification": "Replace m/z with formula-derived [M+Na]+ value 297.84735592; claim [M+H]+.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The asserted protonated monomer cannot have this m/z. The deliberately generated alternative adduct explains the discrepancy.",
+    "required_flags": [
+      "ADDUCT_MISASSIGNMENT"
+    ],
+    "limitations": "Simulated ion, not an observed sodium-adduct or dimer spectrum.",
+    "assumptions": {
+      "ion_mass_offset_Da": 22.989218,
+      "molecule_multiplier": 1,
+      "simulated_mz": 297.847355916
+    },
+    "input_file": "cases/MS02.json",
+    "input_sha256": "7e545fc2a0bf123b14fe665ea02fdc34349894eec2e9f027d71415942a1ef781",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "MS03",
+    "category": "LCMS_ADDUCT_DIMER_TRAP",
+    "title": "Simulated [2M+H]+ mislabeled [M+H]+",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "MSBNK-Eawag-EA005201",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA005201.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA005201.json",
+        "snapshot_sha256": "85d093395ebd946cc150b85dcf5518c15ba6d11c3db65b4450f7adfa6ddd383c"
+      }
+    ],
+    "original_evidence": "Source structure CC(C)c1ccc(N)cc1; experimental source spectrum retained in snapshot.",
+    "deliberate_modification": "Replace m/z with formula-derived [2M+H]+ value 271.21687483; claim [M+H]+.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The asserted protonated monomer cannot have this m/z. The deliberately generated alternative adduct explains the discrepancy.",
+    "required_flags": [
+      "ADDUCT_MISASSIGNMENT"
+    ],
+    "limitations": "Simulated ion, not an observed sodium-adduct or dimer spectrum.",
+    "assumptions": {
+      "ion_mass_offset_Da": 1.007276,
+      "molecule_multiplier": 2,
+      "simulated_mz": 271.216874832
+    },
+    "input_file": "cases/MS03.json",
+    "input_sha256": "ba4e24b028e5b83eb8a8e788f53bf4100f60a7f0a1f6b5b5b2bbb4eae9527bdc",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "MS04",
+    "category": "LCMS_ADDUCT_DIMER_TRAP",
+    "title": "Chlorinated molecule with simulated missing M+2",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "MSBNK-Eawag-EA006901",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA006901.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA006901.json",
+        "snapshot_sha256": "4ced1ba623d3106e253cd74ff0fd9940d7426f4e36e764ad5813c35f77aceb05"
+      }
+    ],
+    "original_evidence": "Source structure contains one Cl and one S; no measured MS1 isotope envelope is available.",
+    "deliberate_modification": "Construct a protonated exact mass and artificial [M,M+1,M+2] intensities; force M+2 to zero.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "A natural-abundance chlorinated ion cannot have a truly absent M+2 peak at the stipulated measurement precision.",
+    "required_flags": [
+      "ISOTOPE_PATTERN_MISMATCH"
+    ],
+    "limitations": "Noise-free simulated envelope. Does not establish experimental isotope sensitivity.",
+    "assumptions": {},
+    "input_file": "cases/MS04.json",
+    "input_sha256": "b0fbcf061dd45e1d2cba37457b9d491be75434ba679f344625ae14a81e35101d",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "MS05",
+    "category": "LCMS_ADDUCT_DIMER_TRAP",
+    "title": "Real constitutional isomers share exact mass",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "MSBNK-Eawag-EA009401",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA009401.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA009401.json",
+        "snapshot_sha256": "790fa11f25c1dd9c4c1e3cdfd95529f8fdfdb84a8098a417b8b66358cfbd7e7d"
+      },
+      {
+        "record_id": "MSBNK-Eawag-EA014401",
+        "family": "lcms",
+        "url": "https://github.com/MassBank/MassBank-data/blob/72980b3af504cfd1e89ac54d7698d3da45d85a58/Eawag/MSBNK-Eawag-EA014401.txt",
+        "license": "CC BY",
+        "snapshot": "sources/MSBNK-Eawag-EA014401.json",
+        "snapshot_sha256": "448597368261eeca030431df388a1c21d23d319fc48e1c9b19d61a90ed8c7852"
+      }
+    ],
+    "original_evidence": "Two MassBank structures have formula C16H16N2O4 and distinct connectivity.",
+    "deliberate_modification": "Use calculated [M+H]+ mass and put the second isomer in the candidate field (named starting_materials by the schema).",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Same-formula isomers share exact mass and nominal isotope composition. Mass evidence alone cannot identify which isomer is present.",
+    "required_flags": [
+      "ISOBARIC_AMBIGUITY"
+    ],
+    "limitations": "No real synthetic starting-material relationship is asserted. No MS2 discrimination is evaluated.",
+    "assumptions": {},
+    "input_file": "cases/MS05.json",
+    "input_sha256": "2a51de38b2f0209866da1a43959fbaa53e1284eca0691f0c9ac7b85f768e2548",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "OP01",
+    "category": "OPTICAL_IFE_ARTIFACT",
+    "title": "Source lacks excitation setting and absorbances",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "deep4chem-v2-tag-504",
+        "family": "optical",
+        "url": "https://doi.org/10.1016/j.dyepig.2012.07.018",
+        "license": "CC-BY-4.0",
+        "snapshot": "sources/deep4chem-v2-tag-504.json",
+        "snapshot_sha256": "5af543e3efd21698f1eca1f1736f2f7ff2f821638ad28a876b041ecb026dbb2f"
+      }
+    ],
+    "original_evidence": "Absorption maximum 416.0 nm; emission 502.0 nm; QY 0.22; log10 epsilon 4.421 (M^-1 cm^-1).",
+    "deliberate_modification": "None. Optical input cannot represent these missing required values, so the source data remain in the snapshot.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Reported maxima and QY alone do not quantify cuvette inner-filter effects.",
+    "required_flags": [
+      "NO_SPECTRAL_EVIDENCE"
+    ],
+    "limitations": "Absorption maximum is not a measured excitation setting. OD, path length, epsilon_em, concentrations and response ratio are missing in the source; any supplied values are simulated. QY is held fixed as a reference property, not a high-concentration measurement.",
+    "assumptions": {},
+    "input_file": "cases/OP01.json",
+    "input_sha256": "226b249e7203ccb49365863ee269ddf93b08dfed916be5b4866175f5657d0011",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "OP02",
+    "category": "OPTICAL_IFE_ARTIFACT",
+    "title": "Moderate OD simulates apparent quenching",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "deep4chem-v2-tag-805",
+        "family": "optical",
+        "url": "https://doi.org/10.1016/j.dyepig.2016.08.046",
+        "license": "CC-BY-4.0",
+        "snapshot": "sources/deep4chem-v2-tag-805.json",
+        "snapshot_sha256": "8ca59e7225ac9df05c02db3efdbaf824af2182471f651bbba1551fd33d9aa937"
+      }
+    ],
+    "original_evidence": "Absorption maximum 393.0 nm; emission 467.0 nm; QY 0.035; log10 epsilon 4.720159303 (M^-1 cm^-1).",
+    "deliberate_modification": "Assume 1 cm right-angle cuvette, excitation at absorption maximum and epsilon_em=0.1*epsilon_ex. Generate sample Aex=0.6, reference Aex=0.02, normalized apparent ratio=0.479733.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The stipulated unchanged intrinsic response is restored by the differential IFE correction; apparent quenching is an optical artifact.",
+    "required_flags": [
+      "IFE_RESPONSE_ARTIFACT"
+    ],
+    "limitations": "Absorption maximum is not a measured excitation setting. OD, path length, epsilon_em, concentrations and response ratio are missing in the source; any supplied values are simulated. QY is held fixed as a reference property, not a high-concentration measurement.",
+    "assumptions": {
+      "path_length_cm": 1.0,
+      "excitation_equals_absorption_max": true,
+      "epsilon_em_over_epsilon_ex": 0.1,
+      "sample_concentration_M": 1.1428571439254288e-05,
+      "reference_concentration_M": 3.809523813084763e-07,
+      "intrinsic_normalized_response_ratio": 1.0,
+      "apparent_response_ratio": 0.47973344863668915,
+      "sample_Aex": 0.6,
+      "sample_Aem": 0.06,
+      "reference_Aex": 0.02,
+      "reference_Aem": 0.002,
+      "response_normalization": "Per concentration/absorbed-photon response; not raw intensity across unequal concentrations."
+    },
+    "input_file": "cases/OP02.json",
+    "input_sha256": "72188e2839d86c392adf77244b043313333b919de03ac1ce961ecc543b9e53cf",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "OP03",
+    "category": "OPTICAL_IFE_ARTIFACT",
+    "title": "Matched absorbance control",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "deep4chem-v2-tag-1035",
+        "family": "optical",
+        "url": "https://doi.org/10.1016/j.jlumin.2018.12.059",
+        "license": "CC-BY-4.0",
+        "snapshot": "sources/deep4chem-v2-tag-1035.json",
+        "snapshot_sha256": "28dcd29fcccb72dce5e9466f22298c3214ff6d4ef24402f4b1ba177590ac9cf1"
+      }
+    ],
+    "original_evidence": "Absorption maximum 348.0 nm; emission 405.14 nm; QY 0.1525; log10 epsilon 3.980185237 (M^-1 cm^-1).",
+    "deliberate_modification": "Assume 1 cm right-angle cuvette, excitation at absorption maximum and epsilon_em=0.1*epsilon_ex. Generate sample Aex=0.6, reference Aex=0.6, normalized apparent ratio=1.000000.",
+    "expected_status": "VERIFIED",
+    "expected_reason": "Sample and reference have equal attenuation, so their normalized ratio remains 1. High absorbance alone is not a response artifact.",
+    "required_flags": [],
+    "limitations": "Absorption maximum is not a measured excitation setting. OD, path length, epsilon_em, concentrations and response ratio are missing in the source; any supplied values are simulated. QY is held fixed as a reference property, not a high-concentration measurement.",
+    "assumptions": {
+      "path_length_cm": 1.0,
+      "excitation_equals_absorption_max": true,
+      "epsilon_em_over_epsilon_ex": 0.1,
+      "sample_concentration_M": 6.280092107256023e-05,
+      "reference_concentration_M": 6.280092107256023e-05,
+      "intrinsic_normalized_response_ratio": 1.0,
+      "apparent_response_ratio": 1.0000000000000002,
+      "sample_Aex": 0.6,
+      "sample_Aem": 0.06,
+      "reference_Aex": 0.6,
+      "reference_Aem": 0.06,
+      "response_normalization": "Per concentration/absorbed-photon response; not raw intensity across unequal concentrations."
+    },
+    "input_file": "cases/OP03.json",
+    "input_sha256": "5eabc50c6600c33d1f0e75811463a1135ba1e2822709fbe2a227ddd85fb36bde",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "OP04",
+    "category": "OPTICAL_IFE_ARTIFACT",
+    "title": "High OD exceeds correction policy",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "deep4chem-v2-tag-1063",
+        "family": "optical",
+        "url": "https://doi.org/10.3389/fmars.2015.00098",
+        "license": "CC-BY-4.0",
+        "snapshot": "sources/deep4chem-v2-tag-1063.json",
+        "snapshot_sha256": "ce40a27a279f92451cdc46277001212977bb9a6c2de64618164300a22f2e63fc"
+      }
+    ],
+    "original_evidence": "Absorption maximum 287.0 nm; emission 413.0 nm; QY 0.002; log10 epsilon 4.150664354 (M^-1 cm^-1).",
+    "deliberate_modification": "Assume 1 cm right-angle cuvette, excitation at absorption maximum and epsilon_em=0.1*epsilon_ex. Generate sample Aex=1.5, reference Aex=0.02, normalized apparent ratio=0.153462.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Aex=1.5 exceeds the engine's declared A<=1 correction domain. Abstention is required under that policy, not a universal physical cutoff.",
+    "required_flags": [
+      "IFE_OUTSIDE_VALIDITY"
+    ],
+    "limitations": "Absorption maximum is not a measured excitation setting. OD, path length, epsilon_em, concentrations and response ratio are missing in the source; any supplied values are simulated. QY is held fixed as a reference property, not a high-concentration measurement.",
+    "assumptions": {
+      "path_length_cm": 1.0,
+      "excitation_equals_absorption_max": true,
+      "epsilon_em_over_epsilon_ex": 0.1,
+      "sample_concentration_M": 0.00010602954678554895,
+      "reference_concentration_M": 1.413727290473986e-06,
+      "intrinsic_normalized_response_ratio": 1.0,
+      "apparent_response_ratio": 0.15346169827992945,
+      "sample_Aex": 1.5,
+      "sample_Aem": 0.15000000000000002,
+      "reference_Aex": 0.02,
+      "reference_Aem": 0.002,
+      "response_normalization": "Per concentration/absorbed-photon response; not raw intensity across unequal concentrations."
+    },
+    "input_file": "cases/OP04.json",
+    "input_sha256": "32dec4c393a31f1ed519d988725a065a095cca0deb40a87b37f9d7c7a569880a",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "OP05",
+    "category": "OPTICAL_IFE_ARTIFACT",
+    "title": "Dilute simulated control",
+    "evidence_kind": "source_based_simulation",
+    "sources": [
+      {
+        "record_id": "deep4chem-v2-tag-1190",
+        "family": "optical",
+        "url": "https://doi.org/10.1039/c6cp04252j",
+        "license": "CC-BY-4.0",
+        "snapshot": "sources/deep4chem-v2-tag-1190.json",
+        "snapshot_sha256": "edca230b8121dcd5f3f60401cc37f774d40d53665e82cf9a445a8e99ee51a7c1"
+      }
+    ],
+    "original_evidence": "Absorption maximum 327.0 nm; emission 409.0 nm; QY 0.92; log10 epsilon 4.56 (M^-1 cm^-1).",
+    "deliberate_modification": "Assume 1 cm right-angle cuvette, excitation at absorption maximum and epsilon_em=0.1*epsilon_ex. Generate sample Aex=0.02, reference Aex=0.02, normalized apparent ratio=1.000000.",
+    "expected_status": "VERIFIED",
+    "expected_reason": "Dilute matched sample/reference with a physically possible QY pass the implemented consistency checks.",
+    "required_flags": [],
+    "limitations": "Absorption maximum is not a measured excitation setting. OD, path length, epsilon_em, concentrations and response ratio are missing in the source; any supplied values are simulated. QY is held fixed as a reference property, not a high-concentration measurement.",
+    "assumptions": {
+      "path_length_cm": 1.0,
+      "excitation_equals_absorption_max": true,
+      "epsilon_em_over_epsilon_ex": 0.1,
+      "sample_concentration_M": 5.508457406676338e-07,
+      "reference_concentration_M": 5.508457406676338e-07,
+      "intrinsic_normalized_response_ratio": 1.0,
+      "apparent_response_ratio": 1.0,
+      "sample_Aex": 0.02,
+      "sample_Aem": 0.002,
+      "reference_Aex": 0.02,
+      "reference_Aem": 0.002,
+      "response_normalization": "Per concentration/absorbed-photon response; not raw intensity across unequal concentrations."
+    },
+    "input_file": "cases/OP05.json",
+    "input_sha256": "29bcd4807c28e203111bc49109d65e7ffe17adfab81c3b1921a49d47e2884ebd",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "NM01",
+    "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+    "title": "Source NMR proton-count control",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-e44f21f22e2b47f2983e0a59a5274138",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-e44f21f22e2b47f2983e0a59a5274138.json",
+        "snapshot_sha256": "55507eb35af2683fe5072fc92d433c148a34eb80f996ab6cc977170ea343b789"
+      }
+    ],
+    "original_evidence": "1 H NMR (500 MHz, CDCl3): δ = 8.68 (d, 1H, J = 6.0 Hz), 8.00 (s, 2H), 7.93 (d, 1H, J = 8.0 Hz), 7.90 (d, 1H, J = 8.0 Hz), 7.74 (d, 1H, J = 6.0 Hz), 7.63 (t, 1H, J = 8.0 Hz), 7.49 (t, 1H, J = 8.0 Hz), 7.43 (d, 1H, J = 8.5 Hz), 7.33 (d, 1H, J = 8.0 Hz), 7.31 (t, 2H, J = 7.5q Hz), 0.95 (s, 6H), 0.75 (s, 6H). 13C NMR (125 MHz, CDCl3): δ = 161.7, 141.9, 136.0, 134.9, 132.2, 130.4, 129.7, 129.6, 127.9, 127.5, 127.5, 126.8, 126.7, 126.4, 126.1, 119.5, 83.2, 24.4, 24.1 (C-B not observed); 11B NMR (160 MHz, CDCl3): δ 31.1 ppm;",
+    "deliberate_modification": "No peak/count modification. Source nH assignments are represented in proton equivalents (scale=1).",
+    "expected_status": "VERIFIED",
+    "expected_reason": "Source peak-count consistency is testable without assigning molecular identity.",
+    "required_flags": [],
+    "limitations": "Reported nH values are author assignments, not re-integrated raw spectra or an independently calibrated qNMR measurement. Range shifts use midpoints; complex multiplicities map to unknown. 13C evidence is not tested.",
+    "assumptions": {
+      "original_reported_H_total": 24.0,
+      "impurity_reference": "https://doi.org/10.1021/jo971176v"
+    },
+    "input_file": "cases/NM01.json",
+    "input_sha256": "246e7673472a6b2a046e8ecb0471c2a056167af1bb4f22c87f0ea8d6ee9762df",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "NM02",
+    "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+    "title": "EtOAc falsely included in product integral",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "ord-34b2e90e8bac42c8b325e7edc6645b46",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-34b2e90e8bac42c8b325e7edc6645b46.json",
+        "snapshot_sha256": "5c5f9fca096790cf8b81d574943ac4ff83c2b7acc36e93f74b2b080d737b70d2"
+      }
+    ],
+    "original_evidence": "1 H NMR (500 MHz, CDCl3): δ = 1.33 (s, 12H), 2.99 (s, 6H), 6.70 (d, J = 8.0 Hz, 2H), 7.70 (d, J = 8.8 Hz, 2H) ppm. 13C{1 H} NMR (126 MHz, CDCl3): δ = 25.0, 40.3, 83.3, 111.4, 136.3, 152.7 ppm. The carbon adjacent to the boron atom was not detected. 11B{1 H} NMR (160 MHz, CDCl3): δ = 30.7 ppm.",
+    "deliberate_modification": "Append synthetic EtOAc signals: 2.05 s 3H, 4.12 q 2H, 1.26 t 3H; wrongly count them as product.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The deliberately added contaminant increases the complete product integral above its molecular proton budget.",
+    "required_flags": [
+      "SOLVENT_INTEGRAL_INFLATION"
+    ],
+    "limitations": "Reported nH values are author assignments, not re-integrated raw spectra or an independently calibrated qNMR measurement. Range shifts use midpoints; complex multiplicities map to unknown. 13C evidence is not tested.",
+    "assumptions": {
+      "original_reported_H_total": 22.0,
+      "impurity_reference": "https://doi.org/10.1021/jo971176v"
+    },
+    "input_file": "cases/NM02.json",
+    "input_sha256": "56eae0771b13735835dd54e36e155da988e49a233653c618771ef67befa70e6e",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "NM03",
+    "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+    "title": "Unknown integral calibration",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "ord-613fad87c4a647bd9c94667f6cfbf163",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-613fad87c4a647bd9c94667f6cfbf163.json",
+        "snapshot_sha256": "d116e3d93454c9ae791d1209029210325e3e300bdf3605de917b9d0746adc773"
+      }
+    ],
+    "original_evidence": "1H NMR (400 MHz, CDCl3):  7.81-7.80 (m, 2H), 7.48 (td, J= 7.6 Hz, J = 1.6 Hz, 1H), 7.38 (t, J = 7.6 Hz, 1H), 3.08 (s, 3H), 2.95 (s, 3H), 1.32 (s, 12H). 13C NMR (100 MHz, CDCl3):  171.6, 135.6, 135.2, 133.0, 129.6, 127.7, 83.9, 39.5, 35.2, 24.8. 11B NMR (128 MHz, CDCl3):  30.4",
+    "deliberate_modification": "Remove the reported-proton-equivalent scale; retain source peak positions and numerical integrals.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Without a supplied integral scale the proton total is not calibrated.",
+    "required_flags": [
+      "UNCALIBRATED_INTEGRALS"
+    ],
+    "limitations": "Reported nH values are author assignments, not re-integrated raw spectra or an independently calibrated qNMR measurement. Range shifts use midpoints; complex multiplicities map to unknown. 13C evidence is not tested.",
+    "assumptions": {
+      "original_reported_H_total": 22.0,
+      "impurity_reference": "https://doi.org/10.1021/jo971176v"
+    },
+    "input_file": "cases/NM03.json",
+    "input_sha256": "6bfe3d9fb92a3f50936abcf3c3f11837970ea03d26543b125492c03e545aa61e",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "NM04",
+    "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+    "title": "DCM falsely included in product integral",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "ord-6f75e7603997451faa50a4b6f240d4f1",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-6f75e7603997451faa50a4b6f240d4f1.json",
+        "snapshot_sha256": "138a5b803f2d44d4e9cf598aaf747c1ce41c92bf54b7a7726f89074e78be40b0"
+      }
+    ],
+    "original_evidence": "1H NMR (400 MHz, CDCl3) δ 7.86 (d, J = 1.2 Hz, 1H), 7.56 (s, 1H), 7.46 (s, 1H), 1.34 (s, 12H); 13C NMR (100 MHz, CDCl3) δ 149.3, 136.1, 127.1, 125.5, 122.6, 120.5 (q, J = 257.9 Hz), 84.7, 25.0; 19F NMR (376.5 MHz, CDCl3) δ -57.8; 11B NMR (128.4 MHz, CDCl3) δ 30.2 (bs);",
+    "deliberate_modification": "Append synthetic DCM signal: 5.30 s 2H; wrongly count it as product.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The deliberately added contaminant increases the complete product integral above its molecular proton budget.",
+    "required_flags": [
+      "SOLVENT_INTEGRAL_INFLATION"
+    ],
+    "limitations": "Reported nH values are author assignments, not re-integrated raw spectra or an independently calibrated qNMR measurement. Range shifts use midpoints; complex multiplicities map to unknown. 13C evidence is not tested.",
+    "assumptions": {
+      "original_reported_H_total": 15.0,
+      "impurity_reference": "https://doi.org/10.1021/jo971176v"
+    },
+    "input_file": "cases/NM04.json",
+    "input_sha256": "f6a540c3e52075a9c73799e72bb3a8199be8ebeea4dcc055da84afefb91ce9a1",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "NM05",
+    "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+    "title": "Experimental assignments without measured integrals",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "nmrshiftdb21807",
+        "family": "nmr",
+        "url": "https://www.nmrshiftdb.org/molecule/21807",
+        "license": "NMRShiftDB2 database license; see included license",
+        "snapshot": "sources/nmrshiftdb21807.json",
+        "snapshot_sha256": "dd19d6a4c62b83964b95892f3d12a0bc2ae9e7de1cf010c107388e23f4f03669"
+      }
+    ],
+    "original_evidence": "Experimental 1H/13C atom-assigned shifts in CD3OD; measured_integral is null for each assignment.",
+    "deliberate_modification": "None. Preserve assigned shifts in the source snapshot; submit an explicitly incomplete integration list because paired arrays cannot encode null integrals.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Atom assignments are not measured integrated intensities. A complete calibrated proton sum is unavailable.",
+    "required_flags": [
+      "INCOMPLETE_INTEGRATION"
+    ],
+    "limitations": "This tests missing-data handling, not CD3OD exchange or chemical-shift assignment accuracy.",
+    "assumptions": {},
+    "input_file": "cases/NM05.json",
+    "input_sha256": "830470c6abf8ccbbfae33ca0548a245a81f8cd931bb52405ccd8149000c279c0",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "ST01",
+    "category": "STEREO_TAUTOMER_TRAP",
+    "title": "Matching structure without analytical evidence",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "chembl_stereo_001_A",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/171972.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_001_A.json",
+        "snapshot_sha256": "260dce93c1b33a1f0d40ce04ca09d11e541d070024806442595d313a3030805a"
+      }
+    ],
+    "original_evidence": "ChEMBL CHEMBL1744037; Ki=38.0 nM; assay CHEMBL670667; SMILES CCCN(CCCCN1C(=O)CC(C)(C)CC1=O)[C@@H]1CCc2ccc3[nH]c(C(N)=O)cc3c2C1.",
+    "deliberate_modification": "None. Retain the source stereochemical structure.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "Matching structural metadata alone cannot verify an experimental sample or biological activity.",
+    "required_flags": [],
+    "limitations": "This tests structure identity assertions. Activity differences do not establish a statistically significant activity flip. Aggregation and experimental tautomer populations are not evaluated.",
+    "assumptions": {},
+    "input_file": "cases/ST01.json",
+    "input_sha256": "ba9a39e55cc0eb925bdb0e735c83e087089fca5e02771dd23b0326d6807ecdd2",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "ST02",
+    "category": "STEREO_TAUTOMER_TRAP",
+    "title": "Swap reference to the paired stereoisomer",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "chembl_stereo_002_A",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/174168.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_002_A.json",
+        "snapshot_sha256": "59fbac9b76638f23dd1a59f8b118c31da9861580fcb9841fd392da4534bae9ee"
+      },
+      {
+        "record_id": "chembl_stereo_002_B",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/179274.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_002_B.json",
+        "snapshot_sha256": "03238f35f699fc0ffe5062349def9882669282f56c04652d06f9dc0e44236745"
+      }
+    ],
+    "original_evidence": "ChEMBL CHEMBL71920; Ki=35.0 nM; assay CHEMBL670667; SMILES CCCN(CCC)[C@@H]1CCc2ccc3[nH]c(C#N)cc3c2C1.",
+    "deliberate_modification": "Replace reference_smiles with the real paired stereoisomer from the same assay.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The proposed and asserted reference structures have different stereochemistry.",
+    "required_flags": [
+      "STEREO_MISMATCH"
+    ],
+    "limitations": "This tests structure identity assertions. Activity differences do not establish a statistically significant activity flip. Aggregation and experimental tautomer populations are not evaluated.",
+    "assumptions": {},
+    "input_file": "cases/ST02.json",
+    "input_sha256": "0397bd468971aaff9ad7a8b3cd248febb7ac853f08289a153be5f965d383802c",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "ST03",
+    "category": "STEREO_TAUTOMER_TRAP",
+    "title": "Remove a required stereochemical assignment",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "chembl_stereo_003_A",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/187082.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_003_A.json",
+        "snapshot_sha256": "7700bdfbf51ef723416d47c7ba9c67e96ac6d1b4a44bf4b0dca4dd18d9b48e6d"
+      }
+    ],
+    "original_evidence": "ChEMBL CHEMBL285873; Ki=75.0 nM; assay CHEMBL672485; SMILES C=CCN1CC[C@H]2c3cccc(O)c3CC[C@H]21.",
+    "deliberate_modification": "Strip the stereochemical annotations; retain the source expectation for assigned centers.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "The modified structure omits stereochemistry required by the source identity assertion.",
+    "required_flags": [
+      "MISSING_STEREOCHEMISTRY"
+    ],
+    "limitations": "This tests structure identity assertions. Activity differences do not establish a statistically significant activity flip. Aggregation and experimental tautomer populations are not evaluated.",
+    "assumptions": {},
+    "input_file": "cases/ST03.json",
+    "input_sha256": "33253f66ea133868928985dea2343b108c8a20eb2e34e5e0162b5a0f5328b90b",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "ST04",
+    "category": "STEREO_TAUTOMER_TRAP",
+    "title": "Swap the full InChIKey stereo layer",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "chembl_stereo_004_A",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/188327.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_004_A.json",
+        "snapshot_sha256": "66005fd3f9b4900acb2e234a934fa972b6a87a6596896e0a73ce9b1b4e4def9b"
+      },
+      {
+        "record_id": "chembl_stereo_004_B",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/207354.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_004_B.json",
+        "snapshot_sha256": "86e7c7885d9ad0af83ce7e6bab1b5503984ab9a0cc242fa36eafa2bfe9e3f3be"
+      }
+    ],
+    "original_evidence": "ChEMBL CHEMBL283528; Ki=12.0 nM; assay CHEMBL672310; SMILES CCCCN1CCC[C@H]1CNC(=O)c1cc(Cl)cc2c1OCCN2C.",
+    "deliberate_modification": "Attach the paired stereoisomer's derived full InChIKey to the source SMILES.",
+    "expected_status": "ARTIFACT_DETECTED",
+    "expected_reason": "Matching connectivity blocks do not make different full stereochemical identifiers interchangeable.",
+    "required_flags": [
+      "INCHI_LAYER_MISMATCH"
+    ],
+    "limitations": "This tests structure identity assertions. Activity differences do not establish a statistically significant activity flip. Aggregation and experimental tautomer populations are not evaluated.",
+    "assumptions": {},
+    "input_file": "cases/ST04.json",
+    "input_sha256": "b91c2294eabcf08a8c204a63eb6a650011223a6b3bc6851bd268dd8d6ef84515",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "ST05",
+    "category": "STEREO_TAUTOMER_TRAP",
+    "title": "Generated tautomer retains parent connectivity",
+    "evidence_kind": "source_plus_perturbation",
+    "sources": [
+      {
+        "record_id": "chembl_stereo_006_A",
+        "family": "structure",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/activity/198746.json",
+        "license": "CC-BY-SA-3.0",
+        "snapshot": "sources/chembl_stereo_006_A.json",
+        "snapshot_sha256": "1d5dad8656a45fc56afd6403e61ae57f87e03767596a4553b48a0b95294f5741"
+      }
+    ],
+    "original_evidence": "ChEMBL CHEMBL281363; Ki=800.0 nM; assay CHEMBL672310; SMILES CN1CCOc2c(C(=O)NC[C@@H]3CCCN3CCc3ccccc3)cc(Cl)cc21.",
+    "deliberate_modification": "Replace reference with a deterministic RDKit-enumerated tautomer, not an experimentally observed tautomer.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "A tautomer-equivalent representation is not sufficient evidence of an identity error; no spectrum supports verification.",
+    "required_flags": [
+      "TAUTOMER_EQUIVALENT"
+    ],
+    "limitations": "This tests structure identity assertions. Activity differences do not establish a statistically significant activity flip. Aggregation and experimental tautomer populations are not evaluated.",
+    "assumptions": {},
+    "input_file": "cases/ST05.json",
+    "input_sha256": "286ac5221ee7c55755ca449ccbc290bbf350f4b103af27ea61bdb0b3c1a350a1",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "TR01",
+    "category": "VERIFIED_TRUE_AND_NEGATIVE",
+    "title": "Source-characterized product: NMR consistency",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-f574833fad824541942b5e46d0c56513",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-f574833fad824541942b5e46d0c56513.json",
+        "snapshot_sha256": "b223585060286d7b4a97b359b7e441b4686f406f8015f8ae3c095488aec48a64"
+      }
+    ],
+    "original_evidence": "1H NMR (400 MHz, CDCl3) 1.37 (s, 12H), 2.45 (s, 3H), 7.08-7.11 (m, 1H), 7.15 (d, J = 7.8 Hz, 1H), 7.35-7.39 (m, 1H), 7.68 (d, J = 7.3 Hz, 1H); 13C NMR (100 MHz, CDCl3) 15.9, 25.0, 84.2, 123.8, 124.0, 131.5, 136.1, 145.4 Recorded yield: [70.0]%.",
+    "deliberate_modification": "None. Extract source-reported NMR peak positions and nH assignments.",
+    "expected_status": "VERIFIED",
+    "expected_reason": "Complete source-reported proton equivalents agree with the molecular proton budget. VERIFIED is limited to the supplied consistency checks.",
+    "required_flags": [],
+    "limitations": "Yield is provenance, not independently verified by this engine. NMR uses author-reported nH assignments. No qualified negative control is available in this source subset.",
+    "assumptions": {},
+    "input_file": "cases/TR01.json",
+    "input_sha256": "1eb268e09eb15d347b07704a9767ef10de1dfebf292d7a305b8c5b3563ff8536",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "TR02",
+    "category": "VERIFIED_TRUE_AND_NEGATIVE",
+    "title": "Source-characterized product: NMR consistency",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-c18ad94aa18f45c0aaae4d5010cc96ea",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-c18ad94aa18f45c0aaae4d5010cc96ea.json",
+        "snapshot_sha256": "bc98d4adf44b23b4a6ce509ff6c7adea448031f9b7a6df17a94fbb6370ed34f6"
+      }
+    ],
+    "original_evidence": "1H NMR (500 MHz, CDCl3) δ 9.78 (s, 1H, amide-NH), 7.80 (d, J = 7.6 Hz, 1H, Ha), 7.60 (d, J = 7.1 Hz, 1H, Hd), 7.40 (t, J = 7.3 Hz, 1H, Hc), 7.14 (t, J = 7.6 Hz, 1H, Hb), 2.46 (d, J = 4.5 Hz, 3H, Me), 1.35 (s, 12H, pin-Me). 13C NMR (126 MHz, CDCl3) δ 172.41, 133.29, 132.76, 130.36, 127.52, 123.61, 81.19, 27.26, 25.33. Recorded yield: [63.0]%.",
+    "deliberate_modification": "None. Extract source-reported NMR peak positions and nH assignments.",
+    "expected_status": "VERIFIED",
+    "expected_reason": "Complete source-reported proton equivalents agree with the molecular proton budget. VERIFIED is limited to the supplied consistency checks.",
+    "required_flags": [],
+    "limitations": "Yield is provenance, not independently verified by this engine. NMR uses author-reported nH assignments. No qualified negative control is available in this source subset.",
+    "assumptions": {},
+    "input_file": "cases/TR02.json",
+    "input_sha256": "5a386241ebcabbc48ef5f8ae06bc1f859cc5e74a5a629e6b913a776bb6b50fb7",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "TR03",
+    "category": "VERIFIED_TRUE_AND_NEGATIVE",
+    "title": "Real HRMS value with unspecified adduct",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-7a17fdd932c54be285708fd64e8dcd7b",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-7a17fdd932c54be285708fd64e8dcd7b.json",
+        "snapshot_sha256": "2eb94837f7a5377fc2c7ef3c376a710d1db8da022a293018d425d7f86df11c61"
+      }
+    ],
+    "original_evidence": "1H NMR (500 MHz,CDCl3) δ 9.12 (s, 1H, 2-H), 8.47 (d, J= 8.8, 1H, 5-H), 8.42 (s, br, 1H, 8-H), 7.80 (dd, J= 1.6, 8.8, 1H, 6-H), 1.43 (s, 12H, pin-CH3); 13C NMR (176 MHz, CDCl3) δ 156.2 (C-2), 149.5 (C-2ʹ), 149.0 (Ar-C), 132.6 (q, 2JC-F= 32.9, C-7), 127.9 (Ar-C), 127.5 (C-8), 126.4 (C-5), 123.7 (q, 1JC-F= 272.8, 7-CF3), 123.1 (C-6), 84.9 (pin-C(CH3)2), 24.9 (pin-CH3); 11B NMR (128 MHz, CDCl3) δ 30.78; 19F NMR (376 MHz, CDCl3) δ -62.88; Recorded yield: [81.0]%. HRMS found 357.1027 m/z; adduct absent from retained source excerpt.",
+    "deliberate_modification": "None to the measured m/z. Leave absent adduct and isotope envelope missing. Positive polarity is an explicit adapter assumption.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "The source excerpt does not specify the ion/adduct and has no isotope envelope. The observed value cannot be rejected by silently treating it as [M+H]+.",
+    "required_flags": [],
+    "limitations": "Yield is provenance, not independently verified by this engine. NMR uses author-reported nH assignments. No qualified negative control is available in this source subset.",
+    "assumptions": {},
+    "input_file": "cases/TR03.json",
+    "input_sha256": "2ab2cd9091ebf73458d1b4aa67706b549ed1bc888ae56a25bf36c9589a940700",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "TR04",
+    "category": "VERIFIED_TRUE_AND_NEGATIVE",
+    "title": "Source reports zero yield; controls unresolved",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-8dc05311ad5340e693477414d5741a5e",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-8dc05311ad5340e693477414d5741a5e.json",
+        "snapshot_sha256": "13570f3e0fafa2a7d186f0b1117ebb040924fbfc653d099c0186827c6731b422"
+      }
+    ],
+    "original_evidence": "8-(1-iododibenzo[b,d]thiophen-4-yl)-2-morpholino-4H-chromen-4-one (20 mg, 0.04 mmol), 1-ethylpiperazine (9.42 µl, 0.07 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (2.145 mg, 3.71 µmol), TRIS(DIBENZYLIDENEACETONE)DIPALLADIUM (0.849 mg, 0.93 µmol) and 2,3,4,6,7,8,9,10-octahydropyrimido[1,2-a]azepine (16.62 µl, 0.11 mmol) were suspended in dioxane (250 µl) and sealed into a microwave tube. The reaction was degased, purged with argon and heated to 130 °C over a period of 45 minutes in the microwave reactor.  No reaction.   Recorded yield: 0%.",
+    "deliberate_modification": "None. controls_passed=False conservatively represents not established, not a documented failed control. Detection-limit text explicitly states missingness.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "A reported failure and zero yield are real observations, but absent detection limits and control validation do not support a qualified NEGATIVE_RESULT.",
+    "required_flags": [
+      "NEGATIVE_CONTROLS_UNRESOLVED"
+    ],
+    "limitations": "Yield is provenance, not independently verified by this engine. NMR uses author-reported nH assignments. No qualified negative control is available in this source subset.",
+    "assumptions": {},
+    "input_file": "cases/TR04.json",
+    "input_sha256": "45b2cec23160cd09387945aa7d11b18a21814c35d7a2c7e8c5bfc855a5ddd47a",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  },
+  {
+    "case_id": "TR05",
+    "category": "VERIFIED_TRUE_AND_NEGATIVE",
+    "title": "Source reports zero yield; controls unresolved",
+    "evidence_kind": "source_only",
+    "sources": [
+      {
+        "record_id": "ord-d5a89652aac64eea875d9bd85a60b6b2",
+        "family": "ord",
+        "url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+        "license": "CC-BY-SA-4.0",
+        "snapshot": "sources/ord-d5a89652aac64eea875d9bd85a60b6b2.json",
+        "snapshot_sha256": "5ed05575aff913bf020060fe80c8b5429870f825338251c92759a6956f90e59b"
+      }
+    ],
+    "original_evidence": "N-(4-bromo-2-methoxyphenyl)-5-chloro-4-(imidazo[1,2-a]pyridin-3-yl)pyrimidin-2-amine (107 mg, 0.25 mmol), 2,6-dimethylpiperazine (28.4 mg, 0.25 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (5.75 mg, 9.94 µmol), diacetoxypalladium (1.116 mg, 4.97 µmol) and cesium carbonate (162 mg, 0.50 mmol) were suspended in 1,4-dioxane (2 mL) . The reaction was purged with nitrogen and heated to 140 °C for 6 hours in an oil bath.  Control LC/MS : no traces of expected product.   Recorded yield: 0%.",
+    "deliberate_modification": "None. controls_passed=False conservatively represents not established, not a documented failed control. Detection-limit text explicitly states missingness.",
+    "expected_status": "INCONCLUSIVE",
+    "expected_reason": "A reported failure and zero yield are real observations, but absent detection limits and control validation do not support a qualified NEGATIVE_RESULT.",
+    "required_flags": [
+      "NEGATIVE_CONTROLS_UNRESOLVED"
+    ],
+    "limitations": "Yield is provenance, not independently verified by this engine. NMR uses author-reported nH assignments. No qualified negative control is available in this source subset.",
+    "assumptions": {},
+    "input_file": "cases/TR05.json",
+    "input_sha256": "cec1e6cba83f4e56e54a6882e3bbacd815961e184b7da858f633f4ef732c7316",
+    "human_review_status": "Pending",
+    "human_review_notes": ""
+  }
+]

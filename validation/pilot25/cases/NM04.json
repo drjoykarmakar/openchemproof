@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "record_id": "NM04",
+  "compound": {
+    "compound_id": "NM04",
+    "proposed_smiles": "FC(F)(F)OC1=CC(Br)=CC(=C1)B2OC(C)(C)C(O2)(C)C"
+  },
+  "assay": {
+    "assay_type": "synthesis_qc",
+    "solvent": "CDCl3"
+  },
+  "evidence": {
+    "nmr": {
+      "solvent": "CDCl3",
+      "proton_shifts_ppm": [
+        7.86,
+        7.56,
+        7.46,
+        1.34,
+        5.3
+      ],
+      "proton_integrals": [
+        1.0,
+        1.0,
+        1.0,
+        12.0,
+        2.0
+      ],
+      "multiplicities": [
+        "d",
+        "s",
+        "s",
+        "s",
+        "s"
+      ],
+      "integral_scale": 1.0,
+      "integration_complete": true
+    }
+  },
+  "source_references": [
+    "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet"
+  ]
+}

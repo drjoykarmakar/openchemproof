@@ -1,0 +1,43 @@
+{
+  "record_id": "MS01",
+  "status": "INCONCLUSIVE",
+  "confidence_score": 0.0,
+  "flags": [
+    {
+      "code": "MISSING_ISOTOPE_EVIDENCE",
+      "severity": "WARNING",
+      "modality": "lcms",
+      "message": "No MS1 M/M+1/M+2 envelope supplied; MS2 fragment peaks cannot substitute",
+      "quantitative_evidence": {}
+    }
+  ],
+  "corrected_metrics": {
+    "structure.canonical_smiles": "Cc1nnc(-c2ccccc2)c(=O)[nH]1",
+    "structure.inchikey": "OUSYWCQYMPDAEO-UHFFFAOYSA-N",
+    "structure.inchi_connectivity_layer": "OUSYWCQYMPDAEO",
+    "structure.molecular_formula": "C10H9N3O",
+    "structure.parent_monoisotopic_mass": 187.074561908,
+    "structure.as_drawn_monoisotopic_mass": 187.074561908,
+    "structure.tautomer_count": 9.0,
+    "structure.assigned_stereocenters": 0.0,
+    "structure.clogp": 1.1403199999999998,
+    "structure.aromatic_rings": 2.0,
+    "lcms.theoretical_mz": 188.08183790799998,
+    "lcms.ppm_error": 0.8618163338557088,
+    "lcms.matched_adduct": "[M+H]+",
+    "lcms.selected_adduct": "[M+H]+"
+  },
+  "deterministic_engine_version": "0.1.0",
+  "checks_performed": [
+    "structure.smiles_parse",
+    "structure.salt_reconciliation",
+    "structure.identity_assertions",
+    "structure.stereochemistry",
+    "structure.tautomer_family",
+    "structure.pains_brenk",
+    "structure.aggregation_heuristic",
+    "lcms.adduct_mass_matching"
+  ],
+  "confidence_basis": "Deterministic rule coverage; not a calibrated probability of identity",
+  "audit_sha256": "2004884edb585232a104fd6ac15f8dda5f07d4d423f389d81c448cfe5ffee648"
+}

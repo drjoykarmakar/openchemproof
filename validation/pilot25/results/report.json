@@ -1,0 +1,921 @@
+{
+  "run_utc": "2026-11-16T10:40:14.036825+00:00",
+  "python": "3.12.14",
+  "expectations_lock_sha256": "f4c6150b00cd47b631f515e50439c4ccb9ac0fcea45587ef5804e8fa1c70ad1a",
+  "lock_created_utc": "2026-11-16T10:39:25.004629+00:00",
+  "engine_file_sha256": {
+    "src/openchemproof/__init__.py": "9ae9bdffbe022c3f9982af9b711baa2746910078506144074e8c6d46e5b4067d",
+    "src/openchemproof/cli.py": "8493fdc7fbdc5e821bea5eb3ae0a53f4a0569974936013013ebb4cee12c2993b",
+    "src/openchemproof/mcp_server/__init__.py": "2587abea275272d8e747bc07f4ae087463df63f76d8542ad58e4587efff51edb",
+    "src/openchemproof/mcp_server/server.py": "59f292b5e9326f9d9d3ce0e792648b298cce509b1f04b42b82a1cf093a355a76",
+    "src/openchemproof/schema/__init__.py": "2587abea275272d8e747bc07f4ae087463df63f76d8542ad58e4587efff51edb",
+    "src/openchemproof/schema/export.py": "ca7bd02e6a83353746a968b871ab6f5f00bf867edec7f33dc07d5c69bac75af3",
+    "src/openchemproof/schema/models.py": "c12649d8a53f6d12a1de4c1972d7128aed7a25a1f8c67b14635f34745963686d",
+    "src/openchemproof/verifiers/__init__.py": "2587abea275272d8e747bc07f4ae087463df63f76d8542ad58e4587efff51edb",
+    "src/openchemproof/verifiers/common.py": "f0c94672afa774e2741e91c742987239e1aa746b960bf22033e840c886ade5af",
+    "src/openchemproof/verifiers/ms_audit.py": "f5d0d516a463d0a8743d9c19e28ba9058d6565ad203ab4eb41153755d4b1276b",
+    "src/openchemproof/verifiers/nmr_audit.py": "d3557ee6a48f05042da41ec0d632c1bea8467db466a80bdd7eafb32d3e981275",
+    "src/openchemproof/verifiers/optical_audit.py": "1e1e0afaa53524fdce2d7c7ed86b036fded02ba6b0358b2e64ebd1bb72e2b646",
+    "src/openchemproof/verifiers/pipeline.py": "559fb9921b2961555cf748182f8673b33abe5f9ad119b3955fc91c87bcc640a8",
+    "src/openchemproof/verifiers/structure_audit.py": "18135858a5fa3929e1e1bf80de0e7ab8337491657917f7227e092b2566f5283c",
+    "pyproject.toml": "02e70ddcdd9661eafd924e0b325e28a94efbb2419ba043589d4ea9e2921dc8a9",
+    "uv.lock": "d339d364061ba316bc5794bed0ca3dda8311aa6fc6c21a81064bc660350b889c"
+  },
+  "engine_fingerprint_sha256": "8096cb6f998b23524bf32b3cdb907f7128ab1e5b29dc61e80898aec812ead835",
+  "total": 25,
+  "status_agreement_count": 24,
+  "status_and_diagnostic_agreement_count": 24,
+  "execution_error_count": 0,
+  "expected_counts": {
+    "INCONCLUSIVE": 11,
+    "ARTIFACT_DETECTED": 9,
+    "VERIFIED": 5
+  },
+  "actual_counts": {
+    "INCONCLUSIVE": 10,
+    "ARTIFACT_DETECTED": 10,
+    "VERIFIED": 5
+  },
+  "evidence_kind_counts": {
+    "source_only": 10,
+    "source_based_simulation": 8,
+    "source_plus_perturbation": 7
+  },
+  "by_category": {
+    "LCMS_ADDUCT_DIMER_TRAP": {
+      "total": 5,
+      "status_agreement": 5,
+      "diagnostic_agreement": 5
+    },
+    "OPTICAL_IFE_ARTIFACT": {
+      "total": 5,
+      "status_agreement": 5,
+      "diagnostic_agreement": 5
+    },
+    "NMR_SOLVENT_INTEGRAL_TRAP": {
+      "total": 5,
+      "status_agreement": 5,
+      "diagnostic_agreement": 5
+    },
+    "STEREO_TAUTOMER_TRAP": {
+      "total": 5,
+      "status_agreement": 5,
+      "diagnostic_agreement": 5
+    },
+    "VERIFIED_TRUE_AND_NEGATIVE": {
+      "total": 5,
+      "status_agreement": 4,
+      "diagnostic_agreement": 4
+    }
+  },
+  "confusion_matrix_expected_rows_actual_columns": {
+    "VERIFIED": {
+      "VERIFIED": 5,
+      "ARTIFACT_DETECTED": 0,
+      "INCONCLUSIVE": 0,
+      "NEGATIVE_RESULT": 0,
+      "EXECUTION_ERROR": 0
+    },
+    "ARTIFACT_DETECTED": {
+      "VERIFIED": 0,
+      "ARTIFACT_DETECTED": 9,
+      "INCONCLUSIVE": 0,
+      "NEGATIVE_RESULT": 0,
+      "EXECUTION_ERROR": 0
+    },
+    "INCONCLUSIVE": {
+      "VERIFIED": 0,
+      "ARTIFACT_DETECTED": 1,
+      "INCONCLUSIVE": 10,
+      "NEGATIVE_RESULT": 0,
+      "EXECUTION_ERROR": 0
+    },
+    "NEGATIVE_RESULT": {
+      "VERIFIED": 0,
+      "ARTIFACT_DETECTED": 0,
+      "INCONCLUSIVE": 0,
+      "NEGATIVE_RESULT": 0,
+      "EXECUTION_ERROR": 0
+    }
+  },
+  "independent_blinded_validation": false,
+  "human_review_complete": false,
+  "results": [
+    {
+      "case_id": "MS01",
+      "category": "LCMS_ADDUCT_DIMER_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "MISSING_ISOTOPE_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "2004884edb585232a104fd6ac15f8dda5f07d4d423f389d81c448cfe5ffee648",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "Cc1nnc(-c2ccccc2)c(=O)[nH]1",
+        "structure.inchikey": "OUSYWCQYMPDAEO-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "OUSYWCQYMPDAEO",
+        "structure.molecular_formula": "C10H9N3O",
+        "structure.parent_monoisotopic_mass": 187.074561908,
+        "structure.as_drawn_monoisotopic_mass": 187.074561908,
+        "structure.tautomer_count": 9.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 1.1403199999999998,
+        "structure.aromatic_rings": 2.0,
+        "lcms.theoretical_mz": 188.08183790799998,
+        "lcms.ppm_error": 0.8618163338557088,
+        "lcms.matched_adduct": "[M+H]+",
+        "lcms.selected_adduct": "[M+H]+"
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "MS02",
+      "category": "LCMS_ADDUCT_DIMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "HRMS_MASS_MISMATCH",
+        "ADDUCT_MISASSIGNMENT",
+        "MISSING_ISOTOPE_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "083f08371bd5b6d22ce827f2c614f5321001c601d7fca36f2782152ce7518b17",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "N#Cc1cc(Br)c(O)c(Br)c1",
+        "structure.inchikey": "UPMXNNIRAGDFEH-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "UPMXNNIRAGDFEH",
+        "structure.molecular_formula": "C7H3Br2NO",
+        "structure.parent_monoisotopic_mass": 274.85813791600003,
+        "structure.as_drawn_monoisotopic_mass": 274.85813791600003,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 2.78888,
+        "structure.aromatic_rings": 1.0,
+        "lcms.theoretical_mz": 275.865413916,
+        "lcms.ppm_error": 79683.57355117168,
+        "lcms.matched_adduct": "[M+Na]+",
+        "lcms.selected_adduct": "[M+H]+"
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "MS03",
+      "category": "LCMS_ADDUCT_DIMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "HRMS_MASS_MISMATCH",
+        "ADDUCT_MISASSIGNMENT",
+        "MISSING_ISOTOPE_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "427b411d2b82f23c0220a0e554b6aa60497a67be26360b4fffc72006f631cc83",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CC(C)c1ccc(N)cc1",
+        "structure.inchikey": "LRTFPLFDLJYEKT-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "LRTFPLFDLJYEKT",
+        "structure.molecular_formula": "C9H13N",
+        "structure.parent_monoisotopic_mass": 135.104799416,
+        "structure.as_drawn_monoisotopic_mass": 135.104799416,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 2.3922000000000008,
+        "structure.aromatic_rings": 1.0,
+        "lcms.theoretical_mz": 136.11207541599998,
+        "lcms.ppm_error": 992599.6573270854,
+        "lcms.matched_adduct": "[2M+H]+",
+        "lcms.selected_adduct": "[M+H]+"
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "MS04",
+      "category": "LCMS_ADDUCT_DIMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "ISOTOPE_PATTERN_MISMATCH"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "7ba9533ac5f18f67678fbd8e7937250081d6b122b5bce6d26acdfeb71a256280",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCN(CC)C(=O)SCc1ccccc1Cl",
+        "structure.inchikey": "LLLFASISUZUJEQ-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "LLLFASISUZUJEQ",
+        "structure.molecular_formula": "C12H16ClNOS",
+        "structure.parent_monoisotopic_mass": 257.064112812,
+        "structure.as_drawn_monoisotopic_mass": 257.064112812,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 4.035000000000004,
+        "structure.aromatic_rings": 1.0,
+        "lcms.theoretical_mz": 258.071388812,
+        "lcms.ppm_error": 0.0,
+        "lcms.matched_adduct": "[M+H]+",
+        "lcms.selected_adduct": "[M+H]+",
+        "lcms.isotope_M+1_expected": 0.1436737559722313,
+        "lcms.isotope_M+1_observed": 0.132,
+        "lcms.isotope_M+2_expected": 0.3763354726546758,
+        "lcms.isotope_M+2_observed": 0.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "MS05",
+      "category": "LCMS_ADDUCT_DIMER_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "ISOBARIC_AMBIGUITY",
+        "MISSING_ISOTOPE_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "08f763d72e0140c1d0d4c553b7d8bcc67e91c37912e0a39bc5b82d70ce550280",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1",
+        "structure.inchikey": "IDOWTHOLJBTAFI-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "IDOWTHOLJBTAFI",
+        "structure.molecular_formula": "C16H16N2O4",
+        "structure.parent_monoisotopic_mass": 300.111006992,
+        "structure.as_drawn_monoisotopic_mass": 300.111006992,
+        "structure.tautomer_count": 4.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 3.784220000000002,
+        "structure.aromatic_rings": 2.0,
+        "lcms.theoretical_mz": 301.118282992,
+        "lcms.ppm_error": 0.0,
+        "lcms.matched_adduct": "[M+H]+",
+        "lcms.selected_adduct": "[M+H]+"
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "OP01",
+      "category": "OPTICAL_IFE_ARTIFACT",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "STRUCTURAL_ALERT",
+        "AGGREGATION_RISK",
+        "NO_SPECTRAL_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "67bc9bace5dd6f238c2341d83d2e1fb0c7695f93f22593e715e556c7745a1895",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCCCCCN1C(=O)c2cccc3c(-c4sc(-c5ccc6c7c(cccc57)C(=O)N(CCCCCC)C6=O)c5c4OCCO5)ccc(c23)C1=O",
+        "structure.inchikey": "LNZXPFVDXCWFMD-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "LNZXPFVDXCWFMD",
+        "structure.molecular_formula": "C42H40N2O6S",
+        "structure.parent_monoisotopic_mass": 700.2607080000001,
+        "structure.as_drawn_monoisotopic_mass": 700.2607080000001,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 9.512299999999998,
+        "structure.aromatic_rings": 5.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "OP02",
+      "category": "OPTICAL_IFE_ARTIFACT",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "STRUCTURAL_ALERT",
+        "AGGREGATION_RISK",
+        "IFE_RESPONSE_ARTIFACT",
+        "HIGH_ABSORBANCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "ea0ccd40b5ff7db0006fa0d3e0b6ba5ccfcc21ca63161a79249ed33d3b39667f",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CN(C)c1ccc(/C=C/c2nc3c4ccccc4c4ccccc4c3[nH]2)cc1",
+        "structure.inchikey": "BMUTVNQMFDYZNG-DTQAZKPQSA-N",
+        "structure.inchi_connectivity_layer": "BMUTVNQMFDYZNG",
+        "structure.molecular_formula": "C25H21N3",
+        "structure.parent_monoisotopic_mass": 363.17354767200004,
+        "structure.as_drawn_monoisotopic_mass": 363.17354767200004,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 6.105700000000005,
+        "structure.aromatic_rings": 5.0,
+        "optical.stokes_shift_nm": 74.0,
+        "optical.stokes_shift_cm": 4032.0163896017584,
+        "optical.ife_correction_factor": 2.1379620895022318,
+        "optical.corrected_fold_change": 0.9999999999999998
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "OP03",
+      "category": "OPTICAL_IFE_ARTIFACT",
+      "expected_status": "VERIFIED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "VERIFIED",
+      "flags": [
+        "HIGH_ABSORBANCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "36efc860c2ebc0c414c666c90d8b71b721281e26a9b35bcf23e9f81fa6758ee8",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "Fc1ccc(Nc2ccc3ccccc3n2)cc1",
+        "structure.inchikey": "CJCUXXISDZFQHB-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "CJCUXXISDZFQHB",
+        "structure.molecular_formula": "C15H11FN2",
+        "structure.parent_monoisotopic_mass": 238.090626572,
+        "structure.as_drawn_monoisotopic_mass": 238.090626572,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 4.117500000000002,
+        "structure.aromatic_rings": 3.0,
+        "optical.stokes_shift_nm": 57.139999999999986,
+        "optical.stokes_shift_cm": 4052.806494023065,
+        "optical.ife_correction_factor": 2.1379620895022318,
+        "optical.corrected_fold_change": 1.0000000000000002
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "OP04",
+      "category": "OPTICAL_IFE_ARTIFACT",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "IFE_OUTSIDE_VALIDITY",
+        "HIGH_ABSORBANCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "4017336d1201c36e76ac0c17979b55600118a16b2998a648e235e565e0f30dc7",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "COc1cc(/C=C/C(=O)O)ccc1O",
+        "structure.inchikey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+        "structure.inchi_connectivity_layer": "KSEBMYQBYZTDHS",
+        "structure.molecular_formula": "C10H10O4",
+        "structure.parent_monoisotopic_mass": 194.0579088,
+        "structure.as_drawn_monoisotopic_mass": 194.0579088,
+        "structure.tautomer_count": 5.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 1.4986,
+        "structure.aromatic_rings": 1.0,
+        "optical.stokes_shift_nm": 126.0,
+        "optical.stokes_shift_cm": 10630.130514380206
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "OP05",
+      "category": "OPTICAL_IFE_ARTIFACT",
+      "expected_status": "VERIFIED",
+      "evidence_kind": "source_based_simulation",
+      "actual_status": "VERIFIED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "AGGREGATION_RISK"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "879321041e68e77c50097210745ba40d78606d359f196126ee1cb5dc77a348d7",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCCCCCC1(CCCCCC)c2ccccc2-c2ccc(-c3ccc(-c4cc(-c5ccccn5)nc(-c5ccccn5)c4)cc3)cc21",
+        "structure.inchikey": "ZTILGISGTMGYAN-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "ZTILGISGTMGYAN",
+        "structure.molecular_formula": "C46H47N3",
+        "structure.parent_monoisotopic_mass": 641.376998504,
+        "structure.as_drawn_monoisotopic_mass": 641.376998504,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 12.746899999999979,
+        "structure.aromatic_rings": 6.0,
+        "optical.stokes_shift_nm": 82.0,
+        "optical.stokes_shift_cm": 6131.162004740436,
+        "optical.ife_correction_factor": 1.0256519262514077,
+        "optical.corrected_fold_change": 1.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "NM01",
+      "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+      "expected_status": "VERIFIED",
+      "evidence_kind": "source_only",
+      "actual_status": "VERIFIED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "AGGREGATION_RISK"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "32f6ef1c12bcda938676d275986f46a36293857d8f68692c83df8eca60feaa0e",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CC1(C)OB(c2ccc3ccccc3c2-c2nccc3ccccc23)OC1(C)C",
+        "structure.inchikey": "SNRWQXSKKAVDOU-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "SNRWQXSKKAVDOU",
+        "structure.molecular_formula": "C25H24BNO2",
+        "structure.parent_monoisotopic_mass": 381.1900094079999,
+        "structure.as_drawn_monoisotopic_mass": 381.1900094079999,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 5.354200000000005,
+        "structure.aromatic_rings": 4.0,
+        "nmr.nonexchangeable_h": 24.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 24.0,
+        "nmr.expected_integral_upper_h": 24.0,
+        "nmr.observed_integral_h": 24.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "NM02",
+      "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "SOLVENT_PEAK_CANDIDATE",
+        "PROTON_INTEGRAL_MISMATCH",
+        "SOLVENT_INTEGRAL_INFLATION"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "20e2bd06fe38babcf3ff688e0566328e2704f8693e49722e3cb5e31254d476e7",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CN(C)c1ccc(B2OC(C)(C)C(C)(C)O2)cc1",
+        "structure.inchikey": "DGMLJJIUOFKPKB-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "DGMLJJIUOFKPKB",
+        "structure.molecular_formula": "C14H22BNO2",
+        "structure.parent_monoisotopic_mass": 247.17435934399998,
+        "structure.as_drawn_monoisotopic_mass": 247.17435934399998,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 2.0518,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 22.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 22.0,
+        "nmr.expected_integral_upper_h": 22.0,
+        "nmr.observed_integral_h": 30.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "NM03",
+      "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "UNCALIBRATED_INTEGRALS"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "64216548afd8bc19a2464fe48222988f54645de112e03a4fe88cb6680d8ffc48",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CN(C)C(=O)c1cccc(B2OC(C)(C)C(C)(C)O2)c1",
+        "structure.inchikey": "CHLGBYJEMLCJJJ-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "CHLGBYJEMLCJJJ",
+        "structure.molecular_formula": "C15H22BNO3",
+        "structure.parent_monoisotopic_mass": 275.169273964,
+        "structure.as_drawn_monoisotopic_mass": 275.169273964,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 1.6875999999999998,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 22.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 22.0,
+        "nmr.expected_integral_upper_h": 22.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "NM04",
+      "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "SOLVENT_PEAK_CANDIDATE",
+        "PROTON_INTEGRAL_MISMATCH",
+        "SOLVENT_INTEGRAL_INFLATION"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "47f64e6371d4a15b3209e00f0037878f5490dab107ca727d449d717c3654d01c",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CC1(C)OB(c2cc(Br)cc(OC(F)(F)F)c2)OC1(C)C",
+        "structure.inchikey": "LHVHGIUPEAOMSW-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "LHVHGIUPEAOMSW",
+        "structure.molecular_formula": "C13H15BBrF3O3",
+        "structure.parent_monoisotopic_mass": 366.0249715,
+        "structure.as_drawn_monoisotopic_mass": 366.0249715,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 3.6469000000000023,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 15.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 15.0,
+        "nmr.expected_integral_upper_h": 15.0,
+        "nmr.observed_integral_h": 17.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "NM05",
+      "category": "NMR_SOLVENT_INTEGRAL_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "UNSPECIFIED_STEREO",
+        "UNCALIBRATED_INTEGRALS",
+        "INCOMPLETE_INTEGRATION"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "776c061b7bb6eddf954489b1dff4616acb1b2ad996737e9e381bfaffc06f7bb5",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCC(C)C(=O)c1c(O)cc(O)cc1OC1OC(CO)C(O)C(O)C1O",
+        "structure.inchikey": "MMJKSUJYDHTZJV-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "MMJKSUJYDHTZJV",
+        "structure.molecular_formula": "C17H24O9",
+        "structure.parent_monoisotopic_mass": 372.14203234799993,
+        "structure.as_drawn_monoisotopic_mass": 372.14203234799993,
+        "structure.tautomer_count": 21.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": -0.4947000000000005,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 18.0,
+        "nmr.exchangeable_h": 6.0,
+        "nmr.expected_integral_lower_h": 18.0,
+        "nmr.expected_integral_upper_h": 18.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "ST01",
+      "category": "STEREO_TAUTOMER_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "STRUCTURAL_ALERT",
+        "NO_SPECTRAL_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "28febfeaab1785fcb4c899fbf40d8408b643b1f52735ae8646afa2e990e17fe2",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCCN(CCCCN1C(=O)CC(C)(C)CC1=O)[C@@H]1CCc2ccc3[nH]c(C(N)=O)cc3c2C1",
+        "structure.inchikey": "FBQVSOZYMOLIKP-LJQANCHMSA-N",
+        "structure.inchi_connectivity_layer": "FBQVSOZYMOLIKP",
+        "structure.molecular_formula": "C27H38N4O3",
+        "structure.parent_monoisotopic_mass": 466.294391076,
+        "structure.as_drawn_monoisotopic_mass": 466.294391076,
+        "structure.tautomer_count": 30.0,
+        "structure.assigned_stereocenters": 1.0,
+        "structure.clogp": 3.791500000000002,
+        "structure.aromatic_rings": 2.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "ST02",
+      "category": "STEREO_TAUTOMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STEREO_MISMATCH"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "a0c5d0750fb31b5093e5747badd1a77d2c23f29cf506c00a23a482fb9e381383",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCCN(CCC)[C@@H]1CCc2ccc3[nH]c(C#N)cc3c2C1",
+        "structure.inchikey": "WDDZPZKGLZNGEH-MRXNPFEDSA-N",
+        "structure.inchi_connectivity_layer": "WDDZPZKGLZNGEH",
+        "structure.molecular_formula": "C19H25N3",
+        "structure.parent_monoisotopic_mass": 295.20484780000004,
+        "structure.as_drawn_monoisotopic_mass": 295.20484780000004,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 1.0,
+        "structure.clogp": 4.018880000000003,
+        "structure.aromatic_rings": 2.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "ST03",
+      "category": "STEREO_TAUTOMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STEREO_MISMATCH",
+        "MISSING_STEREOCHEMISTRY",
+        "STRUCTURAL_ALERT"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "91ed8dadafa2a613977293c6ed5eac6e485d17a896beeb4346adeb8a08e317c2",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "C=CCN1CCC2c3cccc(O)c3CCC21",
+        "structure.inchikey": "MHHLELSXRBTNRD-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "MHHLELSXRBTNRD",
+        "structure.molecular_formula": "C15H19NO",
+        "structure.parent_monoisotopic_mass": 229.146664228,
+        "structure.as_drawn_monoisotopic_mass": 229.146664228,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 2.6823000000000006,
+        "structure.aromatic_rings": 1.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "ST04",
+      "category": "STEREO_TAUTOMER_TRAP",
+      "expected_status": "ARTIFACT_DETECTED",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "INCHI_LAYER_MISMATCH"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "a73d35715459f89b7b5830ae497e36cfead95b8dbff3a43366986c83943d849f",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCCCN1CCC[C@H]1CNC(=O)c1cc(Cl)cc2c1OCCN2C",
+        "structure.inchikey": "AHCLBNDBOQTPGQ-HNNXBMFYSA-N",
+        "structure.inchi_connectivity_layer": "AHCLBNDBOQTPGQ",
+        "structure.molecular_formula": "C19H28ClN3O2",
+        "structure.parent_monoisotopic_mass": 365.187004816,
+        "structure.as_drawn_monoisotopic_mass": 365.187004816,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 1.0,
+        "structure.clogp": 3.1629000000000014,
+        "structure.aromatic_rings": 1.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "ST05",
+      "category": "STEREO_TAUTOMER_TRAP",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_plus_perturbation",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "TAUTOMER_EQUIVALENT",
+        "NO_SPECTRAL_EVIDENCE"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "5a74e0459a19ad281ce84d147a08248c579eeeefaa0027560878431a48d60b0a",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CN1CCOc2c(C(=O)NC[C@@H]3CCCN3CCc3ccccc3)cc(Cl)cc21",
+        "structure.inchikey": "ZIGNSANQGXWXBU-IBGZPJMESA-N",
+        "structure.inchi_connectivity_layer": "ZIGNSANQGXWXBU",
+        "structure.molecular_formula": "C23H28ClN3O2",
+        "structure.parent_monoisotopic_mass": 413.18700481599996,
+        "structure.as_drawn_monoisotopic_mass": 413.18700481599996,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 1.0,
+        "structure.clogp": 3.605500000000003,
+        "structure.aromatic_rings": 2.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "TR01",
+      "category": "VERIFIED_TRUE_AND_NEGATIVE",
+      "expected_status": "VERIFIED",
+      "evidence_kind": "source_only",
+      "actual_status": "VERIFIED",
+      "flags": [
+        "STRUCTURAL_ALERT"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "4bb137dec2c9a80cb4df01426f485a6e883b036b2bc0dc6beb9c1548c2883cac",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CSc1ccccc1B1OC(C)(C)C(C)(C)O1",
+        "structure.inchikey": "SLJWZEVOGXSTOM-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "SLJWZEVOGXSTOM",
+        "structure.molecular_formula": "C13H19BO2S",
+        "structure.parent_monoisotopic_mass": 250.11988124799998,
+        "structure.as_drawn_monoisotopic_mass": 250.11988124799998,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 2.707700000000001,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 19.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 19.0,
+        "nmr.expected_integral_upper_h": 19.0,
+        "nmr.observed_integral_h": 19.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "TR02",
+      "category": "VERIFIED_TRUE_AND_NEGATIVE",
+      "expected_status": "VERIFIED",
+      "evidence_kind": "source_only",
+      "actual_status": "VERIFIED",
+      "flags": [
+        "STRUCTURAL_ALERT"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "90c7a89dc587396eff86aecab28f8238f0105424192ab8f82d979ca3940bf5b7",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CNC(=O)c1ccccc1B1OC(C)(C)C(C)(C)O1",
+        "structure.inchikey": "CDICQJUTNNWEIT-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "CDICQJUTNNWEIT",
+        "structure.molecular_formula": "C14H20BNO3",
+        "structure.parent_monoisotopic_mass": 261.1536239,
+        "structure.as_drawn_monoisotopic_mass": 261.1536239,
+        "structure.tautomer_count": 2.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 1.3454,
+        "structure.aromatic_rings": 1.0,
+        "nmr.nonexchangeable_h": 19.0,
+        "nmr.exchangeable_h": 1.0,
+        "nmr.expected_integral_lower_h": 19.0,
+        "nmr.expected_integral_upper_h": 20.0,
+        "nmr.observed_integral_h": 20.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "TR03",
+      "category": "VERIFIED_TRUE_AND_NEGATIVE",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "ARTIFACT_DETECTED",
+      "flags": [
+        "STRUCTURAL_ALERT",
+        "HRMS_MASS_MISMATCH",
+        "MISSING_ISOTOPE_EVIDENCE"
+      ],
+      "status_agrees": false,
+      "missing_required_flags": [],
+      "audit_sha256": "3ae6988c9407a9400cd7822273b680eabb47fcdcbd9f6740434b7abce317c105",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CC1(C)OB(c2cnc3cc(C(F)(F)F)ccc3c2Cl)OC1(C)C",
+        "structure.inchikey": "QJNVXGRGGSBNGZ-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "QJNVXGRGGSBNGZ",
+        "structure.molecular_formula": "C16H16BClF3NO2",
+        "structure.parent_monoisotopic_mass": 357.091471492,
+        "structure.as_drawn_monoisotopic_mass": 357.091471492,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 4.2062000000000035,
+        "structure.aromatic_rings": 2.0,
+        "lcms.theoretical_mz": 358.098747492,
+        "lcms.ppm_error": -2781.488343580977,
+        "lcms.matched_adduct": "[M+H]+",
+        "lcms.selected_adduct": "[M+H]+",
+        "nmr.nonexchangeable_h": 16.0,
+        "nmr.exchangeable_h": 0.0,
+        "nmr.expected_integral_lower_h": 16.0,
+        "nmr.expected_integral_upper_h": 16.0,
+        "nmr.observed_integral_h": 16.0
+      },
+      "error": null,
+      "diagnostic_agrees": false,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "TR04",
+      "category": "VERIFIED_TRUE_AND_NEGATIVE",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "AGGREGATION_RISK",
+        "NEGATIVE_CONTROLS_UNRESOLVED"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "6ff8680db0ed25d00ab40db44f36f48366ad11d41c6747e10fd7c52e2b018bdd",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "CCN1CCN(c2ccc(-c3cccc4c(=O)cc(N5CCOCC5)oc34)c3sc4ccccc4c23)CC1",
+        "structure.inchikey": "PRECKSFGYCYLSN-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "PRECKSFGYCYLSN",
+        "structure.molecular_formula": "C31H31N3O3S",
+        "structure.parent_monoisotopic_mass": 525.2086128519999,
+        "structure.as_drawn_monoisotopic_mass": 525.2086128519999,
+        "structure.tautomer_count": 1.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 5.806400000000006,
+        "structure.aromatic_rings": 5.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    },
+    {
+      "case_id": "TR05",
+      "category": "VERIFIED_TRUE_AND_NEGATIVE",
+      "expected_status": "INCONCLUSIVE",
+      "evidence_kind": "source_only",
+      "actual_status": "INCONCLUSIVE",
+      "flags": [
+        "UNSPECIFIED_STEREO",
+        "NEGATIVE_CONTROLS_UNRESOLVED"
+      ],
+      "status_agrees": true,
+      "missing_required_flags": [],
+      "audit_sha256": "11dab01f04acbfa2fddaee9bbaa46bd62b0463159ae2d5711cded6ba569193f5",
+      "corrected_metrics": {
+        "structure.canonical_smiles": "COc1cc(N2CC(C)NC(C)C2)ccc1Nc1ncc(Cl)c(-c2cnc3ccccn23)n1",
+        "structure.inchikey": "ZGBYNZVHNRLYBP-UHFFFAOYSA-N",
+        "structure.inchi_connectivity_layer": "ZGBYNZVHNRLYBP",
+        "structure.molecular_formula": "C24H26ClN7O",
+        "structure.parent_monoisotopic_mass": 463.18873613200003,
+        "structure.as_drawn_monoisotopic_mass": 463.18873613200003,
+        "structure.tautomer_count": 3.0,
+        "structure.assigned_stereocenters": 0.0,
+        "structure.clogp": 4.383500000000002,
+        "structure.aromatic_rings": 4.0
+      },
+      "error": null,
+      "diagnostic_agrees": true,
+      "review_status": "Pending human review"
+    }
+  ]
+}
