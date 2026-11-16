@@ -1,0 +1,946 @@
+{
+  "$defs": {
+    "AssayContext": {
+      "additionalProperties": false,
+      "properties": {
+        "assay_type": {
+          "enum": [
+            "synthesis_qc",
+            "fluorescence_probe",
+            "binding_assay",
+            "reaction_screen"
+          ],
+          "title": "Assay Type",
+          "type": "string"
+        },
+        "solvent": {
+          "minLength": 1,
+          "title": "Solvent",
+          "type": "string"
+        },
+        "ph": {
+          "anyOf": [
+            {
+              "maximum": 16,
+              "minimum": -2,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ph"
+        },
+        "temperature_c": {
+          "default": 25.0,
+          "exclusiveMinimum": -273.15,
+          "title": "Temperature C",
+          "type": "number"
+        },
+        "concentration_um": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Concentration Um"
+        }
+      },
+      "required": [
+        "assay_type",
+        "solvent"
+      ],
+      "title": "AssayContext",
+      "type": "object"
+    },
+    "AuditFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "INFO",
+            "WARNING",
+            "CRITICAL_ARTIFACT"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "modality": {
+          "enum": [
+            "structure",
+            "lcms",
+            "optical",
+            "nmr",
+            "provenance"
+          ],
+          "title": "Modality",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "quantitative_evidence": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "title": "Quantitative Evidence",
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "modality",
+        "message"
+      ],
+      "title": "AuditFlag",
+      "type": "object"
+    },
+    "AuditPolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "policy_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "hrms_ppm_tolerance": {
+          "default": 5.0,
+          "exclusiveMinimum": 0,
+          "title": "Hrms Ppm Tolerance",
+          "type": "number"
+        },
+        "alternative_ppm_tolerance": {
+          "default": 3.0,
+          "exclusiveMinimum": 0,
+          "title": "Alternative Ppm Tolerance",
+          "type": "number"
+        },
+        "isotope_absolute_tolerance": {
+          "default": 0.05,
+          "exclusiveMinimum": 0,
+          "title": "Isotope Absolute Tolerance",
+          "type": "number"
+        },
+        "isotope_relative_tolerance": {
+          "default": 0.25,
+          "exclusiveMinimum": 0,
+          "title": "Isotope Relative Tolerance",
+          "type": "number"
+        },
+        "ife_absorbance_trigger": {
+          "default": 0.15,
+          "exclusiveMinimum": 0,
+          "title": "Ife Absorbance Trigger",
+          "type": "number"
+        },
+        "ife_max_absorbance": {
+          "default": 1.0,
+          "exclusiveMinimum": 0,
+          "title": "Ife Max Absorbance",
+          "type": "number"
+        },
+        "ife_baseline_tolerance": {
+          "default": 0.15,
+          "exclusiveMinimum": 0,
+          "title": "Ife Baseline Tolerance",
+          "type": "number"
+        },
+        "nmr_absolute_h_tolerance": {
+          "default": 0.35,
+          "exclusiveMinimum": 0,
+          "title": "Nmr Absolute H Tolerance",
+          "type": "number"
+        },
+        "nmr_relative_h_tolerance": {
+          "default": 0.05,
+          "exclusiveMinimum": 0,
+          "title": "Nmr Relative H Tolerance",
+          "type": "number"
+        }
+      },
+      "title": "AuditPolicy",
+      "type": "object"
+    },
+    "AuditVerdict": {
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "ARTIFACT_DETECTED",
+            "INCONCLUSIVE",
+            "NEGATIVE_RESULT"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "confidence_score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence Score",
+          "type": "number"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/$defs/AuditFlag"
+          },
+          "title": "Flags",
+          "type": "array"
+        },
+        "corrected_metrics": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "title": "Corrected Metrics",
+          "type": "object"
+        },
+        "deterministic_engine_version": {
+          "title": "Deterministic Engine Version",
+          "type": "string"
+        },
+        "checks_performed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Checks Performed",
+          "type": "array"
+        },
+        "confidence_basis": {
+          "default": "Deterministic rule coverage; not a calibrated probability of identity",
+          "title": "Confidence Basis",
+          "type": "string"
+        },
+        "audit_sha256": {
+          "default": "",
+          "pattern": "^([a-f0-9]{64})?$",
+          "title": "Audit Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_id",
+        "status",
+        "confidence_score",
+        "flags",
+        "corrected_metrics",
+        "deterministic_engine_version"
+      ],
+      "title": "AuditVerdict",
+      "type": "object"
+    },
+    "CompoundSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "compound_id": {
+          "minLength": 1,
+          "title": "Compound Id",
+          "type": "string"
+        },
+        "proposed_smiles": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "title": "Proposed Smiles",
+          "type": "string"
+        },
+        "canonical_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonical Smiles"
+        },
+        "inchikey": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{14}-[A-Z]{10}-[A-Z]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inchikey"
+        },
+        "inchi_connectivity_layer": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{14}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inchi Connectivity Layer"
+        },
+        "molecular_formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Molecular Formula"
+        },
+        "monoisotopic_mass": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Monoisotopic Mass"
+        },
+        "salt_form": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Salt Form"
+        },
+        "mass_basis": {
+          "default": "neutral_parent",
+          "enum": [
+            "neutral_parent",
+            "as_drawn"
+          ],
+          "title": "Mass Basis",
+          "type": "string"
+        },
+        "expected_stereocenters": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Expected Stereocenters",
+          "type": "integer"
+        },
+        "reference_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Smiles"
+        },
+        "ord_compound_identifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ord Compound Identifier"
+        }
+      },
+      "required": [
+        "compound_id",
+        "proposed_smiles"
+      ],
+      "title": "CompoundSpec",
+      "type": "object"
+    },
+    "LCMSEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "observed_mz": {
+          "exclusiveMinimum": 0,
+          "title": "Observed Mz",
+          "type": "number"
+        },
+        "ionization_mode": {
+          "enum": [
+            "positive",
+            "negative"
+          ],
+          "title": "Ionization Mode",
+          "type": "string"
+        },
+        "observed_adduct": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed Adduct"
+        },
+        "relative_isotope_intensities": {
+          "items": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "maxItems": 3,
+          "title": "Relative Isotope Intensities",
+          "type": "array"
+        },
+        "retention_time_min": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retention Time Min"
+        },
+        "purity_uv_percent": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Purity Uv Percent"
+        },
+        "starting_materials": {
+          "items": {
+            "$ref": "#/$defs/CompoundSpec"
+          },
+          "maxItems": 20,
+          "title": "Starting Materials",
+          "type": "array"
+        }
+      },
+      "required": [
+        "observed_mz",
+        "ionization_mode"
+      ],
+      "title": "LCMSEvidence",
+      "type": "object"
+    },
+    "NMREvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "solvent": {
+          "enum": [
+            "CDCl3",
+            "DMSO-d6",
+            "CD3OD",
+            "D2O",
+            "Acetone-d6"
+          ],
+          "title": "Solvent",
+          "type": "string"
+        },
+        "proton_shifts_ppm": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 2000,
+          "title": "Proton Shifts Ppm",
+          "type": "array"
+        },
+        "proton_integrals": {
+          "items": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "maxItems": 2000,
+          "title": "Proton Integrals",
+          "type": "array"
+        },
+        "carbon_shifts_ppm": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 2000,
+          "title": "Carbon Shifts Ppm",
+          "type": "array"
+        },
+        "integral_scale": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Integral Scale"
+        },
+        "multiplicities": {
+          "items": {
+            "enum": [
+              "s",
+              "d",
+              "t",
+              "q",
+              "m",
+              "br",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Multiplicities",
+          "type": "array"
+        },
+        "integration_complete": {
+          "default": true,
+          "title": "Integration Complete",
+          "type": "boolean"
+        },
+        "exchangeable_protons_observed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exchangeable Protons Observed"
+        }
+      },
+      "required": [
+        "solvent",
+        "proton_shifts_ppm",
+        "proton_integrals"
+      ],
+      "title": "NMREvidence",
+      "type": "object"
+    },
+    "NegativeResultRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "experiment_id": {
+          "minLength": 1,
+          "title": "Experiment Id",
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "no_product",
+            "decomposition",
+            "no_response",
+            "failed_synthesis"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "observation": {
+          "minLength": 10,
+          "title": "Observation",
+          "type": "string"
+        },
+        "protocol_reference": {
+          "minLength": 1,
+          "title": "Protocol Reference",
+          "type": "string"
+        },
+        "evidence_references": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        },
+        "detection_limit_description": {
+          "minLength": 5,
+          "title": "Detection Limit Description",
+          "type": "string"
+        },
+        "controls_passed": {
+          "title": "Controls Passed",
+          "type": "boolean"
+        },
+        "measured_yield_percent": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Measured Yield Percent"
+        }
+      },
+      "required": [
+        "experiment_id",
+        "outcome",
+        "observation",
+        "protocol_reference",
+        "evidence_references",
+        "detection_limit_description",
+        "controls_passed"
+      ],
+      "title": "NegativeResultRecord",
+      "type": "object"
+    },
+    "OpticalEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "excitation_nm": {
+          "exclusiveMinimum": 0,
+          "title": "Excitation Nm",
+          "type": "number"
+        },
+        "emission_nm": {
+          "exclusiveMinimum": 0,
+          "title": "Emission Nm",
+          "type": "number"
+        },
+        "absorbance_at_ex": {
+          "minimum": 0,
+          "title": "Absorbance At Ex",
+          "type": "number"
+        },
+        "absorbance_at_em": {
+          "minimum": 0,
+          "title": "Absorbance At Em",
+          "type": "number"
+        },
+        "observed_quantum_yield": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed Quantum Yield"
+        },
+        "apparent_fold_change": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Apparent Fold Change"
+        },
+        "baseline_absorbance_at_ex": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline Absorbance At Ex"
+        },
+        "baseline_absorbance_at_em": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline Absorbance At Em"
+        },
+        "geometry": {
+          "default": "right_angle_center",
+          "enum": [
+            "right_angle_center",
+            "other"
+          ],
+          "title": "Geometry",
+          "type": "string"
+        },
+        "upconversion_declared": {
+          "default": false,
+          "title": "Upconversion Declared",
+          "type": "boolean"
+        },
+        "solvent_raman_shift_cm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Solvent Raman Shift Cm"
+        },
+        "solvent_series": {
+          "items": {
+            "$ref": "#/$defs/SolventObservation"
+          },
+          "title": "Solvent Series",
+          "type": "array"
+        },
+        "expected_solvatochromism": {
+          "anyOf": [
+            {
+              "enum": [
+                "positive",
+                "negative"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Solvatochromism"
+        }
+      },
+      "required": [
+        "excitation_nm",
+        "emission_nm",
+        "absorbance_at_ex",
+        "absorbance_at_em"
+      ],
+      "title": "OpticalEvidence",
+      "type": "object"
+    },
+    "SolventObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "solvent": {
+          "title": "Solvent",
+          "type": "string"
+        },
+        "polarity_index": {
+          "title": "Polarity Index",
+          "type": "number"
+        },
+        "emission_nm": {
+          "exclusiveMinimum": 0,
+          "title": "Emission Nm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "solvent",
+        "polarity_index",
+        "emission_nm"
+      ],
+      "title": "SolventObservation",
+      "type": "object"
+    },
+    "SpectralEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "lcms": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LCMSEvidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "optical": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OpticalEvidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "nmr": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NMREvidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "SpectralEvidence",
+      "type": "object"
+    },
+    "VerificationRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_id": {
+          "minLength": 1,
+          "title": "Record Id",
+          "type": "string"
+        },
+        "compound": {
+          "$ref": "#/$defs/CompoundSpec"
+        },
+        "assay": {
+          "$ref": "#/$defs/AssayContext"
+        },
+        "evidence": {
+          "$ref": "#/$defs/SpectralEvidence"
+        },
+        "negative_result": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NegativeResultRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ord_reaction_id": {
+          "anyOf": [
+            {
+              "pattern": "^ord-[0-9a-f]{32}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ord Reaction Id"
+        },
+        "source_references": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "record_id",
+        "compound",
+        "assay"
+      ],
+      "title": "VerificationRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "input": {
+      "$ref": "#/$defs/VerificationRecord"
+    },
+    "policy": {
+      "$ref": "#/$defs/AuditPolicy"
+    },
+    "verdict": {
+      "$ref": "#/$defs/AuditVerdict"
+    },
+    "runtime_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Runtime Versions",
+      "type": "object"
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "input",
+    "policy",
+    "verdict",
+    "runtime_versions",
+    "sha256"
+  ],
+  "title": "AuditBundle",
+  "type": "object"
+}
