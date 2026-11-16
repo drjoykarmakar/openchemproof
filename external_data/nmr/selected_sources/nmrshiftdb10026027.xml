@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+<molecule title="2-O-Caffeoyl tartaric acid" id="nmrshiftdb10026027">
+<atomArray>
+<atom id="a1" elementType="C" x2="-2.7119" y2="-1.9965" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a2" elementType="C" x2="-2.7119" y2="-2.8214" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a3" elementType="C" x2="-1.9987" y2="-3.2331" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a4" elementType="C" x2="-1.2837" y2="-2.8214" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a5" elementType="C" x2="-1.2837" y2="-1.9965" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a6" elementType="C" x2="-1.9987" y2="-1.5832" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+<scalar dictRef="cdk:aromaticAtom" />
+</atom>
+<atom id="a7" elementType="C" x2="-0.5688" y2="-3.2331" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a8" elementType="C" x2="0.1445" y2="-2.8214" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a9" elementType="C" x2="0.8596" y2="-3.2331" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a10" elementType="C" x2="2.2877" y2="-3.2331" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a11" elementType="C" x2="3.0026" y2="-2.8214" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a12" elementType="C" x2="2.286" y2="-4.058" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a13" elementType="C" x2="3.8686" y2="-3.7331" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a14" elementType="O" x2="0.8596" y2="-4.058" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a15" elementType="O" x2="-3.4269" y2="-1.5832" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a16" elementType="O" x2="-3.4269" y2="-3.2331" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a17" elementType="O" x2="1.5744" y2="-2.8214" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a18" elementType="O" x2="3.0026" y2="-1.9965" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a19" elementType="O" x2="3.152" y2="-4.558" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a20" elementType="O" x2="1.42" y2="-4.558" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a21" elementType="O" x2="4.8061" y2="-3.452" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a22" elementType="O" x2="4.0963" y2="-4.6706" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a23" elementType="H" x2="-1.99917742" y2="-0.7094652" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a24" elementType="H" x2="-4.18334998" y2="-1.14594017" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a25" elementType="H" x2="-1.99917649" y2="-4.1068348" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a26" elementType="H" x2="-4.18408305" y2="-3.66908918" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a27" elementType="H" x2="-0.52691009" y2="-1.55982876" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a28" elementType="H" x2="-0.56837645" y2="-4.10683483" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a29" elementType="H" x2="0.14402361" y2="-1.9476652" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a30" elementType="H" x2="2.28812355" y2="-2.35936517" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a31" elementType="H" x2="2.24616371" y2="-2.38411649" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a32" elementType="H" x2="3.0026" y2="-1.12276507" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a33" elementType="H" x2="0.6633289" y2="-4.99487708" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a34" elementType="H" x2="4.30251744" y2="-5.51965071" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+</atomArray>
+<bondArray>
+<bond id="b1" atomRefs2="a1 a2" order="D">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b2" atomRefs2="a2 a3" order="S">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b3" atomRefs2="a3 a4" order="D">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b4" atomRefs2="a4 a5" order="S">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b5" atomRefs2="a5 a6" order="D">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b6" atomRefs2="a1 a6" order="S">
+<bondType dictRef="cdk:aromaticBond" />
+</bond>
+<bond id="b7" atomRefs2="a4 a7" order="S" />
+<bond id="b8" atomRefs2="a7 a8" order="D" />
+<bond id="b9" atomRefs2="a8 a9" order="S" />
+<bond id="b10" atomRefs2="a9 a14" order="D" />
+<bond id="b11" atomRefs2="a1 a15" order="S" />
+<bond id="b12" atomRefs2="a2 a16" order="S" />
+<bond id="b13" atomRefs2="a9 a17" order="S" />
+<bond id="b14" atomRefs2="a17 a10" order="S" />
+<bond id="b15" atomRefs2="a10 a11" order="S" />
+<bond id="b16" atomRefs2="a11 a18" order="S" />
+<bond id="b17" atomRefs2="a10 a12" order="S" />
+<bond id="b18" atomRefs2="a12 a19" order="D" />
+<bond id="b19" atomRefs2="a12 a20" order="S" />
+<bond id="b20" atomRefs2="a11 a13" order="S" />
+<bond id="b21" atomRefs2="a13 a21" order="D" />
+<bond id="b22" atomRefs2="a13 a22" order="S" />
+<bond id="b23" atomRefs2="a6 a23" order="S" />
+<bond id="b24" atomRefs2="a15 a24" order="S" />
+<bond id="b25" atomRefs2="a3 a25" order="S" />
+<bond id="b26" atomRefs2="a16 a26" order="S" />
+<bond id="b27" atomRefs2="a5 a27" order="S" />
+<bond id="b28" atomRefs2="a7 a28" order="S" />
+<bond id="b29" atomRefs2="a8 a29" order="S" />
+<bond id="b30" atomRefs2="a10 a30" order="S" />
+<bond id="b31" atomRefs2="a11 a31" order="S" />
+<bond id="b32" atomRefs2="a18 a32" order="S" />
+<bond id="b33" atomRefs2="a20 a33" order="S" />
+<bond id="b34" atomRefs2="a22 a34" order="S" />
+</bondArray>
+<scalar dictRef="cdk:molecularProperty" title="cdk:Remark" dataType="xsd:string">nmrshiftdb2 10026027
+</scalar>
+</molecule>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb20076347" moleculeRef="nmrshiftdb10026027" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">500
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1D shift positions" />
+<metadata name="nmr:OBSERVENUCLEUS" content="1H" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Methanol-D4 (CD3OD)" />
+</substanceList>
+<peakList>
+<peak xValue="4.65" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p0" atomRefs="a31">
+<peakStructure type="coupling" atomRefs="a30" units="unit:hertz" value="2.7" />
+</peak>
+<peak xValue="5.55" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p1" atomRefs="a30">
+<peakStructure type="coupling" atomRefs="a31" units="unit:hertz" value="2.7" />
+</peak>
+<peak xValue="6.34" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p2" atomRefs="a29">
+<peakStructure type="coupling" atomRefs="a28" units="unit:hertz" value="16.0" />
+</peak>
+<peak xValue="6.78" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p3" atomRefs="a23">
+<peakStructure type="coupling" atomRefs="a27" units="unit:hertz" value="8.3" />
+</peak>
+<peak xValue="6.97" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="dd" id="p4" atomRefs="a27">
+<peakStructure type="coupling" atomRefs="a25" units="unit:hertz" value="1.9" />
+<peakStructure type="coupling" atomRefs="a23" units="unit:hertz" value="8.3" />
+</peak>
+<peak xValue="7.07" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p5" atomRefs="a25">
+<peakStructure type="coupling" atomRefs="a27" units="unit:hertz" value="1.9" />
+</peak>
+<peak xValue="7.64" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p6" atomRefs="a28">
+<peakStructure type="coupling" atomRefs="a29" units="unit:hertz" value="16.0" />
+</peak>
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Planta
+</journal>
+<volume>216
+</volume>
+<pages>881-889
+</pages>
+<author> Opitz
+</author>
+<etal>true
+</etal>
+<year>2003
+</year>
+</article>
+</entry>
+</spectrum>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb20076578" moleculeRef="nmrshiftdb10026027" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">125
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1D shift positions" />
+<metadata name="nmr:OBSERVENUCLEUS" content="13C" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Methanol-D4 (CD3OD)" />
+</substanceList>
+<peakList>
+<peak xValue="72.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p0" atomRefs="a11" />
+<peak xValue="75.7" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p1" atomRefs="a10" />
+<peak xValue="114.4" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p2" atomRefs="a8" />
+<peak xValue="115.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p3" atomRefs="a3" />
+<peak xValue="116.5" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p4" atomRefs="a6" />
+<peak xValue="123.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p5" atomRefs="a5" />
+<peak xValue="127.7" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p6" atomRefs="a4" />
+<peak xValue="146.8" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p7" atomRefs="a2" />
+<peak xValue="147.9" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p8" atomRefs="a7" />
+<peak xValue="149.8" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p9" atomRefs="a1" />
+<peak xValue="168.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p10" atomRefs="a9" />
+<peak xValue="170.6" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p11" atomRefs="a12" />
+<peak xValue="173.8" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p12" atomRefs="a13" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Planta
+</journal>
+<volume>216
+</volume>
+<pages>881-889
+</pages>
+<author> Opitz
+</author>
+<etal>true
+</etal>
+<year>2003
+</year>
+</article>
+</entry>
+</spectrum>
+</cml>

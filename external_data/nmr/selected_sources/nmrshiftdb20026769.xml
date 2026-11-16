@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+<molecule title="2-methyl-5-propan-2-ylcyclohexa-2,5-diene-1,4-dione; Thymoquinone" id="nmrshiftdb20026769">
+<atomArray>
+<atom id="a1" elementType="C" x2="2.0" y2="-1.24" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a2" elementType="C" x2="1.0" y2="-1.88" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a3" elementType="C" x2="1.0" y2="-3.13" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a4" elementType="C" x2="2.0" y2="-3.76" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a5" elementType="C" x2="3.0" y2="-3.13" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a6" elementType="C" x2="3.0" y2="-1.88" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a7" elementType="C" x2="4.0" y2="-1.24" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a8" elementType="C" x2="0.0" y2="-3.76" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a9" elementType="C" x2="4.0" y2="0.0" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a10" elementType="C" x2="5.0" y2="-1.87" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a11" elementType="O" x2="2.0" y2="-5.0" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a12" elementType="O" x2="2.0" y2="0.0" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a13" elementType="H" x2="-0.06067087" y2="-1.29953114" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a14" elementType="H" x2="4.0585958" y2="-3.71424457" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a15" elementType="H" x2="2.9414042" y2="-0.65575543" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a16" elementType="H" x2="-0.64450553" y2="-2.73697536" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a17" elementType="H" x2="-1.02302464" y2="-4.40450553" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a18" elementType="H" x2="0.64450553" y2="-4.78302464" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a19" elementType="H" x2="5.20911819" y2="0.0" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a20" elementType="H" x2="4.0" y2="1.20911819" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a21" elementType="H" x2="2.79088181" y2="0.0" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a22" elementType="H" x2="4.35549447" y2="-2.89302464" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a23" elementType="H" x2="6.02302464" y2="-2.51450553" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a24" elementType="H" x2="5.64450553" y2="-0.84697536" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+</atomArray>
+<bondArray>
+<bond id="b1" atomRefs2="a1 a2" order="S" />
+<bond id="b2" atomRefs2="a1 a6" order="S" />
+<bond id="b3" atomRefs2="a1 a12" order="D" />
+<bond id="b4" atomRefs2="a2 a3" order="D" />
+<bond id="b5" atomRefs2="a3 a4" order="S" />
+<bond id="b6" atomRefs2="a3 a8" order="S" />
+<bond id="b7" atomRefs2="a4 a5" order="S" />
+<bond id="b8" atomRefs2="a4 a11" order="D" />
+<bond id="b9" atomRefs2="a5 a6" order="D" />
+<bond id="b10" atomRefs2="a6 a7" order="S" />
+<bond id="b11" atomRefs2="a7 a9" order="S" />
+<bond id="b12" atomRefs2="a7 a10" order="S" />
+<bond id="b13" atomRefs2="a2 a13" order="S" />
+<bond id="b14" atomRefs2="a5 a14" order="S" />
+<bond id="b15" atomRefs2="a7 a15" order="S" />
+<bond id="b16" atomRefs2="a8 a16" order="S" />
+<bond id="b17" atomRefs2="a8 a17" order="S" />
+<bond id="b18" atomRefs2="a8 a18" order="S" />
+<bond id="b19" atomRefs2="a9 a19" order="S" />
+<bond id="b20" atomRefs2="a9 a20" order="S" />
+<bond id="b21" atomRefs2="a9 a21" order="S" />
+<bond id="b22" atomRefs2="a10 a22" order="S" />
+<bond id="b23" atomRefs2="a10 a23" order="S" />
+<bond id="b24" atomRefs2="a10 a24" order="S" />
+</bondArray>
+<scalar dictRef="cdk:molecularProperty" title="cdk:Remark" dataType="xsd:string">nmrshiftdb2 20026769
+</scalar>
+</molecule>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb40252052" moleculeRef="nmrshiftdb20026769" type="NMR" rawdata="http://www.nmrshiftdb.org/download/NmrshiftdbServlet/40252052_1H.zip?spectrumid=40252052&amp;nmrshiftdbaction=exportspec&amp;format=rawdata">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">298
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">400.0
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1H,APT, COSY,HSQC,NOESY,HMBC" />
+<metadata name="nmr:OBSERVENUCLEUS" content="1H" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="2.05" xUnits="units:ppm" peakShape="sharp" id="p0" atomRefs="a16 a17 a18">
+<peakStructure type="coupling" atomRefs="a14" units="unit:hertz" value="1.18" />
+</peak>
+<peak xValue="1.13" xUnits="units:ppm" peakShape="sharp" id="p1" atomRefs="a19 a20 a21 a22 a23 a24">
+<peakStructure type="coupling" atomRefs="a15" units="unit:hertz" value="6.94" />
+<peakStructure type="coupling" atomRefs="a15" units="unit:hertz" value="6.94" />
+</peak>
+<peak xValue="3.03" xUnits="units:ppm" peakShape="sharp" id="p2" atomRefs="a15">
+<peakStructure type="coupling" atomRefs="a13" units="unit:hertz" value="1.58" />
+<peakStructure type="coupling" atomRefs="a19" units="unit:hertz" value="6.94" />
+<peakStructure type="coupling" atomRefs="a22" units="unit:hertz" value="6.94" />
+</peak>
+<peak xValue="6.52" xUnits="units:ppm" peakShape="sharp" id="p3" atomRefs="a14">
+<peakStructure type="coupling" atomRefs="a16" units="unit:hertz" value="1.18" />
+</peak>
+<peak xValue="6.59" xUnits="units:ppm" peakShape="sharp" id="p4" atomRefs="a13">
+<peakStructure type="coupling" atomRefs="a15" units="unit:hertz" value="1.58" />
+</peak>
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Chemie in unserer Zeit
+</journal>
+<volume>48
+</volume>
+<pages>114-122
+</pages>
+<author>Sandro Spiller; Peter Mettke; Hans-Ullrich Siehl; Klaus-Peter Zeller; Dieter Sicker; Stefan Berger
+</author>
+<etal>false
+</etal>
+<title>Thymochinon - das Gelbe vom Öl
+</title>
+<year>2014
+</year>
+<doi>10.1002/ciuz.201400660
+</doi>
+</article>
+</entry>
+</spectrum>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb40251829" moleculeRef="nmrshiftdb20026769" type="NMR" rawdata="http://www.nmrshiftdb.org/download/NmrshiftdbServlet/40251829_13C.zip?spectrumid=40251829&amp;nmrshiftdbaction=exportspec&amp;format=rawdata">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">298
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">100.0
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1H,APT, COSY,HSQC,NOESY,HMBC" />
+<metadata name="nmr:OBSERVENUCLEUS" content="13C" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="15.4" xUnits="units:ppm" peakShape="sharp" id="p0" atomRefs="a8" />
+<peak xValue="21.4" xUnits="units:ppm" peakShape="sharp" id="p1" atomRefs="a9 a10" />
+<peak xValue="26.5" xUnits="units:ppm" peakShape="sharp" id="p2" atomRefs="a7" />
+<peak xValue="130.4" xUnits="units:ppm" peakShape="sharp" id="p3" atomRefs="a5" />
+<peak xValue="133.8" xUnits="units:ppm" peakShape="sharp" id="p4" atomRefs="a2" />
+<peak xValue="145.2" xUnits="units:ppm" peakShape="sharp" id="p5" atomRefs="a3" />
+<peak xValue="155.0" xUnits="units:ppm" peakShape="sharp" id="p6" atomRefs="a6" />
+<peak xValue="187.4" xUnits="units:ppm" peakShape="sharp" id="p7" atomRefs="a1" />
+<peak xValue="188.6" xUnits="units:ppm" peakShape="sharp" id="p8" atomRefs="a4" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Chemie in unserer Zeit
+</journal>
+<volume>48
+</volume>
+<pages>114-122
+</pages>
+<author>Sandro Spiller; Peter Mettke; Hans-Ullrich Siehl; Klaus-Peter Zeller; Dieter Sicker; Stefan Berger
+</author>
+<etal>false
+</etal>
+<title>Thymochinon - das Gelbe vom Öl
+</title>
+<year>2014
+</year>
+<doi>10.1002/ciuz.201400660
+</doi>
+</article>
+</entry>
+</spectrum>
+</cml>

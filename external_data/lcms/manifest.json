@@ -1,0 +1,45 @@
+{
+  "dataset": "OpenChemProof v0.1 public experimental LC-MS/MS acquisition subset",
+  "created_utc": "2026-11-16T09:20:48.805149+00:00",
+  "requested_count": 100,
+  "record_count": 100,
+  "unique_canonical_smiles": 100,
+  "source_repository": "https://github.com/MassBank/MassBank-data",
+  "source_release": "2026.11",
+  "source_commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+  "source_release_doi": "https://doi.org/10.5281/zenodo.24082491",
+  "source_tree_url": "https://api.github.com/repos/MassBank/MassBank-data/git/trees/1cd69cbf8796c73124237e928e1fc432a953f8ed",
+  "source_tree_sha256": "a9417539873b422e6f1ed6b37498a4797772ea6ca01e2ee20d2ec35d6f11edf2",
+  "normalized_file": "massbank_100.jsonl",
+  "normalized_sha256": "64d14ad0585dec5bb283dd781e6aba4d4bb194fe84bf6ff3f2a7257e477f7883",
+  "rdkit_version": "2026.09.2",
+  "licenses": {
+    "CC BY": 100
+  },
+  "license_note": "Each original record says CC BY without a version. Preserve attribution, record URLs and exact source license; do not relicense these records under the code license or infer a version.",
+  "ion_modes": {
+    "positive": 78,
+    "negative": 22
+  },
+  "adducts": {
+    "[M+H]+": 78,
+    "[M-H]-": 22
+  },
+  "instrument_types": {
+    "LC-ESI-ITFT": 100
+  },
+  "experimental_ms2_peak_lists": 100,
+  "measured_ms1_isotope_envelopes": 0,
+  "synthetic_records": 0,
+  "selection": "Pinned Eawag EA series; ascending compound IDs; first available record per polarity block; prefer alternating polarity; only source-standard compounds with LC instrument, valid SMILES, precursor fields and MS2 peaks; unique canonical SMILES.",
+  "limitations": [
+    "Convenience subset of one contributor/series; not a representative or blind evaluation.",
+    "Records are processed experimental MS2 reference spectra, not original raw instrument files.",
+    "All M/M+1/M+2 isotope envelope fields are unavailable; MS2 fragments are not substituted.",
+    "Reported precursor m/z is metadata; MassBank format explicitly prefers calculated exact precursor mass. Do not use this field as independent measured mass accuracy or PASS truth.",
+    "Reference identity is contributor asserted for standard compounds; no engine-derived truth labels are assigned.",
+    "Canonical SMILES parsing does not validate chemistry, stereochemistry or source assignment.",
+    "No synthetic perturbations and no expected verifier verdict labels are included."
+  ],
+  "rejected_candidates": []
+}

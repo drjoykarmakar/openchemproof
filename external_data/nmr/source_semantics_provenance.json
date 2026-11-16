@@ -1,0 +1,16 @@
+{
+  "retrieved_date": "2026-11-16",
+  "svn_revision_observed_in_directory_listing": 2696,
+  "upstream_code_used_only_to_verify_export_semantics": [
+    {
+      "filename": "DBSpectrum.java",
+      "source_url": "https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/nmrshiftdb2/src/java/org/openscience/nmrshiftdb/om/DBSpectrum.java",
+      "sha256": "62fef80c0b09da2c22b1d96e2ef53fef0928dca48e30523ad89415275494a876"
+    },
+    {
+      "filename": "populate-mysql.sql",
+      "source_url": "https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/nmrshiftdb2/src/sql/populate-mysql.sql",
+      "sha256": "3d95d9fdaeeec0bcdcc6922a1125ec74d849b4cb40ad3e77acc8e70a2e264e9b"
+    }
+  ]
+}

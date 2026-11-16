@@ -1,0 +1,61 @@
+{
+  "attribution": "Contains information from nmrshiftdb2 (www.nmrshiftdb.org), which is made available here under the nmrshiftdb2 Database License.",
+  "blocker_to_integrated_peak_list_target": "Selected source CML has assigned chemical shifts but no measured proton integration values. No integral or impurity measurement is fabricated.",
+  "dataset": "OpenChemProof NMRShiftDB2 paired experimental assigned shifts",
+  "eligible_same_solvent_pairs_before_structure_validation": {
+    "CD3OD": 19,
+    "CDCl3": 112,
+    "DMSO-d6": 14
+  },
+  "license": "nmrshiftdb2 Database License",
+  "license_sha256": "00322cc450c2e53e305c082e1ab7454f108b7df51c0dbee0a07932666b245516",
+  "license_url": "https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/snapshots/nmrshiftdb2datalicense.txt",
+  "normalized_count": 100,
+  "normalized_sha256": "ddc0f2dbbedcdf9b7a64fd140397284a7070d343457afad34ffecbb882e6319d",
+  "quantitatively_integrated_case_count": 0,
+  "requested_count": 100,
+  "retrieved_utc": "2026-11-16T09:24:40.391631+00:00",
+  "scan_counts": {
+    "eligible_13C_spectra": 1153,
+    "eligible_1H_spectra": 565,
+    "molecule_elements_scanned": 34465,
+    "selected_structure_parse_failures": 1,
+    "spectrum_elements_scanned": 47961
+  },
+  "schema_version": 1,
+  "scope": "Counts apply only to scanned complete elements; partial-export counts are not whole-database totals.",
+  "selection": "deterministic source-order round robin across CDCl3, DMSO-d6, CD3OD; unique molecule IDs; skip unparseable structures",
+  "solvent_counts": {
+    "CD3OD": 18,
+    "CDCl3": 68,
+    "DMSO-d6": 14
+  },
+  "source_exports": [
+    {
+      "bytes": 398454784,
+      "complete": false,
+      "filename": "nmrshiftdb2.xml",
+      "sha256": "55d0d33cd9818f9b00800d08c804daeabe3f239363b1b9c35f2cd526d208b8bb",
+      "snapshot_kind": "exact_byte_prefix",
+      "url": "https://downloads.sourceforge.net/project/nmrshiftdb2/data/nmrshiftdb2.xml"
+    },
+    {
+      "bytes": 158569118,
+      "complete": true,
+      "filename": "nmrshiftdb2withsignals.sd",
+      "sha256": "0e86688360e23c88ccf0eb82a1251315fa57ec6f5b376dc8886f3311793a0afe",
+      "snapshot_kind": "full_export",
+      "url": "https://downloads.sourceforge.net/project/nmrshiftdb2/data/nmrshiftdb2withsignals.sd"
+    }
+  ],
+  "validation": {
+    "carbon_assigned_peaks": 1871,
+    "carbon_spectra": 100,
+    "command": ".venv/bin/python external_data/nmr/verify_subset.py",
+    "proton_assigned_peaks": 1649,
+    "proton_spectra": 100,
+    "verified_records": 100
+  },
+  "xml_export_complete": false,
+  "xml_prefix_bytes": 398454784
+}

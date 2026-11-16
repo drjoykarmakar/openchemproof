@@ -1,0 +1,43 @@
+{
+  "complete_raw_spectra_cases": 0,
+  "engine_confirmed_positive_cases": 0,
+  "independently_verified_spectral_match_cases": 0,
+  "pinned_source_dataset_counts": {
+    "ord_dataset-00005539a1e04c809a9a78647bea649c": {
+      "reactions_with_explicit_positive_yield": 616,
+      "reactions_with_explicit_zero_yield": 134
+    },
+    "ord_dataset-99c23cf435dc42f1af884053bc8b11c7": {
+      "reactions_with_explicit_positive_yield": 1026,
+      "reactions_with_explicit_zero_yield": 58
+    }
+  },
+  "positive_yield_range_percent": [
+    50.0,
+    100.0
+  ],
+  "selection_bias": "Curated provenance demonstration, not a random or balanced general-chemistry benchmark. Success borylations and failed Buchwald-Hartwig reactions differ in source and chemistry.",
+  "source_characterized_successes": 60,
+  "source_reported_zero_yield_with_failure_narrative": 40,
+  "strict_negative_eligible_cases": 0,
+  "success_publication_dois": [
+    "10.1002/anie.201104544",
+    "10.1002/anie.201409186",
+    "10.1002/anie.201610041",
+    "10.1002/anie.201611536",
+    "10.1002/anie.201708967",
+    "10.1002/anie.201809929",
+    "10.1002/anie.201907366",
+    "10.1021/jacs.5b05252",
+    "10.1039/c2sc20776a"
+  ],
+  "successes_with_product_linked_nmr_peak_text_and_hrms": 60,
+  "successes_yield_at_least_50_percent": 60,
+  "target_shortfalls": {
+    "raw_spectra_verified_successes_of_60": 60,
+    "source_characterized_successes_of_60": 0,
+    "source_reported_zero_yield_of_40": 0,
+    "strict_controlled_negatives_of_40": 40
+  },
+  "total_records": 100
+}

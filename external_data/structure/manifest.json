@@ -1,0 +1,56 @@
+{
+  "dataset": "OpenChemProof ChEMBL stereoisomer evidence subset",
+  "created_at": "2026-11-16T09:20:46.581055+00:00",
+  "source": "ChEMBL",
+  "source_homepage": "https://www.ebi.ac.uk/chembl/",
+  "license": "CC-BY-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "license_evidence": "https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions",
+  "source_citation": "Zdrazil et al. The ChEMBL Database in 2023. Nucleic Acids Research. DOI:10.1093/nar/gkad1004",
+  "records": 100,
+  "pairs": 50,
+  "unique_molecules": 100,
+  "unique_assays": 21,
+  "screened_activities": 10000,
+  "target_id": "CHEMBL217",
+  "rdkit_version": "2026.09.2",
+  "confirmed_aggregator_records": 0,
+  "tautomer_records": 0,
+  "api_status": {
+    "url": "https://www.ebi.ac.uk/chembl/api/data/status.json",
+    "retrieved_at": "2026-11-16T09:19:03.674094+00:00",
+    "status": {
+      "activities": 24527044,
+      "chembl_db_version": "ChEMBL_37",
+      "chembl_release_date": "2026-05-01",
+      "compound_records": 3824604,
+      "disinct_compounds": 2921148,
+      "publications": 101100,
+      "status": "UP",
+      "targets": 18552
+    }
+  },
+  "selection": "First qualifying non-overlapping fully assigned tetrahedral stereoisomer pairs in activity_id order, grouped by stereo-stripped exact canonical connectivity, same assay, document, endpoint, units, description, assay variant and recorded activity properties. Validity warnings and potential duplicate flags excluded. No activity ratio threshold.",
+  "raw_fields_excluded": [
+    "ligand_efficiency",
+    "commercial calculated molecule properties"
+  ],
+  "files": {
+    "records.jsonl": "9bcff98e2808596791c92e2adc1cca8a43af479e96a6ece2d281cbbc7a84a95e",
+    "pairs.jsonl": "f5d66a76e0b1d9e79b658c1608ecb7a6f28585c3f0f54572bdd503f3561a295c",
+    "acquire_chembl.py": "53e713009985edbece4371779244add3e59e62545febdc3d391e34a267a6829c",
+    "api_status.json": "02b29b1aa8e9dead92b10c01b3cc3f7755501dbb939b9dddbab8d5343faa572f",
+    "raw/activity_000000.json": "f35b70c9b810f2e3d667cdf2dc4567d4dd27fc18d8cf9e1463fc237814cc24de",
+    "raw/activity_001000.json": "8138805cc3892fda74a928fce6ac993b1cfc7112cc2e14d26040b187cdd6877b",
+    "raw/activity_002000.json": "8048160aaa7a34f3382fc61f1619516861cd40eabe8d3ba05584e5692fcbfff8",
+    "raw/activity_003000.json": "6ec53ead6d6a82583fe917f358e0c50af59d7475f8f0a43ef487c36a2cf5b20d",
+    "raw/activity_004000.json": "58c34d809187d185ffa6365f3c903cb9034998db3f9fe85bb9f098b93a964ad9",
+    "raw/activity_005000.json": "533d0adeb12d33292db02584fd64a316d7375216aea5e7aa2da9c4cf3bcc2082",
+    "raw/activity_006000.json": "c2b1ff83dd841b7408b1dfb549f82cf513b98e990180f73f39974b68e047bd3e",
+    "raw/activity_007000.json": "d04106dc1b6a458b2b3b3d5360db3632e9495ebd157a6ae2c35549dfea9d7288",
+    "raw/activity_008000.json": "5689caf1d3a24a1cdf27df064ce98803754d2faa1164a0cf03dff52434626767",
+    "raw/activity_009000.json": "007f401bd211196f0f52f886390c669da4456b30ad8f7561d10625bb7ccdbd03",
+    "raw/assay_metadata.json": "6c9deacd03d36c65296f9f519620a6ba53d5700ff34fb97afce2896073f3f1df",
+    "raw/document_metadata.json": "0c39e02a92c15537afbe1b20b49e28d4aa53df649c04ea0a58d8b45dc863f4c3"
+  }
+}

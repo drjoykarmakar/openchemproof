@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+<molecule title="2,2,2-trichloro-1,1-dimethylethyl bromoacetate" id="nmrshiftdb20024874">
+<atomArray>
+<atom id="a1" elementType="C" x2="-3.598" y2="0.8813" formalCharge="0" hydrogenCount="2" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a2" elementType="C" x2="-2.8836" y2="0.4688" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a3" elementType="C" x2="-1.4546" y2="0.4688" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a4" elementType="C" x2="-1.0421" y2="1.1832" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a5" elementType="C" x2="-1.8671" y2="-0.2457" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a6" elementType="C" x2="-0.7401" y2="0.0563" formalCharge="0" hydrogenCount="0" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a7" elementType="Br" x2="-4.3125" y2="0.4688" formalCharge="0" hydrogenCount="0" isotopeNumber="79">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a8" elementType="O" x2="-2.8836" y2="-0.3562" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a9" elementType="O" x2="-2.1691" y2="0.8813" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a10" elementType="Cl" x2="-0.3276" y2="0.7707" formalCharge="0" hydrogenCount="0" isotopeNumber="35">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a11" elementType="Cl" x2="-1.1526" y2="-0.6582" formalCharge="0" hydrogenCount="0" isotopeNumber="35">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a12" elementType="Cl" x2="-0.0257" y2="-0.3562" formalCharge="0" hydrogenCount="0" isotopeNumber="35">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a13" elementType="H" x2="-3.06768394" y2="1.51326174" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a14" elementType="H" x2="-4.12827776" y2="1.51329388" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a15" elementType="H" x2="-0.32765425" y2="0.77067359" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a16" elementType="H" x2="-0.62957359" y2="1.89764575" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a17" elementType="H" x2="-1.75654575" y2="1.59572641" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a18" elementType="H" x2="-2.58157075" y2="0.16678311" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a19" elementType="H" x2="-2.27958311" y2="-0.96017075" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a20" elementType="H" x2="-1.15262925" y2="-0.65818311" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+</atomArray>
+<bondArray>
+<bond id="b1" atomRefs2="a7 a1" order="S" />
+<bond id="b2" atomRefs2="a1 a2" order="S" />
+<bond id="b3" atomRefs2="a2 a8" order="D" />
+<bond id="b4" atomRefs2="a2 a9" order="S" />
+<bond id="b5" atomRefs2="a9 a3" order="S" />
+<bond id="b6" atomRefs2="a3 a4" order="S" />
+<bond id="b7" atomRefs2="a3 a5" order="S" />
+<bond id="b8" atomRefs2="a3 a6" order="S" />
+<bond id="b9" atomRefs2="a6 a10" order="S" />
+<bond id="b10" atomRefs2="a6 a11" order="S" />
+<bond id="b11" atomRefs2="a6 a12" order="S" />
+<bond id="b12" atomRefs2="a1 a13" order="S" />
+<bond id="b13" atomRefs2="a1 a14" order="S" />
+<bond id="b14" atomRefs2="a4 a15" order="S" />
+<bond id="b15" atomRefs2="a4 a16" order="S" />
+<bond id="b16" atomRefs2="a4 a17" order="S" />
+<bond id="b17" atomRefs2="a5 a18" order="S" />
+<bond id="b18" atomRefs2="a5 a19" order="S" />
+<bond id="b19" atomRefs2="a5 a20" order="S" />
+</bondArray>
+<scalar dictRef="cdk:molecularProperty" title="cdk:Remark" dataType="xsd:string">nmrshiftdb2 20024874
+</scalar>
+</molecule>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb20068903" moleculeRef="nmrshiftdb20024874" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">500
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="Unreported" />
+<metadata name="nmr:OBSERVENUCLEUS" content="1H" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="1.94" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="s" id="p0" atomRefs="a15 a18" />
+<peak xValue="3.87" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="s" id="p1" atomRefs="a13 a14" />
+<peak xValue="1.94" xUnits="units:ppm" peakShape="sharp" id="p2" atomRefs="a16 a17 a19 a20" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Molbank
+</journal>
+<volume>0
+</volume>
+<author>L Kovács; P. Forgó; Z. Kele; É. Klement
+</author>
+<etal>false
+</etal>
+<title>2,2,2-Trichloro-1,1-dimethylethyl bromoacetate
+</title>
+<year>2004
+</year>
+<url>http://www.mdpi.net/molbank/molbank2004/m0378.htm
+</url>
+</article>
+</entry>
+</spectrum>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb20068904" moleculeRef="nmrshiftdb20024874" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">125
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="hmqc / hmbc" />
+<metadata name="nmr:OBSERVENUCLEUS" content="13C" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="21.09" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="Q" id="p0" atomRefs="a4 a5" />
+<peak xValue="26.64" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="T" id="p1" atomRefs="a1" />
+<peak xValue="99.3" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p2" atomRefs="a6" />
+<peak xValue="105.1" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p3" atomRefs="a3" />
+<peak xValue="165.05" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="S" id="p4" atomRefs="a2" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Molbank
+</journal>
+<volume>0
+</volume>
+<author>L Kovács; P. Forgó; Z. Kele; É. Klement
+</author>
+<etal>false
+</etal>
+<title>2,2,2-Trichloro-1,1-dimethylethyl bromoacetate
+</title>
+<year>2004
+</year>
+</article>
+</entry>
+</spectrum>
+</cml>

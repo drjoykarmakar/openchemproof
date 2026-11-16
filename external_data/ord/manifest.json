@@ -1,0 +1,63 @@
+{
+  "acquired_date_utc": "2026-11-16",
+  "dependencies": {
+    "ord-schema": "0.9.6",
+    "pyarrow": "26.0.1",
+    "requests": "2.34.2"
+  },
+  "outputs": {
+    "LICENSE-CC-BY-SA-4.0.txt": {
+      "bytes": 20137,
+      "sha256": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39"
+    },
+    "raw/selected_reactions.jsonl": {
+      "bytes": 391987,
+      "sha256": "f841bc40851b1b190ff67f3edbb36af4eedcb3fedd25216bd3ff96db56280db1"
+    },
+    "records.jsonl": {
+      "bytes": 456750,
+      "sha256": "63378468188ebf93bf516357d8653e784357ad154e9d2da63be2b753f8863e7b"
+    },
+    "selection.json": {
+      "bytes": 47239,
+      "sha256": "42fca5aa26bfb6465fb3cfcb9e8ec2630ad0836d9ff488bb6df7e03e5187f5e3"
+    },
+    "summary.json": {
+      "bytes": 1537,
+      "sha256": "3253c3e50812d0ba400365a0307d92e4bd20683caea7ebde5c294d85e24b8e26"
+    }
+  },
+  "selection_file": "selection.json",
+  "selection_method": "First eligible success records round-robin by publication DOI; zero-yield records selected after narrative review. Selection IDs frozen.",
+  "source_license": "CC-BY-SA-4.0",
+  "sources": [
+    {
+      "bytes": 214444,
+      "dataset_description": "Borylation reactions which were extracted from the literature by Roche scientists and published in the SURF format (ChemRxiv, 2024, DOI: 10.26434/chemrxiv-2023-nfq7h)",
+      "dataset_id": "ord_dataset-99c23cf435dc42f1af884053bc8b11c7",
+      "dataset_name": "Borylation dataset from Roche",
+      "download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet",
+      "github_commit": "398d7349d4218eccf8782a350a13588c7c7fb88f",
+      "huggingface_commit": "69a17d69acd264c1ccde52c1a86ef7689c43a7c2",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/LICENSE",
+      "sha256": "59cd8c35e021be300944f8e556b8fd7ec30a6bc32ff36a54be133aad8e44c393",
+      "source_reaction_count": 1111,
+      "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/99/ord_dataset-99c23cf435dc42f1af884053bc8b11c7.parquet"
+    },
+    {
+      "bytes": 285104,
+      "dataset_description": "This dataset includes 750 Buchwald-Hartwig reactions generated from AstraZeneca ELN which is used in yield prediction work: 10.26434/chemrxiv.14589498.v2",
+      "dataset_id": "ord_dataset-00005539a1e04c809a9a78647bea649c",
+      "dataset_name": "750 AstraZeneca ELN dataset",
+      "download_url": "https://huggingface.co/datasets/open-reaction-database/ord-data/resolve/69a17d69acd264c1ccde52c1a86ef7689c43a7c2/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+      "github_commit": "398d7349d4218eccf8782a350a13588c7c7fb88f",
+      "huggingface_commit": "69a17d69acd264c1ccde52c1a86ef7689c43a7c2",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/LICENSE",
+      "sha256": "5326c1f79ef6a71e6b2a91cbd07cd8521049427df79307686c7c4f44eb16b53a",
+      "source_reaction_count": 750,
+      "source_url": "https://github.com/open-reaction-database/ord-data/blob/398d7349d4218eccf8782a350a13588c7c7fb88f/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet"
+    }
+  ]
+}

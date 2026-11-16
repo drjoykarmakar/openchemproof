@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+<molecule title="ophiocerin C" id="nmrshiftdb20069680">
+<atomArray>
+<atom id="a1" elementType="C" x2="-0.625" y2="1.7625" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a2" elementType="C" x2="-1.3395" y2="1.35" formalCharge="0" hydrogenCount="2" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a3" elementType="C" x2="-1.3395" y2="0.525" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a4" elementType="C" x2="0.0895" y2="0.525" formalCharge="0" hydrogenCount="2" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a5" elementType="C" x2="0.0895" y2="1.35" formalCharge="0" hydrogenCount="1" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a6" elementType="C" x2="-2.0539" y2="0.1125" formalCharge="0" hydrogenCount="3" isotopeNumber="12">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a7" elementType="O" x2="-0.625" y2="0.1125" formalCharge="0" hydrogenCount="0" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a8" elementType="O" x2="-0.625" y2="2.5875" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a9" elementType="O" x2="0.8039" y2="1.7625" formalCharge="0" hydrogenCount="1" isotopeNumber="16">
+<scalar title="visible" dataType="xsd:string">true
+</scalar>
+</atom>
+<atom id="a10" elementType="H" x2="-0.212513813868076" y2="1.04802392729392" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a11" elementType="H" x2="-1.62165667437946" y2="2.12524739491487" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a12" elementType="H" x2="-2.1519647968958" y2="1.20674545024946" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a13" elementType="H" x2="0.80397768282459" y2="0.937516602801065" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a14" elementType="H" x2="-0.625" y2="3.41249752255335" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a15" elementType="H" x2="-2.05397768282459" y2="0.937483397198935" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a16" elementType="H" x2="0.371656674379464" y2="-0.250247394914869" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a17" elementType="H" x2="0.901964796895803" y2="0.668254549750544" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a18" elementType="H" x2="1.51835107113095" y2="2.1750294888599" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a19" elementType="H" x2="-2.4664294888599" y2="0.826951071130946" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a20" elementType="H" x2="-2.76835107113095" y2="-0.300029488859904" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+<atom id="a21" elementType="H" x2="-1.6413705111401" y2="-0.601951071130946" formalCharge="0" hydrogenCount="0" isotopeNumber="1">
+<scalar title="visible" dataType="xsd:string">false
+</scalar>
+</atom>
+</atomArray>
+<bondArray>
+<bond id="b1" atomRefs2="a1 a2" order="S" />
+<bond id="b2" atomRefs2="a1 a5" order="S" />
+<bond id="b3" atomRefs2="a2 a3" order="S" />
+<bond id="b4" atomRefs2="a3 a7" order="S" />
+<bond id="b5" atomRefs2="a7 a4" order="S" />
+<bond id="b6" atomRefs2="a4 a5" order="S" />
+<bond id="b7" atomRefs2="a1 a8" order="S">
+<bondStereo dictRef="cml:H">H
+</bondStereo>
+</bond>
+<bond id="b8" atomRefs2="a5 a9" order="S">
+<bondStereo dictRef="cml:W">W
+</bondStereo>
+</bond>
+<bond id="b9" atomRefs2="a3 a6" order="S">
+<bondStereo dictRef="cml:H">H
+</bondStereo>
+</bond>
+<bond id="b10" atomRefs2="a1 a10" order="S">
+<bondStereo dictRef="cml:W">W
+</bondStereo>
+</bond>
+<bond id="b11" atomRefs2="a2 a11" order="S" />
+<bond id="b12" atomRefs2="a2 a12" order="S" />
+<bond id="b13" atomRefs2="a5 a13" order="S">
+<bondStereo dictRef="cml:H">H
+</bondStereo>
+</bond>
+<bond id="b14" atomRefs2="a8 a14" order="S" />
+<bond id="b15" atomRefs2="a3 a15" order="S">
+<bondStereo dictRef="cml:W">W
+</bondStereo>
+</bond>
+<bond id="b16" atomRefs2="a4 a16" order="S" />
+<bond id="b17" atomRefs2="a4 a17" order="S" />
+<bond id="b18" atomRefs2="a9 a18" order="S" />
+<bond id="b19" atomRefs2="a6 a19" order="S" />
+<bond id="b20" atomRefs2="a6 a20" order="S" />
+<bond id="b21" atomRefs2="a6 a21" order="S" />
+</bondArray>
+<scalar dictRef="cdk:molecularProperty" title="cdk:Remark" dataType="xsd:string">nmrshiftdb2 20069680
+</scalar>
+</molecule>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb10086214" moleculeRef="nmrshiftdb20069680" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">400
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1D shift positions, homodecoupling, HMQC" />
+<metadata name="nmr:OBSERVENUCLEUS" content="1H" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="1.18" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="d" id="p0" atomRefs="a19" />
+<peak xValue="1.31" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="ddd" id="p1" atomRefs="a12" />
+<peak xValue="1.94" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="ddd" id="p2" atomRefs="a11" />
+<peak xValue="3.1" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="dd" id="p3" atomRefs="a16" />
+<peak xValue="3.44" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="ddd" id="p4" atomRefs="a13" />
+<peak xValue="3.49" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="m" id="p5" atomRefs="a10 a15" />
+<peak xValue="3.91" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="dd" id="p6" atomRefs="a17" />
+<peak xValue="1.18" xUnits="units:ppm" peakShape="sharp" id="p7" atomRefs="a20 a21" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Journal of Natural Products
+</journal>
+<volume>68
+</volume>
+<pages>701-705
+</pages>
+<author>R. F. Reategui
+</author>
+<etal>true
+</etal>
+<year>2005
+</year>
+</article>
+</entry>
+</spectrum>
+<spectrum xmlns:cml="http://www.xml-cml.org/dict/cml" xmlns:cmlDict="http://www.xml-cml.org/dict/cmlDict" xmlns:macie="http://www.xml-cml.org/dict/macie" xmlns:nmr="http://www.nmrshiftdb.org/dict" xmlns:siUnits="http://www.xml-cml.org/units/siUnits" xmlns:subst="http://www.xml-cml.org/dict/substDict" xmlns:units="http://www.xml-cml.org/units/units" id="nmrshiftdb10085997" moleculeRef="nmrshiftdb20069680" type="NMR">
+<conditionList>
+<scalar dataType="xsd:string" dictRef="cml:field" units="siUnits:megahertz">100
+</scalar>
+<scalar dataType="xsd:string" dictRef="cml:temp" units="siUnits:k">Unreported
+</scalar>
+</conditionList>
+<metadataList>
+<metadata name="nmr:assignmentMethod" content="1D shift positions, homodecoupling, HMQC" />
+<metadata name="nmr:OBSERVENUCLEUS" content="13C" />
+</metadataList>
+<substanceList>
+<substance dictRef="cml:solvent" role="subst:solvent" title="Chloroform-D1 (CDCl3)" />
+</substanceList>
+<peakList>
+<peak xValue="21.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="Q" id="p0" atomRefs="a6" />
+<peak xValue="40.6" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="T" id="p1" atomRefs="a2" />
+<peak xValue="69.7" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="T" id="p2" atomRefs="a4" />
+<peak xValue="72.1" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p3" atomRefs="a5" />
+<peak xValue="72.7" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p4" atomRefs="a1" />
+<peak xValue="73.2" xUnits="units:ppm" peakShape="sharp" peakMultiplicity="D" id="p5" atomRefs="a3" />
+</peakList>
+<entry xmlns="http://bibtexml.sf.net/">
+<article>
+<journal>Journal of Natural Products
+</journal>
+<volume>68
+</volume>
+<pages>701-705
+</pages>
+<author>R. F. Reategui
+</author>
+<etal>true
+</etal>
+<year>2005
+</year>
+</article>
+</entry>
+</spectrum>
+</cml>

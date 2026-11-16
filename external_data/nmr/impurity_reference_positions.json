@@ -1,0 +1,119 @@
+{
+  "reference_id": "gottlieb_1997_table1",
+  "citation": "Gottlieb HE, Kotlyar V, Nudelman A. NMR Chemical Shifts of Common Laboratory Solvents as Trace Impurities. J Org Chem. 1997;62:7512-7515.",
+  "doi": "10.1021/jo971176v",
+  "url": "https://pubs.acs.org/doi/10.1021/jo971176v",
+  "accessed_copy_url": "https://nmr.chem.ucsb.edu/docs/NMR_Impurities.pdf",
+  "accessed_copy_table": "PDF page 3 (zero-based page 2), original article Table 1",
+  "nucleus": "1H",
+  "units": "ppm",
+  "data_kind": "literature_reference_positions_not_observed_impurities_in_nmrshiftdb_cases",
+  "notes": [
+    "These literature positions support synthetic contamination stress tests only.",
+    "Water chemical shift depends on temperature, concentration, and hydrogen bonding; 3.33 ppm is H2O in DMSO while HDO can occur at 3.30 ppm.",
+    "No integration is provided by this reference subset. Ethyl acetate proton counts 3:2:3 are structural stoichiometry, not measured integrated values in a target sample.",
+    "The source PDF is a combined document; the cited original1997 Table1 is on PDF page3."
+  ],
+  "solvents": {
+    "CDCl3": {
+      "ethyl_acetate": [
+        {
+          "shift_ppm": 2.05,
+          "multiplicity": "s",
+          "group": "CH3CO"
+        },
+        {
+          "shift_ppm": 4.12,
+          "multiplicity": "q",
+          "group": "OCH2"
+        },
+        {
+          "shift_ppm": 1.26,
+          "multiplicity": "t",
+          "group": "CH2CH3"
+        }
+      ],
+      "dichloromethane": [
+        {
+          "shift_ppm": 5.3,
+          "multiplicity": "s",
+          "group": "CH2"
+        }
+      ],
+      "water": [
+        {
+          "shift_ppm": 1.56,
+          "multiplicity": "s",
+          "group": "exchangeable_H"
+        }
+      ]
+    },
+    "DMSO-d6": {
+      "ethyl_acetate": [
+        {
+          "shift_ppm": 1.99,
+          "multiplicity": "s",
+          "group": "CH3CO"
+        },
+        {
+          "shift_ppm": 4.03,
+          "multiplicity": "q",
+          "group": "OCH2"
+        },
+        {
+          "shift_ppm": 1.17,
+          "multiplicity": "t",
+          "group": "CH2CH3"
+        }
+      ],
+      "dichloromethane": [
+        {
+          "shift_ppm": 5.76,
+          "multiplicity": "s",
+          "group": "CH2"
+        }
+      ],
+      "water": [
+        {
+          "shift_ppm": 3.33,
+          "multiplicity": "s",
+          "group": "exchangeable_H"
+        }
+      ]
+    },
+    "CD3OD": {
+      "ethyl_acetate": [
+        {
+          "shift_ppm": 2.01,
+          "multiplicity": "s",
+          "group": "CH3CO"
+        },
+        {
+          "shift_ppm": 4.09,
+          "multiplicity": "q",
+          "group": "OCH2"
+        },
+        {
+          "shift_ppm": 1.24,
+          "multiplicity": "t",
+          "group": "CH2CH3"
+        }
+      ],
+      "dichloromethane": [
+        {
+          "shift_ppm": 5.49,
+          "multiplicity": "s",
+          "group": "CH2"
+        }
+      ],
+      "water": [
+        {
+          "shift_ppm": 4.87,
+          "multiplicity": "s",
+          "group": "exchangeable_H"
+        }
+      ]
+    }
+  },
+  "accessed_copy_sha256": "27b0cbfb5a8cfcc53b2e5ca1307e992b8b4c661fb04ea3ded181b8c7063f386c"
+}

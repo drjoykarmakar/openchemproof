@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "count": 500,
+  "origin": "synthetic_unit_fixture",
+  "categories": {
+    "OPTICAL_IFE_ARTIFACT": 100,
+    "VERIFIED_TRUE_AND_NEGATIVE": 100,
+    "STEREO_TAUTOMER_TRAP": 100,
+    "NMR_SOLVENT_INTEGRAL_TRAP": 100,
+    "LCMS_ADDUCT_DIMER_TRAP": 100
+  },
+  "sha256_jsonl": "e8eb4d8aa2106d355b3d882562cfc4893287de60fb2a62fa7aae0d0bf483f5fc",
+  "warning": "Internal consistency fixtures share chemistry primitives with the engine; 100% agreement does not establish external validity or LLM performance."
+}
