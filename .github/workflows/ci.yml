@@ -1,0 +1,23 @@
+name: checks
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - run: uv sync --locked --all-extras --python 3.12
+      - run: uv run ruff check src benchmarks tests
+      - run: uv run ruff format --check src benchmarks tests
+      - run: uv run mypy
+      - run: uv run pytest -q
+      - run: uv run chem-artifact-generate
+      - run: uv run chem-artifact-eval --oracle
+      - run: uv build
